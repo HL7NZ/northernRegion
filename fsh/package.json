@@ -1,0 +1,21 @@
+{
+  "name": "hl7.org.nz.northernregion",
+  "version": "0.1.0",
+  "canonical": "http://hl7.org.nz/fhir/northernregion",
+  "url": "https://build.fhir.org/ig/HL7NZ/northernregion/",
+  "title": "New Zealand Northern Region Implementation Guide",
+  "description": "New Zealand orthern Region profiles",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.org.nz.base" : "dev"
+  },
+  "language": "en",
+  "author": "David Hay",
+  "maintainers": [
+    {
+      "name": "David Hay",
+      "email": "mailto:david.hay25@gmail.com"
+    }
+  ],
+  "license": "CC0-1.0"
+}

@@ -1,0 +1,189 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HaPatient",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">healthAlliance Patient profile</div>"
+  },
+  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPatient",
+  "version": "0.1.0",
+  "name": "HaPatient",
+  "title": "Common Patient profile",
+  "status": "active",
+  "description": "Represents patient demographics exposed by healthAlliance systems",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzPatient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient"
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.extension:preferred",
+        "path": "Patient.name.extension",
+        "sliceName": "preferred",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-preferred"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom"
+      },
+      {
+        "id": "Patient.telecom.extension:authorizedByPatient",
+        "path": "Patient.telecom.extension",
+        "sliceName": "authorizedByPatient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.telecom.extension:validatedByPatient",
+        "path": "Patient.telecom.extension",
+        "sliceName": "validatedByPatient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "min": 1
+      },
+      {
+        "id": "Patient.address.extension:validatedByPatient",
+        "path": "Patient.address.extension",
+        "sliceName": "validatedByPatient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPractitioner",
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "max": "0"
+      }
+    ]
+  }
+}

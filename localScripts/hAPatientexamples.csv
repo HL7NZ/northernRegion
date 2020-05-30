@@ -1,0 +1,6 @@
+Description,NHI,family name,given names,gender,birthDate,phone,email,address line 1,address line 2,suburb,city,GP name,GP HPI,Practice name,Practice facility id,DHB
+,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+John Doe,WER4568,Doe,John Albertus,male,1982-01-01,+64 123 4567,john.doe@myserver.com,23 Thule St,,the Cove,Waipu,Dr Welby,hpi-001,Waipu Cove MC,pracid-001,
+Mary Doe,ABC1234,Doe,Mary,female,1984-05-23,64 123 4568,mary.doe@myserver.com,23 Thule st,,the cove,Waipu,Dr Kildaire,hpi-002,Waipu MC,pracid-002,
+,YTR8763,Smith,Alex,male,2002-02-12,123 5674,alex.smith@theirserver.com,Flat1,18 The avenue,alberton,New Plymouth,Dr Anderson,hpi-003,Good Health MC,pracid-003,wdhb
+,JUT9986,Smith,Alex,female,2002-02-12,123 5674,alexK.smith@theirserver.com,Flat1,18 The avenue,alberton,New Plymouth,Dr Blyth,hpi-004,Mediocre Health MC,pracid-004,wdhb
