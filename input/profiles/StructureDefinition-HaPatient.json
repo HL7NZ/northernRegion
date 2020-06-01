@@ -51,11 +51,6 @@
         "path": "Patient"
       },
       {
-        "id": "Patient.active",
-        "path": "Patient.active",
-        "max": "0"
-      },
-      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1
