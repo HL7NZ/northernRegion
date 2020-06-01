@@ -39,6 +39,7 @@ let dataServer = 'http://home.clinfhir.com:8054/baseR4/';        //where to save
  //remove any BOM
 contents = contents.replace(/^\uFEFF/, "")
 
+
 let bundle = {resourceType:'Bundle',type:'transaction',entry:[]}
 let lines = contents.split('\n')
 lines.forEach(function(lne,inx){
