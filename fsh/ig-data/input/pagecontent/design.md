@@ -5,7 +5,7 @@ Resources that are involved in the response to a demographics query. In most que
 
 The following diagram shows the relationship between the key resources.
 
-<img style='width:75%; float:none' src="nregion.png"/>
+<img style='width:75%; float:none' src="GP.png"/>
 
 The resources that are used are:
 
@@ -14,7 +14,6 @@ The resources that are used are:
 | Patient | Represents the patient - the person receiving care  | 
 | Practitioner | Represents a person delivering healthcare (regardless of qualification). Curently, this is used for the General Practitioner, but could also represent a doctor or nurse within a hospital |
 Organization | A group responsible for delivering care. The DHB or General Practice are examples of this. |
-| PractitionerRole | A 'linking' resource that connects a Practitioner to an Organization / Location in a role |
 | Endpoint | Represents where information can be sent electronically, and how. For example the HealthLink EDI address to send Discharge Summaries. Note that the EndPoint is connected to the PractitionerRole rather than the Practitioner, as the Practitioner could be in multiple roles at different Organizations / Locations |
 
 
@@ -27,7 +26,7 @@ Organization | A group responsible for delivering care. The DHB or General Pract
 
 -->
 
-Note that unlike the HPI, there is a direct reference from the Patient to the Practitioner or Organization. The HPI approach does add complexity, but allows significantly more flexibility, for example indicating the role that a Practitioner has at an Organization. especially where a single practitioner can habe multiple roles in different care settings. 
+Note that there is a direct reference from the Patient to the Practitioner or Organization rather than using an intermediate PractitionerRole. 
 
 It is the responsibility of the client to correctly identify and process the resources that are returned in a query or referenced by a resource. For example the patients general practitioner is represented by the Patient.generalPractitioner element. This can be a reference to:
 * the actual Practitioner resource (if that is known)

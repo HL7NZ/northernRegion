@@ -1,13 +1,13 @@
 
 // Aliases
-Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
-Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birthPlace
+//Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
+//Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birthPlace
 
 Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
-Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity
+//Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient
-Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicileCode
+//Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicileCode
 
 Profile:        HaPatient
 Parent:         NzPatient

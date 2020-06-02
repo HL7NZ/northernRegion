@@ -1,12 +1,14 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
-  <li><a href="toc.html">Table of Contents</a></li>
+
   <li><a href="usecases.html">Use Cases</a></li>
   <li><a href="design.html">Design notes</a></li>
-  <li><a href="artifacts.html">Artifact Index</a></li>
 
 
-  <li><a href="companion.html">Companion (Local)</a></li>
+
+  <li><a href="profiles.html">Profiles</a></li>
+  <li><a href="extensions.html">Extensions</a></li>
+  
 
     <li class="dropdown">
       <a data-toggle="dropdown" href="#" class="dropdown-toggle">API<b class="caret">
@@ -18,7 +20,8 @@
     </ul>
   </li>
 
-
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
 
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">

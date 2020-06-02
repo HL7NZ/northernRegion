@@ -276,6 +276,16 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "html"
+        },
+        {
           "nameUrl": "usecases.html",
           "title": "Usecases",
           "generation": "markdown"

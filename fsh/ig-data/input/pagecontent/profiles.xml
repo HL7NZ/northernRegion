@@ -1,0 +1,20 @@
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<tr><th>Id</th><th>Url</th><th>Description</th></tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-HaOrganization.html'>HaOrganization</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization</td>
+<td>Represents Organization data exposed by healthAlliance systems</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-HaPatient.html'>HaPatient</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPatient</td>
+<td>Represents patient demographics exposed by healthAlliance systems</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-HaPractitioner.html'>HaPractitioner</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPractitioner</td>
+<td>Represents Practitioner data exposed by northern region DHBs</td>
+</tr>
+</table>
+</div>
