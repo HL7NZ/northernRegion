@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "authorizedByPatient",
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient",
+  "id": "validated-by-patient",
+  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient",
   "version": "0.1.0",
-  "name": "AuthorizedByPatient",
+  "name": "ValidatedByPatient",
   "status": "active",
-  "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
+  "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -39,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient"
+        "fixedUri": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
       },
       {
         "id": "Extension.value[x]",

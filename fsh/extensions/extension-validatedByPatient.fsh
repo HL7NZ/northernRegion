@@ -2,7 +2,7 @@
 
 //----------------------------------------
 Extension: ValidatedByPatient
-Id: validatedByPatient
+Id: validated-by-patient
 Description: "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance"
 //* ^url = "http://hl7.org.nz/fhir/StructureDefinition/validatedByPatient"
 

@@ -5,8 +5,8 @@
 
 Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 //Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity
-Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient
-Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient
+Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
+Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 //Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicileCode
 
 Profile:        HaPatient
@@ -26,31 +26,6 @@ Description:    "Represents patient demographics exposed by healthAlliance syste
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
 
-//* extension contains
-   // $birthPlace named birthPlace 0..1
-
-//todo - not sure why this was constrained out...
-//* deceased[x] only dateTime     //may need to support boolean
-/*
-//identifier. Slice to have current NHI (fix system and use)
-* identifier.type 0..0
-* identifier.period 0..0
-* identifier.assigner 0..0
-
-* identifier ^slicing.discriminator.type = #value
-// uses 'use' rather than system to allow multiple NHI's if needed
-* identifier ^slicing.discriminator.path = "use"
-* identifier ^slicing.rules = #openAtEnd  //allow other identifiers
-
-//just the current NHI is specified right now...
-* identifier contains 
-    NHI 0..1 MS 
-
-* identifier[NHI].system = "https://standards.digital.health.nz/id/nhi"
-* identifier[NHI].use = #official (exactly)
-
-*/
-
 //Name is required - can have many
 * name  1..*
 * name.extension contains
@@ -58,14 +33,14 @@ Description:    "Represents patient demographics exposed by healthAlliance syste
   
 
 * telecom.extension contains
-    $authorizedByPatient named authorizedByPatient 0..1 and
-    $validatedByPatient named validatedByPatient 0..1
+    $authorizedByPatient named authorized-by-patient 0..1 and
+    $validatedByPatient named validated-by-patient 0..1
 
 // address is required and has a suburb extension. 
 * address only nzAddress
 
 * address.extension contains
-    $validatedByPatient named validatedByPatient 0..1
+    $validatedByPatient named validated-by-patient 0..1
 
 
 * address 1..*

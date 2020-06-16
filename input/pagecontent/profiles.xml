@@ -9,7 +9,8 @@
 *****************************************************************************************
 {% endcomment %} -->
 <div xmlns='http://www.w3.org/1999/xhtml'>
-<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<br/><strong>Profiles defined in this guide</strong><br/><br/>
+<table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-HaOrganization.html'>HaOrganization</a></td>

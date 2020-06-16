@@ -47,10 +47,6 @@
   "differential": {
     "element": [
       {
-        "id": "Patient",
-        "path": "Patient"
-      },
-      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1
@@ -71,35 +67,31 @@
         ]
       },
       {
-        "id": "Patient.telecom",
-        "path": "Patient.telecom"
-      },
-      {
-        "id": "Patient.telecom.extension:authorizedByPatient",
+        "id": "Patient.telecom.extension:authorized-by-patient",
         "path": "Patient.telecom.extension",
-        "sliceName": "authorizedByPatient",
+        "sliceName": "authorized-by-patient",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient"
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient"
             ]
           }
         ]
       },
       {
-        "id": "Patient.telecom.extension:validatedByPatient",
+        "id": "Patient.telecom.extension:validated-by-patient",
         "path": "Patient.telecom.extension",
-        "sliceName": "validatedByPatient",
+        "sliceName": "validated-by-patient",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient"
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
             ]
           }
         ]
@@ -110,16 +102,16 @@
         "min": 1
       },
       {
-        "id": "Patient.address.extension:validatedByPatient",
+        "id": "Patient.address.extension:validated-by-patient",
         "path": "Patient.address.extension",
-        "sliceName": "validatedByPatient",
+        "sliceName": "validated-by-patient",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient"
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
             ]
           }
         ]

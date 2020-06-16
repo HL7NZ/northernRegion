@@ -3,8 +3,8 @@
   "id": "hl7.org.nz.northernregion",
   "url": "http://hl7.org.nz/fhir/northernregion/ImplementationGuide/hl7.org.nz.northernregion",
   "version": "0.1.0",
-  "name": "NewZealandNorthernRegionImplementationGuide",
-  "title": "New Zealand Northern Region Implementation Guide",
+  "name": "NorthernRegionIG",
+  "title": "Northern Region Implementation Guide",
   "status": "active",
   "publisher": "David Hay",
   "contact": [
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "description": "New Zealand orthern Region profiles",
+  "description": "The work being done for the Northern Region under healthAlliance.",
   "packageId": "hl7.org.nz.northernregion",
   "license": "CC0-1.0",
   "fhirVersion": [
@@ -26,9 +26,9 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.org.nz.base",
-      "packageId": "hl7.org.nz.base",
-      "id": "hl7_org_nz_base",
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.base",
+      "packageId": "hl7.fhir.nz.base",
+      "id": "hl7_fhir_nz_base",
       "version": "dev"
     }
   ],
@@ -60,7 +60,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/authorizedByPatient"
+          "reference": "StructureDefinition/authorized-by-patient"
         },
         "name": "AuthorizedByPatient",
         "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
@@ -68,7 +68,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/validatedByPatient"
+          "reference": "StructureDefinition/validated-by-patient"
         },
         "name": "ValidatedByPatient",
         "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
@@ -182,57 +182,57 @@
         "reference": {
           "reference": "StructureDefinition/HaDiagnosticReportLM"
         },
-        "name": "HaDiagnosticReportLM",
         "description": "HaDiagnosticReport",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaDiagnosticReportLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaLabObservationLM"
         },
-        "name": "HaLabObservationLM",
         "description": "HaLabObservation",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaLabObservationLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaLocationLM"
         },
-        "name": "HaLocationLM",
         "description": "HaLocation",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaLocationLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaOrganizationLM"
         },
-        "name": "HaOrganizationLM",
         "description": "HaOrganization",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaOrganizationLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaPatientLM"
         },
-        "name": "HaPatientLM",
         "description": "Represents the changes required to the hA Patient resource",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaPatientLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaPractitionerLM"
         },
-        "name": "HaPractitionerLM",
         "description": "HaPractitioner",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaPractitionerLM"
       },
       {
         "reference": {
           "reference": "StructureDefinition/HaPractitionerRoleLM"
         },
-        "name": "HaPractitionerRoleLM",
         "description": "HaPractitionerRole",
-        "exampleBoolean": false
+        "exampleBoolean": false,
+        "name": "HaPractitionerRoleLM"
       }
     ],
     "page": {
@@ -284,6 +284,11 @@
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
         },
         {
           "nameUrl": "usecases.html",

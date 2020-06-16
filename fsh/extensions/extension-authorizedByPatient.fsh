@@ -1,5 +1,5 @@
 Extension: AuthorizedByPatient
-Id: authorizedByPatient
+Id: authorized-by-patient
 Description: "If true, then indicates that the patient as authorized the use of this address or telecom to contact them."
 
 

@@ -1,16 +1,51 @@
 <div xmlns='http://www.w3.org/1999/xhtml'>
-<h3>Extensions</h3>
+<br/><strong>Extensions defined in this guide</strong><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Id</th><th>Url</th><th>Description</th></tr>
+<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-authorized-by-patient.html'>authorized-by-patient</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient</td>
+<td>
+<div>Address</div>
+<div>Telecom</div>
+</td>
+<td>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</td>
+</tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-authorizedByPatient.html'>authorizedByPatient</a></td>
 <td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorizedByPatient</td>
+<td>
+<div>Address</div>
+<div>Telecom</div>
+</td>
 <td>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient</td>
+<td>
+<div>Address</div>
+<div>Telecom</div>
+</td>
+<td>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-validatedByPatient.html'>validatedByPatient</a></td>
 <td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/validatedByPatient</td>
+<td>
+<div>Address</div>
+<div>Telecom</div>
+</td>
 <td>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</td>
+</tr>
+</table>
+<a name="externalExtensions"> </a>
+<h3>Extensions used but defined elsewhere</h3>
+<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
+<tr><th>Url</th><th>Description</th><th>IG</th></tr>
+<tr>
+<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
+<td>Defined outside of known IG's</td>
 </tr>
 </table>
 </div>

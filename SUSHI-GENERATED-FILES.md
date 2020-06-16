@@ -11,16 +11,16 @@ lists those files generated from project configs or the contents in the ig-data 
 
 | SUSHI-GENERATED FILE                                       | ACTION    | INPUT FILE(S)                                                          |
 | ---------------------------------------------------------- | --------- | ---------------------------------------------------------------------- |
-| ig.ini                                                     | generated | fsh/ig-data/ig.ini, fsh/package.json                                   |
-| input/ImplementationGuide-hl7.org.nz.northernregion.json   | generated | fsh/ig-data/ig.ini, fsh/package.json, {all input resources and pages}  |
+| ig.ini                                                     | generated | fsh/config.yaml                                                        |
+| input/ImplementationGuide-hl7.org.nz.northernregion.json   | generated | fsh/config.yaml, {all input resources and pages}                       |
 | input/ignoreWarnings.txt                                   | generated |                                                                        |
-| package-list.json                                          | generated | fsh/package.json                                                       |
+| input/includes/menu.xml                                    | generated | fsh/config.yaml                                                        |
+| package-list.json                                          | generated | fsh/config.yaml                                                        |
 | input/images/.DS_Store                                     | copied    | fsh/ig-data/input/images/.DS_Store                                     |
 | input/images/GP.png                                        | copied    | fsh/ig-data/input/images/GP.png                                        |
 | input/images/demographics.png                              | copied    | fsh/ig-data/input/images/demographics.png                              |
 | input/images/fbc.png                                       | copied    | fsh/ig-data/input/images/fbc.png                                       |
 | input/images/nregion.png                                   | copied    | fsh/ig-data/input/images/nregion.png                                   |
-| input/includes/menu.xml                                    | copied    | fsh/ig-data/input/includes/menu.xml                                    |
 | input/models/StructureDefinition-HaDiagnosticReportLM.json | copied    | fsh/ig-data/input/models/StructureDefinition-HaDiagnosticReportLM.json |
 | input/models/StructureDefinition-HaLabObservationLM.json   | copied    | fsh/ig-data/input/models/StructureDefinition-HaLabObservationLM.json   |
 | input/models/StructureDefinition-HaLocationLM.json         | copied    | fsh/ig-data/input/models/StructureDefinition-HaLocationLM.json         |
@@ -39,6 +39,6 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/extensions.xml                           | copied    | fsh/ig-data/input/pagecontent/extensions.xml                           |
 | input/pagecontent/index.md                                 | copied    | fsh/ig-data/input/pagecontent/index.md                                 |
 | input/pagecontent/profiles.xml                             | copied    | fsh/ig-data/input/pagecontent/profiles.xml                             |
+| input/pagecontent/terminology.md                           | copied    | fsh/ig-data/input/pagecontent/terminology.md                           |
 | input/pagecontent/usecases.md                              | copied    | fsh/ig-data/input/pagecontent/usecases.md                              |
 | input/pagecontent/usecasesDEP.md                           | copied    | fsh/ig-data/input/pagecontent/usecasesDEP.md                           |
-| package.json                                               | copied    | fsh/package.json                                                       |
