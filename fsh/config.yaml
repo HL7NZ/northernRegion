@@ -57,14 +57,17 @@ menu:
     Home: index.html
     Use cases: usecases.html
     Design : design.html
-    API: 
-      Documentation: api.html
-      CapabilityStatement: capStmt.html
+    Profiles: profiles.html
+    Extensions: extensions.html
+    API: CapabilityStatement.html
+    # API: 
+    #  Documentation: api.html
+    #   CapabilityStatement: CapabilityStatement.html
     Artifact index: artifacts.html
     Support:
         Companion: companion.html
         FHIR Spec: http://hl7.org/fhir/R4/index.html
-        Downloads: downloads.html
+       # Downloads: downloads.html
     Development: development.html
 
 # menu:

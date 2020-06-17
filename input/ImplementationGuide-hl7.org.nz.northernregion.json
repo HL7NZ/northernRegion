@@ -251,9 +251,9 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "capStmt.html",
-          "title": "Cap Stmt",
-          "generation": "markdown"
+          "nameUrl": "CapabilityStatement.html",
+          "title": "Capability Statement",
+          "generation": "html"
         },
         {
           "nameUrl": "companion.html",

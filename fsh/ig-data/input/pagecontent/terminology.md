@@ -12,7 +12,7 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
 </table>
-<br/></br/>
+<br/><br/>
 ### CodeSystems
 
 These are codesystems that have been defined by this guide. They define specific concepts that are included in ValueSets. It is preferabe to use an international code systm such as SNOMED, ICD or LOINC - but this is not always possible.

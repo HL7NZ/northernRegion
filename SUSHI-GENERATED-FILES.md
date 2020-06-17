@@ -21,6 +21,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/images/demographics.png                              | copied    | fsh/ig-data/input/images/demographics.png                              |
 | input/images/fbc.png                                       | copied    | fsh/ig-data/input/images/fbc.png                                       |
 | input/images/nregion.png                                   | copied    | fsh/ig-data/input/images/nregion.png                                   |
+| input/includes/menuDEP.xml                                 | copied    | fsh/ig-data/input/includes/menuDEP.xml                                 |
 | input/models/StructureDefinition-HaDiagnosticReportLM.json | copied    | fsh/ig-data/input/models/StructureDefinition-HaDiagnosticReportLM.json |
 | input/models/StructureDefinition-HaLabObservationLM.json   | copied    | fsh/ig-data/input/models/StructureDefinition-HaLabObservationLM.json   |
 | input/models/StructureDefinition-HaLocationLM.json         | copied    | fsh/ig-data/input/models/StructureDefinition-HaLocationLM.json         |
@@ -28,10 +29,10 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/models/StructureDefinition-HaPatientLM.json          | copied    | fsh/ig-data/input/models/StructureDefinition-HaPatientLM.json          |
 | input/models/StructureDefinition-HaPractitionerLM.json     | copied    | fsh/ig-data/input/models/StructureDefinition-HaPractitionerLM.json     |
 | input/models/StructureDefinition-HaPractitionerRoleLM.json | copied    | fsh/ig-data/input/models/StructureDefinition-HaPractitionerRoleLM.json |
+| input/pagecontent/CapabilityStatement.xml                  | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                  |
 | input/pagecontent/StructureDefinition-HaPatientLM-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-intro.md |
 | input/pagecontent/StructureDefinition-HaPatientLM-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-notes.md |
 | input/pagecontent/api.md                                   | copied    | fsh/ig-data/input/pagecontent/api.md                                   |
-| input/pagecontent/capStmt.md                               | copied    | fsh/ig-data/input/pagecontent/capStmt.md                               |
 | input/pagecontent/companion.xml                            | copied    | fsh/ig-data/input/pagecontent/companion.xml                            |
 | input/pagecontent/design.md                                | copied    | fsh/ig-data/input/pagecontent/design.md                                |
 | input/pagecontent/development.md                           | copied    | fsh/ig-data/input/pagecontent/development.md                           |

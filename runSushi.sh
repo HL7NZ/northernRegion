@@ -5,6 +5,8 @@ sushi fsh -o .
 echo "Creating Profiles and extensions summary pages..."
 ../scripts/makeProfilesAndExtensions.js northernRegion
 
-
 echo "Making terminology summary"   # will copy into IG input folder
 ../scripts/makeTerminologySummary.js northernRegion
+
+echo "Making API summary"
+../scripts/makeCapabilityStatement.js northernRegion

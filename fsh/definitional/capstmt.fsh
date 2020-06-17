@@ -30,13 +30,12 @@ Currently the subset of API's exposed by healthAlliance are read-only and confin
 * rest.resource.documentation = """
 Each DHB exposes its core demographics infomation via the Patient resource.
 
-**This is italic**
 
 """
 
 //read by id
 * rest.resource.interaction.code = #read
-* rest.resource.interaction.documentation = "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier"
+* rest.resource.interaction.documentation = "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier (use the identifier search for that)"
 //search by various parameters
 * rest.resource.interaction[1].code = #search-type
 * rest.resource.interaction[1].documentation = "Gender and birthDate are required in all searches"
@@ -44,32 +43,41 @@ Each DHB exposes its core demographics infomation via the Patient resource.
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam.name = "name"
 * rest.resource.searchParam.type = #string
-* rest.resource.searchParam.definition = "http://hl7.org/fhir/SearchParameter/Patient-name"
+
 * rest.resource.searchParam.documentation = "Not case sensitive"
 
+//birthdate
+* rest.resource.searchParam[1].name = "birthdate"
+* rest.resource.searchParam[1].type = #date
+* rest.resource.searchParam[1].documentation = "The patients date of birth"
+
+//gender
+* rest.resource.searchParam[2].name = "gender"
+* rest.resource.searchParam[2].type = #token
+* rest.resource.searchParam[2].documentation = "The patients administrative gender (Patient.gender)"
+
 //identifier 
-* rest.resource.searchParam[1].name = "identifier"
-* rest.resource.searchParam[1].type = #token
-* rest.resource.searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/Patient-identifier"
-* rest.resource.searchParam[1].documentation = "Use for NHI queries"
+* rest.resource.searchParam[3].name = "identifier"
+* rest.resource.searchParam[3].type = #token
+* rest.resource.searchParam[3].documentation = "Use for NHI queries and other queries related to identifiers"
 
 //managingOrganization (ie DHB)
-* rest.resource.searchParam[2].name = "organization"
-* rest.resource.searchParam[2].type = #reference
-* rest.resource.searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Patient-organization"
-* rest.resource.searchParam[2].documentation = "This is the organization (DHB) that is the source of the resoruce"
+* rest.resource.searchParam[4].name = "organization"
+* rest.resource.searchParam[4].type = #reference
 
-* rest.resource.searchInclude = "managingOrganization"
+* rest.resource.searchParam[4].documentation = "This is the organization (DHB) that is the source of the resource"
+
+* rest.resource.searchInclude = "organization"
 * rest.resource.searchInclude[1] = "generalPractitioner"
 
 // =============== the Practitioner endpoint
 * rest.resource[1].type = #Practitioner
 * rest.resource[1].documentation = "The practitioner resource is the indiviudal delivering care. Currently this is the GP only."
 * rest.resource[1].interaction.code = #read
-* rest.resource[1].interaction.documentation = "Allows a read of a Practitioner resource - eg references from Patient.generalPractitioner"
+* rest.resource[1].interaction.documentation = "Allows a read of a Practitioner resource based on its Id - eg references from Patient.generalPractitioner"
 
 
 // ================ the Organization endpoint
 * rest.resource[2].type = #Organization
 * rest.resource[2].interaction.code = #read
-* rest.resource[2].interaction.documentation = "Allows a read of an Organization resource - eg references from Patient.generalPractitioner and Patient.managingOrganization"
+* rest.resource[2].interaction.documentation = "Allows a read of an Organization resource based on its Id - eg references from Patient.generalPractitioner and Patient.managingOrganization"

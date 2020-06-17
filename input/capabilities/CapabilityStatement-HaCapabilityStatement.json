@@ -28,11 +28,11 @@
           "supportedProfile": [
             "http://hl7.org.nz/healthalliance/HaPatient"
           ],
-          "documentation": "Each DHB exposes its core demographics infomation via the Patient resource.\n\n**This is italic**\n",
+          "documentation": "Each DHB exposes its core demographics infomation via the Patient resource.\n\n",
           "interaction": [
             {
               "code": "read",
-              "documentation": "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier"
+              "documentation": "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier (use the identifier search for that)"
             },
             {
               "code": "search-type",
@@ -43,24 +43,31 @@
             {
               "name": "name",
               "type": "string",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-name",
               "documentation": "Not case sensitive"
+            },
+            {
+              "name": "birthdate",
+              "type": "date",
+              "documentation": "The patients date of birth"
+            },
+            {
+              "name": "gender",
+              "type": "token",
+              "documentation": "The patients administrative gender (Patient.gender)"
             },
             {
               "name": "identifier",
               "type": "token",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
-              "documentation": "Use for NHI queries"
+              "documentation": "Use for NHI queries and other queries related to identifiers"
             },
             {
               "name": "organization",
               "type": "reference",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-organization",
-              "documentation": "This is the organization (DHB) that is the source of the resoruce"
+              "documentation": "This is the organization (DHB) that is the source of the resource"
             }
           ],
           "searchInclude": [
-            "managingOrganization",
+            "organization",
             "generalPractitioner"
           ]
         },
@@ -70,7 +77,7 @@
           "interaction": [
             {
               "code": "read",
-              "documentation": "Allows a read of a Practitioner resource - eg references from Patient.generalPractitioner"
+              "documentation": "Allows a read of a Practitioner resource based on its Id - eg references from Patient.generalPractitioner"
             }
           ]
         },
@@ -79,7 +86,7 @@
           "interaction": [
             {
               "code": "read",
-              "documentation": "Allows a read of an Organization resource - eg references from Patient.generalPractitioner and Patient.managingOrganization"
+              "documentation": "Allows a read of an Organization resource based on its Id - eg references from Patient.generalPractitioner and Patient.managingOrganization"
             }
           ]
         }
