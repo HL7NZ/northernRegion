@@ -5,16 +5,16 @@ Create logical models suitable for the IG builder from the clinFHIR logical mode
 
  */
 let fs = require('fs');
-let syncRequest = require('../../common/node_modules/sync-request');
+let syncRequest = require('../../scripts/node_modules/sync-request');
 
 let serverRoot = "http://home.clinfhir.com:8054/baseR4/";   //the server to access the models
 
 
-let domain = "http://hl7.org.nz/fhir/hpi/"      //all models ar ein the HPI domain...
+let domain = "http://hl7.fhir.nz/northernregion"      //all models ar ein the northern region domain...
 
 
 //the models to export.
-let arModels = ['HpiPractitioner','HpiPractitionerRole','HpiLocation','HpiOrganization','HpiEndpoint'];
+let arModels = ['HaPractitioner','HaPatient','HaOrganization'];
 
 arModels.forEach(function(modelId){
     makeModel(modelId)

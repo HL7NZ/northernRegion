@@ -84,22 +84,3 @@ Usage: #example
 * identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
 * identifier.value = "gpprac"
 
-//The linking PractitionerRole
-Instance:   pr1
-InstanceOf: PractitionerRole
-Description: "GP Practice"
-Usage: #example
-
-* organization = Reference(gp-org1)
-* practitioner = Reference(gp-prac1)
-
-
-//The DHB 
-Instance:   cmdhb
-InstanceOf: HaOrganization
-Description: "Counties manakau DHB"
-Usage: #example
-
-* name = "Counties manakau DHB"
-* identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
-* identifier.value = "cmdhb"

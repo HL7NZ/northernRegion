@@ -24,11 +24,12 @@ The resources that are used are:
 | Patient | Represents the patient - the person receiving care  | 
 | Practitioner | Represents a person delivering healthcare (regardless of qualification). Curently, this is used for the General Practitioner, but could also represent a doctor or nurse within a hospital |
 Organization | A group responsible for delivering care. The DHB or General Practice are examples of this. |
-| Endpoint | Represents where information can be sent electronically, and how. For example the HealthLink EDI address to send Discharge Summaries. Note that the EndPoint is connected to the PractitionerRole rather than the Practitioner, as the Practitioner could be in multiple roles at different Organizations / Locations |
+
 
 
 
 <!--
+| Endpoint | Represents where information can be sent electronically, and how. For example the HealthLink EDI address to send Discharge Summaries. Note that the EndPoint is connected to the PractitionerRole rather than the Practitioner, as the Practitioner could be in multiple roles at different Organizations / Locations |
 | PractitionerRole | Is a link to a practitioner in a role - as well as a location and organization. It is used here to link the patient to their usual GP and GP Practice <a href="http://clinfhir.com/logicalModeller.html#awiqv" target="_blank">Model</a>|
 | Location | Refers to a place where healthcare is delivered - in this case a Hospital <a href="http://clinfhir.com/logicalModeller.html#p8hy1" target="_blank">Model</a>|
 | 

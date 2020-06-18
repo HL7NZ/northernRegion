@@ -1,22 +1,20 @@
 
 // Aliases
-//Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
-//Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birthPlace
 
 Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
-//Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
-//Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicileCode
+Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 
 Profile:        HaPatient
 Parent:         NzPatient
-Title:          "Common Patient profile"
-Description:    "Represents patient demographics exposed by healthAlliance systems"
+Title:          "Northern Region Patient profile"
+Description:    "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
 
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>healthAlliance Patient profile</div>"
 
+* ^version = "0.1.0"
 //elements that have been removed
 //* active 0..
 * photo 0..0
@@ -25,6 +23,10 @@ Description:    "Represents patient demographics exposed by healthAlliance syste
 * link 0..0
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
+
+//gender and birthDate are required
+* gender 1..1
+* birthDate 1..1
 
 //Name is required - can have many
 * name  1..*
@@ -42,19 +44,21 @@ Description:    "Represents patient demographics exposed by healthAlliance syste
 * address.extension contains
     $validatedByPatient named validated-by-patient 0..1
 
-
 * address 1..*
 
 // todo - is this correct? * address.line 1..*     //there will always be at least 1 line
 
 //Limit the possible resources for generalPractitioner to a practitioner or an organization.
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.
-//Note that this might still be a contained resource - that's still supported by this profile
-//It might also be possible to use PractitionerRole - but the value of that is unclear at this time.
+//both can be populated for a given patient if needed
+//Note that the healthLink EDI number is on the Organization resource
 * generalPractitioner only Reference(HaPractitioner | HaOrganization)
 
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)
+
+* language.extension contains
+    $interpreterRequired named interpreterRequired 0..1
 
 
 

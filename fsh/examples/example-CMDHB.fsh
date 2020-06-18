@@ -11,5 +11,7 @@ Usage: #example
 * identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
 * identifier.value = "cmdhb-1"
 
+* extension[healthlink-edi].valueString = "xxx"
+
 
 

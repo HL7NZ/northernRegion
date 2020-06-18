@@ -10,7 +10,7 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.org.nz.northernregion
+id: hl7.fhir.nz.northernregion
 canonical: http://hl7.org.nz/fhir/northernregion
 version: 0.1.0
 name: NorthernRegionIG
@@ -23,7 +23,7 @@ description: The work being done for the Northern Region under healthAlliance.
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.nz.base: dev
+  hl7.fhir.nz.base: current
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+

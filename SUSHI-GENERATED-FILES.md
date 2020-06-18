@@ -12,7 +12,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | SUSHI-GENERATED FILE                                       | ACTION    | INPUT FILE(S)                                                          |
 | ---------------------------------------------------------- | --------- | ---------------------------------------------------------------------- |
 | ig.ini                                                     | generated | fsh/config.yaml                                                        |
-| input/ImplementationGuide-hl7.org.nz.northernregion.json   | generated | fsh/config.yaml, {all input resources and pages}                       |
+| input/ImplementationGuide-hl7.fhir.nz.northernregion.json  | generated | fsh/config.yaml, {all input resources and pages}                       |
 | input/ignoreWarnings.txt                                   | generated |                                                                        |
 | input/includes/menu.xml                                    | generated | fsh/config.yaml                                                        |
 | package-list.json                                          | generated | fsh/config.yaml                                                        |
@@ -22,13 +22,9 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/images/fbc.png                                       | copied    | fsh/ig-data/input/images/fbc.png                                       |
 | input/images/nregion.png                                   | copied    | fsh/ig-data/input/images/nregion.png                                   |
 | input/includes/menuDEP.xml                                 | copied    | fsh/ig-data/input/includes/menuDEP.xml                                 |
-| input/models/StructureDefinition-HaDiagnosticReportLM.json | copied    | fsh/ig-data/input/models/StructureDefinition-HaDiagnosticReportLM.json |
-| input/models/StructureDefinition-HaLabObservationLM.json   | copied    | fsh/ig-data/input/models/StructureDefinition-HaLabObservationLM.json   |
-| input/models/StructureDefinition-HaLocationLM.json         | copied    | fsh/ig-data/input/models/StructureDefinition-HaLocationLM.json         |
 | input/models/StructureDefinition-HaOrganizationLM.json     | copied    | fsh/ig-data/input/models/StructureDefinition-HaOrganizationLM.json     |
 | input/models/StructureDefinition-HaPatientLM.json          | copied    | fsh/ig-data/input/models/StructureDefinition-HaPatientLM.json          |
 | input/models/StructureDefinition-HaPractitionerLM.json     | copied    | fsh/ig-data/input/models/StructureDefinition-HaPractitionerLM.json     |
-| input/models/StructureDefinition-HaPractitionerRoleLM.json | copied    | fsh/ig-data/input/models/StructureDefinition-HaPractitionerRoleLM.json |
 | input/pagecontent/CapabilityStatement.xml                  | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                  |
 | input/pagecontent/StructureDefinition-HaPatientLM-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-intro.md |
 | input/pagecontent/StructureDefinition-HaPatientLM-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-notes.md |
@@ -42,4 +38,3 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/profiles.xml                             | copied    | fsh/ig-data/input/pagecontent/profiles.xml                             |
 | input/pagecontent/terminology.md                           | copied    | fsh/ig-data/input/pagecontent/terminology.md                           |
 | input/pagecontent/usecases.md                              | copied    | fsh/ig-data/input/pagecontent/usecases.md                              |
-| input/pagecontent/usecasesDEP.md                           | copied    | fsh/ig-data/input/pagecontent/usecasesDEP.md                           |

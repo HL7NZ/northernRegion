@@ -32,31 +32,25 @@
 <td>name</td>
 <td>string</td>
 <td></td>
-<td>Not case sensitive</td>
+<td>A full name search - any part of any of the names. </td>
 </tr>
 <tr>
 <td>birthdate</td>
 <td>date</td>
 <td></td>
-<td>The patients date of birth</td>
+<td>The patients date of birth. Search must also include given and/or family name.</td>
 </tr>
 <tr>
 <td>gender</td>
 <td>token</td>
 <td></td>
-<td>The patients administrative gender (Patient.gender)</td>
+<td>The patients administrative gender (Patient.gender). Search must always include birthDate and name</td>
 </tr>
 <tr>
 <td>identifier</td>
 <td>token</td>
 <td></td>
 <td>Use for NHI queries and other queries related to identifiers</td>
-</tr>
-<tr>
-<td>organization</td>
-<td>reference</td>
-<td></td>
-<td>This is the organization (DHB) that is the source of the resource</td>
 </tr>
 </table>
 <strong>Search includes</strong>

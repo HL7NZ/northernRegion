@@ -43,30 +43,42 @@ Each DHB exposes its core demographics infomation via the Patient resource.
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam.name = "name"
 * rest.resource.searchParam.type = #string
+* rest.resource.searchParam.documentation = "A full name search - any part of any of the names. "
+/*
+//Search by name. todo - may need add docs about dependencies - eg dob as well
+* rest.resource.searchParam.name = "given"
+* rest.resource.searchParam.type = #string
+* rest.resource.searchParam.documentation = "Search on given name. Gender and birthDate also required. "
 
-* rest.resource.searchParam.documentation = "Not case sensitive"
+//Search by name. todo - may need add docs about dependencies - eg dob as well
+* rest.resource.searchParam.name = "family"
+* rest.resource.searchParam.type = #string
+* rest.resource.searchParam.documentation = "Search on family name. Gender and birthDate also required. "
+
+*/
 
 //birthdate
 * rest.resource.searchParam[1].name = "birthdate"
 * rest.resource.searchParam[1].type = #date
-* rest.resource.searchParam[1].documentation = "The patients date of birth"
+* rest.resource.searchParam[1].documentation = "The patients date of birth. Search must also include given and/or family name."
 
 //gender
 * rest.resource.searchParam[2].name = "gender"
 * rest.resource.searchParam[2].type = #token
-* rest.resource.searchParam[2].documentation = "The patients administrative gender (Patient.gender)"
+* rest.resource.searchParam[2].documentation = "The patients administrative gender (Patient.gender). Search must always include birthDate and name"
 
 //identifier 
 * rest.resource.searchParam[3].name = "identifier"
 * rest.resource.searchParam[3].type = #token
 * rest.resource.searchParam[3].documentation = "Use for NHI queries and other queries related to identifiers"
 
+/*
 //managingOrganization (ie DHB)
 * rest.resource.searchParam[4].name = "organization"
 * rest.resource.searchParam[4].type = #reference
 
 * rest.resource.searchParam[4].documentation = "This is the organization (DHB) that is the source of the resource"
-
+*/
 * rest.resource.searchInclude = "organization"
 * rest.resource.searchInclude[1] = "generalPractitioner"
 
