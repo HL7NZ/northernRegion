@@ -37,10 +37,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="companion.html">Companion</a>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
       </li>
       <li>
-        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+        <a href="downloads.html">Downloads</a>
       </li>
     </ul>
   </li>

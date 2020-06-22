@@ -141,6 +141,21 @@
         "min": 1
       },
       {
+        "id": "Patient.address.extension:authorized-by-patient",
+        "path": "Patient.address.extension",
+        "sliceName": "authorized-by-patient",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.address.extension:validated-by-patient",
         "path": "Patient.address.extension",
         "sliceName": "validated-by-patient",
@@ -168,11 +183,6 @@
       {
         "id": "Patient.photo",
         "path": "Patient.photo",
-        "max": "0"
-      },
-      {
-        "id": "Patient.contact",
-        "path": "Patient.contact",
         "max": "0"
       },
       {

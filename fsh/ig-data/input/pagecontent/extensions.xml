@@ -26,11 +26,6 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Url</th><th>Description</th><th>IG</th></tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-healthlink-edi.html'>http://hl7.org.nz/fhir/StructureDefinition/healthlink-edi</a></td>
-<td>Represents the HealthLink EDI number. </td>
-<td>nzbase</td>
-</tr>
-<tr>
 <td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
 <td>Defined outside of known IG's</td>
 </tr>

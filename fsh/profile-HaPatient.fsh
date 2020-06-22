@@ -18,7 +18,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //elements that have been removed
 //* active 0..
 * photo 0..0
-* contact 0..0
 * communication 0..0
 * link 0..0
 * maritalStatus 0..0
@@ -39,9 +38,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
     $validatedByPatient named validated-by-patient 0..1
 
 // address is required and has a suburb extension. 
-* address only nzAddress
+* address only NzAddress
 
 * address.extension contains
+    $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1
 
 * address 1..*

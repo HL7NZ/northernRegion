@@ -65,9 +65,9 @@ menu:
     #   CapabilityStatement: CapabilityStatement.html
     Artifact index: artifacts.html
     Support:
-        Companion: companion.html
+        # Companion: companion.html
         FHIR Spec: http://hl7.org/fhir/R4/index.html
-       # Downloads: downloads.html
+        Downloads: downloads.html
     Development: development.html
 
 # menu:

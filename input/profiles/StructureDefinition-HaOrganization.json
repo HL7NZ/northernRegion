@@ -38,33 +38,8 @@
   "differential": {
     "element": [
       {
-        "id": "Organization.extension",
-        "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Organization.extension:healthlink-edi",
-        "path": "Organization.extension",
-        "sliceName": "healthlink-edi",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/healthlink-edi"
-            ]
-          }
-        ]
+        "id": "Organization",
+        "path": "Organization"
       }
     ]
   }

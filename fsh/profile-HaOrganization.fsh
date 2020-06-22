@@ -10,7 +10,6 @@ Description:    "Represents Organization data exposed through the Northern Regio
 
 * ^version = "0.1.0"
 
-* extension contains
-    $hlEDI named healthlink-edi 0..1
+
 
 
