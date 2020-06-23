@@ -8,7 +8,7 @@ Title:          "Northern Region Organization profile"
 Description:    "Represents Organization data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
 
 
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 
 
 

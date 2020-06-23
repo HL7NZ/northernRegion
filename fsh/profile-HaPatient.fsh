@@ -21,6 +21,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * link 0..0
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
+* language 0..0
 
 //gender and birthDate are required
 * gender 1..1

@@ -47,6 +47,11 @@
   "differential": {
     "element": [
       {
+        "id": "Patient.language",
+        "path": "Patient.language",
+        "max": "0"
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1
