@@ -52,6 +52,11 @@
         "max": "0"
       },
       {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "max": "0"
+      },
+      {
         "id": "Patient.name",
         "path": "Patient.name",
         "min": 1
@@ -189,6 +194,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Patient.communication.preferred",
+        "path": "Patient.communication.preferred",
+        "max": "0"
       },
       {
         "id": "Patient.generalPractitioner",

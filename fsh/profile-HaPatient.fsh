@@ -22,6 +22,9 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
 * language 0..0
+* active 0..0
+
+* identifier 0..*
 
 //gender and birthDate are required
 * gender 1..1
@@ -39,7 +42,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 // address is required and has a suburb extension. 
 * address only NzAddress
-
+* address 0..*
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1
@@ -57,6 +60,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)
 
+* communication.preferred 0..0
 * communication.extension contains
     $interpreterRequired named interpreter-required 0..1
 
