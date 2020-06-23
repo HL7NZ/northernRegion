@@ -36,11 +36,11 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Url</th><th>Description</th><th>IG</th></tr>
 <tr>
-<td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
+<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
-<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
+<td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
 <td>Defined outside of known IG's</td>
 </tr>
 </table>

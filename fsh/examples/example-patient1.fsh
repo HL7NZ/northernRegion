@@ -64,6 +64,14 @@ Usage: #example
 * generalPractitioner[1] = Reference(gp-org1)       //the GP
 * generalPractitioner[1].display = "Good Health Medcial Centre"
 
+
+* communication.language.coding.system = "urn:ietf:bcp:47"
+* communication.language.coding.code = #fr-be
+* communication.language.coding.display = "French (Belgium)" 
+* communication.extension[interpreter-required].valueBoolean = true
+
+
+
 //The GP 
 Instance:   gp-prac1
 InstanceOf: HaPractitioner

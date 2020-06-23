@@ -6,7 +6,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">healthAlliance Patient profile</div>"
   },
   "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPatient",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HaPatient",
   "title": "Northern Region Patient profile",
   "status": "active",
@@ -46,35 +46,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Patient.language.extension",
-        "path": "Patient.language.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient.language.extension:interpreterRequired",
-        "path": "Patient.language.extension",
-        "sliceName": "interpreterRequired",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-            ]
-          }
-        ]
-      },
       {
         "id": "Patient.name",
         "path": "Patient.name",
@@ -186,9 +157,33 @@
         "max": "0"
       },
       {
-        "id": "Patient.communication",
-        "path": "Patient.communication",
-        "max": "0"
+        "id": "Patient.communication.extension",
+        "path": "Patient.communication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.communication.extension:interpreter-required",
+        "path": "Patient.communication.extension",
+        "sliceName": "interpreter-required",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.generalPractitioner",

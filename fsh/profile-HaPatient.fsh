@@ -14,11 +14,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>healthAlliance Patient profile</div>"
 
-* ^version = "0.1.0"
+* ^version = "0.2.0"
 //elements that have been removed
 //* active 0..
 * photo 0..0
-* communication 0..0
 * link 0..0
 * maritalStatus 0..0
 * multipleBirth[x] 0..0
@@ -57,8 +56,8 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)
 
-* language.extension contains
-    $interpreterRequired named interpreterRequired 0..1
+* communication.extension contains
+    $interpreterRequired named interpreter-required 0..1
 
 
 
