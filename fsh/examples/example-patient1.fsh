@@ -60,9 +60,12 @@ Usage: #example
 //The Managing organization describes the DHB that supplied this record. This will always be an external resource.
 * managingOrganization = Reference(cmdhb)   //DHB is Counties Manukau
 * managingOrganization.display = "Counties-Manukau DHB"
-//The general practitioner is described by the contained practitioner resource)
+
 * generalPractitioner[0] = Reference(drwelby)       //the GP
 * generalPractitioner[0].display = "Dr Marcus Welby"
+* generalPractitioner[0].extension[edi-address].valueString = "hl-001"
+* generalPractitioner[0].extension[gp-practice-enrollment-date].valueDate = "2020-01-01"
+
 
 * generalPractitioner[1] = Reference(gp-org1)       //the GP Practice
 * generalPractitioner[1].display = "Good Health Medcial Centre"

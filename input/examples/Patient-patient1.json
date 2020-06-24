@@ -134,10 +134,12 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+          "valueString": "hl-001"
         },
         {
-          "url": "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date"
+          "url": "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date",
+          "valueDate": "2020-01-01"
         }
       ],
       "reference": "Practitioner/drwelby",
