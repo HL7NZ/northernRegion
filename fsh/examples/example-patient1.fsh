@@ -65,7 +65,7 @@ Usage: #example
 * generalPractitioner.display = "Dr Marcus Welby"
 * generalPractitioner[1] = Reference(gp-org1)       //the GP
 * generalPractitioner[1].display = "Good Health Medcial Centre"
-
+* generalPractitioner[1].extension[edi-address].valueString = "hl-001"
 
 * communication.language.coding.system = "urn:ietf:bcp:47"
 * communication.language.coding.code = #fr-be

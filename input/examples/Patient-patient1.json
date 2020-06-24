@@ -130,6 +130,27 @@
       "city": "Waipu"
     }
   ],
+  "generalPractitioner": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
+        }
+      ],
+      "reference": "Practitioner/drwelby",
+      "display": "Dr Marcus Welby"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+          "valueString": "hl-001"
+        }
+      ],
+      "reference": "Organization/gp-org1",
+      "display": "Good Health Medcial Centre"
+    }
+  ],
   "communication": [
     {
       "extension": [
@@ -172,16 +193,6 @@
     "reference": "Organization/cmdhb",
     "display": "Counties-Manukau DHB"
   },
-  "generalPractitioner": [
-    {
-      "reference": "Practitioner/drwelby",
-      "display": "Dr Marcus Welby"
-    },
-    {
-      "reference": "Organization/gp-org1",
-      "display": "Good Health Medcial Centre"
-    }
-  ],
   "contact": [
     {
       "relationship": [

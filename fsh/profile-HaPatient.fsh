@@ -5,6 +5,7 @@ Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        HaPatient
 Parent:         NzPatient
@@ -60,9 +61,13 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //both can be populated for a given patient if needed
 //Note that the healthLink EDI number is on the Organization resource
 * generalPractitioner only Reference(HaPractitioner | HaOrganization)
-
+* generalPractitioner.extension contains
+    $edi-address named edi-address 0..1
+    
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)
+
+
 
 * communication.preferred 0..0
 * communication.extension contains
