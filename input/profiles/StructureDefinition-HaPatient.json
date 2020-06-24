@@ -85,6 +85,7 @@
         "id": "Patient.telecom.extension:authorized-by-patient",
         "path": "Patient.telecom.extension",
         "sliceName": "authorized-by-patient",
+        "definition": "Indicates that the patient has authorized the use of this method of contact.",
         "min": 0,
         "max": "1",
         "type": [
@@ -100,6 +101,7 @@
         "id": "Patient.telecom.extension:validated-by-patient",
         "path": "Patient.telecom.extension",
         "sliceName": "validated-by-patient",
+        "definition": "Indicates that the patient has confirmed that this method of contact is correct.",
         "min": 0,
         "max": "1",
         "type": [
@@ -130,6 +132,7 @@
         "id": "Patient.address.extension:authorized-by-patient",
         "path": "Patient.address.extension",
         "sliceName": "authorized-by-patient",
+        "definition": "Indicates that the patient has authorized the use of this address.",
         "min": 0,
         "max": "1",
         "type": [
@@ -145,6 +148,7 @@
         "id": "Patient.address.extension:validated-by-patient",
         "path": "Patient.address.extension",
         "sliceName": "validated-by-patient",
+        "definition": "Indicates that the patient has confirmed that this address is correct.",
         "min": 0,
         "max": "1",
         "type": [
@@ -155,11 +159,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Patient.maritalStatus",
-        "path": "Patient.maritalStatus",
-        "max": "0"
       },
       {
         "id": "Patient.multipleBirth[x]",
@@ -189,6 +188,7 @@
         "id": "Patient.communication.extension:interpreter-required",
         "path": "Patient.communication.extension",
         "sliceName": "interpreter-required",
+        "definition": "Indicates that an interpreter will be requierd when talking to the patient",
         "min": 0,
         "max": "1",
         "type": [
@@ -222,6 +222,7 @@
         "id": "Patient.generalPractitioner.extension:edi-address",
         "path": "Patient.generalPractitioner.extension",
         "sliceName": "edi-address",
+        "definition": "The healthLink EDI address for this GP Practice",
         "min": 0,
         "max": "1",
         "type": [
@@ -229,6 +230,22 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.extension:gp-practice-enrollment-date",
+        "path": "Patient.generalPractitioner.extension",
+        "sliceName": "gp-practice-enrollment-date",
+        "definition": "The date that the patient enrolled with this GP Practice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date"
             ]
           }
         ]

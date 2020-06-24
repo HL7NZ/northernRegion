@@ -61,11 +61,13 @@ Usage: #example
 * managingOrganization = Reference(cmdhb)   //DHB is Counties Manukau
 * managingOrganization.display = "Counties-Manukau DHB"
 //The general practitioner is described by the contained practitioner resource)
-* generalPractitioner = Reference(drwelby)       //the GP
-* generalPractitioner.display = "Dr Marcus Welby"
-* generalPractitioner[1] = Reference(gp-org1)       //the GP
+* generalPractitioner[0] = Reference(drwelby)       //the GP
+* generalPractitioner[0].display = "Dr Marcus Welby"
+
+* generalPractitioner[1] = Reference(gp-org1)       //the GP Practice
 * generalPractitioner[1].display = "Good Health Medcial Centre"
 * generalPractitioner[1].extension[edi-address].valueString = "hl-001"
+* generalPractitioner[1].extension[gp-practice-enrollment-date].valueDate = "2020-01-01"
 
 * communication.language.coding.system = "urn:ietf:bcp:47"
 * communication.language.coding.code = #fr-be

@@ -2,6 +2,8 @@ Extension: AuthorizedByPatient
 Id: authorized-by-patient
 Description: "If true, then indicates that the patient as authorized the use of this address or telecom to contact them."
 
+//* ^definition = "If true, then indicates that the patient as authorized the use of this address or telecom to contact them." 
+
 * ^context.type = #element
 * ^context.expression = "Address"
 
@@ -10,4 +12,5 @@ Description: "If true, then indicates that the patient as authorized the use of 
 
 * extension 0..0
 * value[x] only boolean
+
 

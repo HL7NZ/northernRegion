@@ -30,6 +30,12 @@
       "packageId": "hl7.fhir.nz.base",
       "id": "hl7_fhir_nz_base",
       "version": "current"
+    },
+    {
+      "uri": "http://hl7.org.nz/fhir/nhi/ImplementationGuide/hl7.fhir.nz.nhi",
+      "packageId": "hl7.fhir.nz.nhi",
+      "id": "hl7_fhir_nz_nhi",
+      "version": "dev"
     }
   ],
   "definition": {

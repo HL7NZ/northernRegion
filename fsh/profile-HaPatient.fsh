@@ -6,6 +6,8 @@ Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDef
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date
+
 
 Profile:        HaPatient
 Parent:         NzPatient
@@ -17,10 +19,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 * ^version = "0.2.0"
 //elements that have been removed
-//* active 0..
+
+* active 0..0       //Will only ever be active resources..
 * photo 0..0
 * link 0..0
-* maritalStatus 0..0
 * multipleBirth[x] 0..0
 * language 0..0
 * active 0..0
@@ -45,6 +47,9 @@ Description:    "Represents Patient data exposed through the Northern Region API
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1
 
+* telecom.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this method of contact."
+* telecom.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this method of contact is correct."
+
 // address is required and has a suburb extension. 
 * address only NzAddress
 * address 0..*
@@ -52,18 +57,24 @@ Description:    "Represents Patient data exposed through the Northern Region API
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1
 
-* address 1..*
+* address.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this address."
+* address.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this address is correct."
 
-// todo - is this correct? * address.line 1..*     //there will always be at least 1 line
+* address 1..*
 
 //Limit the possible resources for generalPractitioner to a practitioner or an organization.
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.
 //both can be populated for a given patient if needed
-//Note that the healthLink EDI number is on the Organization resource
+//Note that the healthLink EDI number is now an extension
 * generalPractitioner only Reference(HaPractitioner | HaOrganization)
 * generalPractitioner.extension contains
-    $edi-address named edi-address 0..1
-    
+    $edi-address named edi-address 0..1 and
+    $gp-enrollmentDate named gp-practice-enrollment-date 0..1
+
+
+* generalPractitioner.extension[edi-address] ^definition = "The healthLink EDI address for this GP Practice"
+* generalPractitioner.extension[gp-practice-enrollment-date] ^definition = "The date that the patient enrolled with this GP Practice"
+
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)
 
@@ -73,6 +84,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * communication.extension contains
     $interpreterRequired named interpreter-required 0..1
 
+ * communication.extension[interpreter-required] ^definition = "Indicates that an interpreter will be requierd when talking to the patient"
 
 
 
