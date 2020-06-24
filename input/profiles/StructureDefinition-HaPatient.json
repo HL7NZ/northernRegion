@@ -52,6 +52,11 @@
         "max": "0"
       },
       {
+        "id": "Patient.modifierExtension",
+        "path": "Patient.modifierExtension",
+        "max": "0"
+      },
+      {
         "id": "Patient.active",
         "path": "Patient.active",
         "max": "0"

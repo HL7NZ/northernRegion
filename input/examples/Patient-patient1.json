@@ -181,5 +181,35 @@
       "reference": "Organization/gp-org1",
       "display": "Good Health Medcial Centre"
     }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "display": "Next-of-Kin"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "text": "Mr John Watson"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+64 9 000 0001"
+        }
+      ],
+      "address": {
+        "line": [
+          "23 Thule St"
+        ]
+      },
+      "gender": "M"
+    }
   ]
 }

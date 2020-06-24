@@ -24,6 +24,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * language 0..0
 * active 0..0
 
+//don't allow modifier extensions
+* modifierExtension 0..0
+
+
 * identifier 0..*
 
 //gender and birthDate are required
