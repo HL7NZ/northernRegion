@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.northernregion",
   "url": "http://hl7.org.nz/fhir/northernregion/ImplementationGuide/hl7.fhir.nz.northernregion",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
   "status": "active",

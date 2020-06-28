@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "authorized-by-patient",
   "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AuthorizedByPatient",
   "status": "active",
   "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",

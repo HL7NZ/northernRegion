@@ -41,21 +41,6 @@
           ],
           "searchParam": [
             {
-              "name": "name",
-              "type": "string",
-              "documentation": "A full name search - any part of any of the names. "
-            },
-            {
-              "name": "birthdate",
-              "type": "date",
-              "documentation": "The patients date of birth. Search must also include given and/or family name."
-            },
-            {
-              "name": "gender",
-              "type": "token",
-              "documentation": "The patients administrative gender (Patient.gender). Search must always include birthDate and name"
-            },
-            {
               "name": "identifier",
               "type": "token",
               "documentation": "Use for NHI queries and other queries related to identifiers"

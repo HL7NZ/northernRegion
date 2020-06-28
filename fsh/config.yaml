@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.nz.northernregion
 canonical: http://hl7.org.nz/fhir/northernregion
-version: 0.1.0
+version: 0.2.0
 name: NorthernRegionIG
 title: Northern Region Implementation Guide
 status: active
