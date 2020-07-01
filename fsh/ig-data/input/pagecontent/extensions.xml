@@ -34,9 +34,9 @@
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>http://hl7.org.nz/fhir/StructureDefinition/edi-address</a></td>
-<td>Represents the HealthLink EDI number. </td>
-<td>nzbase</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-gp-practice-enrollment-date.html'>http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date</a></td>
+<td>The date that the patient was enrolled with their GP Practicce</td>
+<td>nhi</td>
 </tr>
 </table>
 </div>

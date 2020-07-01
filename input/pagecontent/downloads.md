@@ -8,15 +8,16 @@
 * ig-data/input/pagecontent/downloads.md                                                *
 *****************************************************************************************
 {% endcomment %} -->
-### Downloads
+### Conformance resources
 
 Download the conformance resources (StructureDefinition, ValueSet, CodeSystem). Formats available:
 
 * [XML](definitions.xml.zip)
 * [JSON](definitions.json.zip)
 * [Turtle](definitions.ttl.zip)
+* [Structure Definition CSV] (csvs.zip)
 
-
+### Examples
 Download the examples:
 
 * [XML](examples.xml.zip)

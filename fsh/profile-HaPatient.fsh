@@ -5,7 +5,7 @@ Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
-Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+//Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date
 
 
@@ -68,12 +68,16 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //Note that the healthLink EDI number is now an extension
 * generalPractitioner only Reference(HaPractitioner | HaOrganization)
 * generalPractitioner.extension contains
-    $edi-address named edi-address 0..1 and
+    //$edi-address named edi-address 0..1 and
     $gp-enrollmentDate named gp-practice-enrollment-date 0..1
 
 
-* generalPractitioner.extension[edi-address] ^definition = "The healthLink EDI address for this GP Practice"
+//* generalPractitioner.extension[edi-address] ^definition = "The healthLink EDI address for this GP Practice"
 * generalPractitioner.extension[gp-practice-enrollment-date] ^definition = "The date that the patient enrolled with this GP Practice"
+
+//* generalPractitioner.extension[edi-address] ^short = "The healthLink EDI address for this GP Practice"
+* generalPractitioner.extension[gp-practice-enrollment-date] ^short = "The date that the patient enrolled with this GP Practice"
+
 
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(HaOrganization)

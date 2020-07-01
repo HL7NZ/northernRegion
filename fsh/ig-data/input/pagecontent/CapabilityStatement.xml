@@ -12,30 +12,12 @@
 </tr>
 <tr>
 <td>search-type</td>
-<td>Gender and birthDate are required in all searches</td>
+<td></td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
 <table class='table table-bordered table-condensed'>
 <tr><th width='15%'>Name</th><th>Type</th> <th>Definition</th><th width='40%'>Documentation</th></tr>
-<tr>
-<td>name</td>
-<td>string</td>
-<td></td>
-<td>A full name search - any part of any of the names. </td>
-</tr>
-<tr>
-<td>birthdate</td>
-<td>date</td>
-<td></td>
-<td>The patients date of birth. Search must also include given and/or family name.</td>
-</tr>
-<tr>
-<td>gender</td>
-<td>token</td>
-<td></td>
-<td>The patients administrative gender (Patient.gender). Search must always include birthDate and name</td>
-</tr>
 <tr>
 <td>identifier</td>
 <td>token</td>

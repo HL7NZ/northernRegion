@@ -15,7 +15,7 @@ In general terms, this guide is targetted towards those wishing to implement app
 
 #### If you are a Clinician / BA:
 
-The [Use Cases](usecases.htm) give examples of how the API's are intended to be used. The term 'API' (stands for Application Programming Interface) describes the technical details of how an external application (or 'client') can access the data being exposed.
+The [Use Cases](usecases.html) give examples of how the API's are intended to be used. The term 'API' (stands for Application Programming Interface) describes the technical details of how an external application (or 'client') can access the data being exposed.
 
 Also check out the Logical models. These represent the alterations that made to the individual resource types to suit the needs of the project in a 'simple to understand format'. For example, new elements are added and others removed. FHIR Profiles represent the information in these models represented in the FHIR conformance artifacts and show the content of the actual data exchanged. (You can think of the Profile as being the technical representation of the Model)
 
@@ -35,7 +35,7 @@ The [Design Notes](design.html) page will be of interest to clinicians intereste
   * The [Patient](StructureDefinition-HaPatient.html) profile
 * The [API](api.html) tab describes the different API's exposed by the solution. These are the actual RESTful queries that a client can make. There are 2 representations of the API:
   * The [Documentation](api.html) tab is hand written with examaples and clarifying statements.
-  * The [API](capStmt.html) tab is directly generated from the [CapabilityStatement](CapabilityStatement-HaCapabilityStatement.html), which is the machine readible description of the API.
+  * The [API](CapabilityStatement.html) tab is directly generated from the [CapabilityStatement](CapabilityStatement-HaCapabilityStatement.html), which is the machine readible description of the API.
 * The profiles that describe the structure of the resource instances returned by queries are foung on the [Artifact Index](artifacts.html#structures-resource-profiles) page (as are all the other FHIR artifacts). Like logical models, the snapshot tab is the most useful summary, but there is a lot of detail about each profile. Each profile page also contains links to examples of resource instances conformant to the profile.
 
 There is also a ['companion'](companion.html) application under the support tab that will have a number of features aimed at implementers. This app is not part of the actual IG, but rather is intended to support implementers. Currently there is a single function that allows sample queries to be made against a test server with sample data in it, and then display the result in a number of formats. There are a number of sample queries that can be chosen, but they can be edited by the user as required.

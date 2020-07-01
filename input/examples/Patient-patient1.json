@@ -134,10 +134,6 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
-          "valueString": "hl-001"
-        },
-        {
           "url": "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date",
           "valueDate": "2020-01-01"
         }
@@ -148,16 +144,12 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
-          "valueString": "hl-001"
-        },
-        {
           "url": "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date",
           "valueDate": "2020-01-01"
         }
       ],
       "reference": "Organization/gp-org1",
-      "display": "Good Health Medcial Centre"
+      "display": "Good Health Medical Centre"
     }
   ],
   "communication": [
@@ -229,7 +221,7 @@
           "23 Thule St"
         ]
       },
-      "gender": "M"
+      "gender": "male"
     }
   ]
 }

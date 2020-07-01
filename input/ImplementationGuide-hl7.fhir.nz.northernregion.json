@@ -172,11 +172,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "api.html",
-          "title": "Api",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "CapabilityStatement.html",
           "title": "Capability Statement",
           "generation": "html"

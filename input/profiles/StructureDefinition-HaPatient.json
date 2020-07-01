@@ -219,25 +219,10 @@
         ]
       },
       {
-        "id": "Patient.generalPractitioner.extension:edi-address",
-        "path": "Patient.generalPractitioner.extension",
-        "sliceName": "edi-address",
-        "definition": "The healthLink EDI address for this GP Practice",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Patient.generalPractitioner.extension:gp-practice-enrollment-date",
         "path": "Patient.generalPractitioner.extension",
         "sliceName": "gp-practice-enrollment-date",
+        "short": "The date that the patient enrolled with this GP Practice",
         "definition": "The date that the patient enrolled with this GP Practice",
         "min": 0,
         "max": "1",

@@ -35,8 +35,7 @@
               "documentation": "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier (use the identifier search for that)"
             },
             {
-              "code": "search-type",
-              "documentation": "Gender and birthDate are required in all searches"
+              "code": "search-type"
             }
           ],
           "searchParam": [

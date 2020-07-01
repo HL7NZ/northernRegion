@@ -7,8 +7,6 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe</div>"
 * text.status = #additional
 
-
-
 * extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/cs/ethnic-group-level-4#11111 "New Zealand European"
 * extension[nz-ethnicity][1].valueCodeableConcept = https://standards.digital.health.nz/cs/ethnic-group-level-4#12111 "Celtic"
 * extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
@@ -63,13 +61,10 @@ Usage: #example
 
 * generalPractitioner[0] = Reference(drwelby)       //the GP
 * generalPractitioner[0].display = "Dr Marcus Welby"
-* generalPractitioner[0].extension[edi-address].valueString = "hl-001"
 * generalPractitioner[0].extension[gp-practice-enrollment-date].valueDate = "2020-01-01"
 
-
 * generalPractitioner[1] = Reference(gp-org1)       //the GP Practice
-* generalPractitioner[1].display = "Good Health Medcial Centre"
-* generalPractitioner[1].extension[edi-address].valueString = "hl-001"
+* generalPractitioner[1].display = "Good Health Medical Centre"
 * generalPractitioner[1].extension[gp-practice-enrollment-date].valueDate = "2020-01-01"
 
 * communication.language.coding.system = "urn:ietf:bcp:47"
@@ -88,7 +83,7 @@ Usage: #example
 * contact.address.line = "23 Thule St"
 * address.city = "Waipu"
 
-* contact.gender = #M
+* contact.gender = #male
 
 
 //The GP 

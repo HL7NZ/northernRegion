@@ -28,7 +28,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/CapabilityStatement.xml                  | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                  |
 | input/pagecontent/StructureDefinition-HaPatientLM-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-intro.md |
 | input/pagecontent/StructureDefinition-HaPatientLM-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-notes.md |
-| input/pagecontent/api.md                                   | copied    | fsh/ig-data/input/pagecontent/api.md                                   |
+| input/pagecontent/api.mdDEP                                | copied    | fsh/ig-data/input/pagecontent/api.mdDEP                                |
 | input/pagecontent/companion.xml                            | copied    | fsh/ig-data/input/pagecontent/companion.xml                            |
 | input/pagecontent/design.md                                | copied    | fsh/ig-data/input/pagecontent/design.md                                |
 | input/pagecontent/development.md                           | copied    | fsh/ig-data/input/pagecontent/development.md                           |

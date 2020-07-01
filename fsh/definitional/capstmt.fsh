@@ -38,7 +38,7 @@ Each DHB exposes its core demographics infomation via the Patient resource.
 * rest.resource.interaction.documentation = "Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier (use the identifier search for that)"
 //search by various parameters
 * rest.resource.interaction[1].code = #search-type
-* rest.resource.interaction[1].documentation = "Gender and birthDate are required in all searches"
+//* rest.resource.interaction[1].documentation = "Gender and birthDate are required in all searches"
 
 //identifier 
 * rest.resource.searchParam[0].name = "identifier"
