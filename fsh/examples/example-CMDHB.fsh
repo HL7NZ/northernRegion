@@ -1,5 +1,5 @@
 Instance:   cmdhb
-InstanceOf: HaOrganization
+InstanceOf: NrOrganization
 Description: "Counties Manakau DHB"
 Usage: #example
 

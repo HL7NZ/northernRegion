@@ -38,5 +38,18 @@
 <td>The date that the patient was enrolled with their GP Practicce</td>
 <td>nhi</td>
 </tr>
+<tr>
+<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-gp-practice-enrollment-date.html'>http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date</a></td>
+<td>The date that the patient was enrolled with their GP Practicce</td>
+<td>nhi</td>
+</tr>
 </table>
 </div>

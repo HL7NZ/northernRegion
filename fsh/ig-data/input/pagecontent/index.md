@@ -22,8 +22,8 @@ Also check out the Logical models. These represent the alterations that made to 
 The following models are defined in this guide:
 
 * The [Patient](StructureDefinition-HaPatientLM.html) model are changes to the core [Patient](http://hl7.org/fhir/patient.html) resource. This represents the demographics information exposed by the API's - though note that some parts of this information is represented in referenced Organization and Practitioner profiles.
-* The [Practitioner](StructureDefinition-HaPractitionerLM.html) profile represents someone who delivers healthcare - shuch as a hospital doctor, nurse or GP.
-* The [Organization](StructureDefinition-HaOrganization.html) profile is curently used to represent a General Practice, though can be used more widely
+* The [Practitioner](StructureDefinition-NrPractitionerLM.html) profile represents someone who delivers healthcare - shuch as a hospital doctor, nurse or GP.
+* The [Organization](StructureDefinition-NrOrganization.html) profile is curently used to represent a General Practice, though can be used more widely
 
 The links above give significant detail of these models. The Snapshot table on each page is the best place to start (Note that model is also called a 'profile' in these pages - this is not the same as the FHIR profiles in this guide)
 
@@ -33,10 +33,8 @@ The [Design Notes](design.html) page will be of interest to clinicians intereste
 
 * The [Artifact Index](artifacts.html) lists all FHIR artifacts in the guide, with links to details on each one. The most significant ones at present are
   * The [Patient](StructureDefinition-HaPatient.html) profile
-* The [API](api.html) tab describes the different API's exposed by the solution. These are the actual RESTful queries that a client can make. There are 2 representations of the API:
-  * The [Documentation](api.html) tab is hand written with examaples and clarifying statements.
-  * The [API](CapabilityStatement.html) tab is directly generated from the [CapabilityStatement](CapabilityStatement-HaCapabilityStatement.html), which is the machine readible description of the API.
-* The profiles that describe the structure of the resource instances returned by queries are foung on the [Artifact Index](artifacts.html#structures-resource-profiles) page (as are all the other FHIR artifacts). Like logical models, the snapshot tab is the most useful summary, but there is a lot of detail about each profile. Each profile page also contains links to examples of resource instances conformant to the profile.
+  * The [API](CapabilityStatement.html) describes the different API's exposed by the solution and the contents of tab is directly generated from the [CapabilityStatement](CapabilityStatement-HaCapabilityStatement.html) resource, which is the machine readible description of the API.
+  * The profiles that describe the structure of the resource instances returned by queries are found on the [Artifact Index](artifacts.html#structures-resource-profiles) page (as are all the other FHIR artifacts). Like logical models, the snapshot tab is the most useful summary, but there is a lot of detail about each profile. Each profile page also contains links to examples of resource instances conformant to the profile.
 
 There is also a ['companion'](companion.html) application under the support tab that will have a number of features aimed at implementers. This app is not part of the actual IG, but rather is intended to support implementers. Currently there is a single function that allows sample queries to be made against a test server with sample data in it, and then display the result in a number of formats. There are a number of sample queries that can be chosen, but they can be edited by the user as required.
 

@@ -42,7 +42,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/HaOrganization"
+          "reference": "StructureDefinition/NrOrganization"
         },
         "name": "Northern Region Organization profile",
         "description": "Represents Organization data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
@@ -50,7 +50,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/HaPatient"
+          "reference": "StructureDefinition/NrPatient"
         },
         "name": "Northern Region Patient profile",
         "description": "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
@@ -58,7 +58,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/HaPractitioner"
+          "reference": "StructureDefinition/NrPractitioner"
         },
         "name": "Northern region Practitioner profile",
         "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
@@ -94,7 +94,7 @@
         },
         "name": "cmdhb",
         "description": "Counties Manakau DHB",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
       },
       {
         "reference": {
@@ -102,7 +102,7 @@
         },
         "name": "drwelby",
         "description": "An example of practitioner. Used as a target by some of the other examples",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
       },
       {
         "reference": {
@@ -110,7 +110,7 @@
         },
         "name": "ghmc",
         "description": "Good Health Medcial Centre",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
       },
       {
         "reference": {
@@ -118,7 +118,7 @@
         },
         "name": "gp-org1",
         "description": "GP Practice",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
       },
       {
         "reference": {
@@ -126,7 +126,7 @@
         },
         "name": "gp-prac1",
         "description": "Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
       },
       {
         "reference": {
@@ -134,7 +134,7 @@
         },
         "name": "patient1",
         "description": "An example patient with all data items populated.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/HaPatient"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPatient"
       },
       {
         "reference": {

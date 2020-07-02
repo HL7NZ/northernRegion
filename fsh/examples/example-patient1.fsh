@@ -1,5 +1,5 @@
 Instance:   patient1
-InstanceOf: HaPatient
+InstanceOf: NrPatient
 Description: "An example patient with all data items populated."
 Usage: #example
 
@@ -88,7 +88,7 @@ Usage: #example
 
 //The GP 
 Instance:   gp-prac1
-InstanceOf: HaPractitioner
+InstanceOf: NrPractitioner
 Description: "Practitioner"
 Usage: #example
 
@@ -98,7 +98,7 @@ Usage: #example
 
 //The GP practice 
 Instance:   gp-org1
-InstanceOf: HaOrganization
+InstanceOf: NrOrganization
 Description: "GP Practice"
 Usage: #example
 

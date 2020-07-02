@@ -1,5 +1,5 @@
 Instance:   ghmc
-InstanceOf: HaOrganization
+InstanceOf: NrOrganization
 Description: "Good Health Medcial Centre"
 Usage: #example
 

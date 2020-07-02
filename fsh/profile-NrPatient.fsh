@@ -9,7 +9,7 @@ Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-in
 Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date
 
 
-Profile:        HaPatient
+Profile:        NrPatient
 Parent:         NzPatient
 Title:          "Northern Region Patient profile"
 Description:    "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
@@ -66,7 +66,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.
 //both can be populated for a given patient if needed
 //Note that the healthLink EDI number is now an extension
-* generalPractitioner only Reference(HaPractitioner | HaOrganization)
+* generalPractitioner only Reference(NrPractitioner | NrOrganization)
 * generalPractitioner.extension contains
     //$edi-address named edi-address 0..1 and
     $gp-enrollmentDate named gp-practice-enrollment-date 0..1
@@ -80,7 +80,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 //The managing organization is the DHB where the Patient resource came from
-* managingOrganization only Reference(HaOrganization)
+* managingOrganization only Reference(NrOrganization)
 
 
 
