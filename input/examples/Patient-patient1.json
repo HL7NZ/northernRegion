@@ -50,6 +50,47 @@
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/birth-place"
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "CIT",
+                "system": "https://standards.digital.health.nz/cs/citizenship-status",
+                "display": "Citizen"
+              }
+            ]
+          }
+        },
+        {
+          "url": "source",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "PPRT",
+                "system": "https://standards.digital.health.nz/cs/info-source",
+                "display": "Passport"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/citizenship"
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "male",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Male"
+          }
+        ]
+      }
     }
   ],
   "name": [
@@ -80,6 +121,11 @@
         }
       ],
       "system": "email",
+      "use": "home",
+      "rank": 1,
+      "period": {
+        "start": "2020-01-01"
+      },
       "value": "johndoe@erewhon.com"
     },
     {
@@ -122,12 +168,23 @@
               }
             ]
           }
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient",
+          "valueBoolean": true
         }
       ],
       "line": [
         "23 Thule St"
       ],
-      "city": "Waipu"
+      "city": "Waipu",
+      "district": "Northland",
+      "postalCode": "0510",
+      "country": "New Zealand"
     }
   ],
   "generalPractitioner": [

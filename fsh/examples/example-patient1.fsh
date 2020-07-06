@@ -12,6 +12,12 @@ Usage: #example
 * extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
 * extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
 
+* extension[citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/cs/citizenship-status#CIT "Citizen"
+* extension[citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/cs/info-source#PPRT "Passport"
+
+* extension[sex-at-birth].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
+
+
 //the current NHI
 * identifier.use = #official
 * identifier.system = "https://standards.digital.health.nz/id/nhi"
@@ -27,13 +33,15 @@ Usage: #example
 * name.given[1] = "Albertus"
 * name.extension[preferred].valueBoolean = true
 
-* name.extension[preferred].valueBoolean = true
 * deceasedBoolean = false
 * gender = #male
 * birthDate = "1989-12-12"
 
 //email address & phone
 * telecom.system = #email
+* telecom.use = #home
+* telecom.rank = 1
+* telecom.period.start = "2020-01-01"
 * telecom.value = "johndoe@erewhon.com"
 * telecom.extension[authorized-by-patient].valueBoolean = true
 * telecom.extension[validated-by-patient].valueBoolean = true
@@ -43,17 +51,22 @@ Usage: #example
 
 
 //physical address
-* address.line = "23 Thule St"
-* address.extension[building-name].valueString = "The Black building"
-* address.city = "Waipu"
-* address.extension[suburb].valueString = "Waipu river"
 
+* address.extension[building-name].valueString = "The Black building"
+* address.extension[suburb].valueString = "Waipu river"
 * address.extension[nz-geocode].extension[longitude].valueDecimal = 100
 * address.extension[nz-geocode].extension[latitute].valueDecimal = 100
 * address.extension[domicile-code].valueCodeableConcept.coding.code = #0040
 * address.extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/domicileCode"
 * address.extension[domicile-code].valueCodeableConcept.coding.display = "Waipu"
+* address.extension[authorized-by-patient].valueBoolean = true
+* address.extension[validated-by-patient].valueBoolean = true
 
+* address.line = "23 Thule St"
+* address.city = "Waipu"
+* address.district = "Northland"
+* address.postalCode = "0510"
+* address.country = "New Zealand"
 
 //The Managing organization describes the DHB that supplied this record. This will always be an external resource.
 * managingOrganization = Reference(cmdhb)   //DHB is Counties Manukau
