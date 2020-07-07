@@ -20,6 +20,10 @@ Description:    "A minimal PractitonerRole for use in specifying the GenerapPrac
 * availabilityExceptions 0..0
 * endpoint 0..0
 
+* practitioner only Reference(NrPractitioner)
+* location only Reference(NrLocation)
+* organization only Reference(NrOrganization)
+
 
 
 

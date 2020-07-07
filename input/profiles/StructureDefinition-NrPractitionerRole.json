@@ -48,6 +48,30 @@
         "max": "0"
       },
       {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
         "max": "0"
@@ -56,6 +80,18 @@
         "id": "PractitionerRole.specialty",
         "path": "PractitionerRole.specialty",
         "max": "0"
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
+            ]
+          }
+        ]
       },
       {
         "id": "PractitionerRole.healthcareService",

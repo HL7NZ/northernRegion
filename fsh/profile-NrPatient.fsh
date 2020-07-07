@@ -5,7 +5,7 @@ Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
-//Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+
 Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date
 
 
