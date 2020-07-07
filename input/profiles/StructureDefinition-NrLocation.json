@@ -38,11 +38,6 @@
         "max": "0"
       },
       {
-        "id": "Location.name",
-        "path": "Location.name",
-        "max": "0"
-      },
-      {
         "id": "Location.alias",
         "path": "Location.alias",
         "max": "0"

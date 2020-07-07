@@ -1,3 +1,4 @@
+Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        NrLocation
 Parent:         NzLocation
@@ -10,7 +11,6 @@ Description:    "Represents Location data exposed through the Northern Region AP
 // unsupported elements
 * status 0..0
 * operationalStatus 0..0
-* name 0..0
 * alias 0..0
 * description 0..0
 * mode 0..0
@@ -23,6 +23,8 @@ Description:    "Represents Location data exposed through the Northern Region AP
 * hoursOfOperation 0..0
 * availabilityExceptions 0..0
 * endpoint 0..0
+
+
 
 
 

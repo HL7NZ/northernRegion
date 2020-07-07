@@ -6,7 +6,7 @@
   "name": "NrPractitionerRole",
   "title": "Northern Region PractitionerRole profile",
   "status": "active",
-  "description": "Represents PractitionerRole data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+  "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -38,8 +38,49 @@
   "differential": {
     "element": [
       {
-        "id": "PractitionerRole",
-        "path": "PractitionerRole"
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availabilityExceptions",
+        "path": "PractitionerRole.availabilityExceptions",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "max": "0"
       }
     ]
   }

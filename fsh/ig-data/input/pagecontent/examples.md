@@ -10,6 +10,7 @@
 <tr><td><a href='StructureDefinition-NrPatient.html'>NrPatient</a></td><td>patient2</td><td></td><td>An example patient using PractitionerRole.</td></tr>
 <tr><td><a href='StructureDefinition-NrPractitionerRole.html'>NrPractitionerRole</a></td><td>gp-pracrole1</td><td></td><td>Practitioner</td></tr>
 <tr><td><a href='StructureDefinition-NrLocation.html'>NrLocation</a></td><td>gp-location</td><td></td><td>Location</td></tr>
+<tr><td></td><td>ghc</td><td></td><td>Good Health Clinic</td></tr>
 </table>
 ### Bundles
 

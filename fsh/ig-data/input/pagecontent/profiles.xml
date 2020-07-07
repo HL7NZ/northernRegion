@@ -25,7 +25,7 @@
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-NrPractitionerRole.html'>NrPractitionerRole</a></td>
 <td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole</td>
-<td>Represents PractitionerRole data exposed through the Northern Region APIs. The profile extends the NZ Base profile</td>
+<td>A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient</td>
 </tr>
 </table>
 </div>

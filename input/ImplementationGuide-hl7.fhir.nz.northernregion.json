@@ -77,7 +77,7 @@
           "reference": "StructureDefinition/NrPractitionerRole"
         },
         "name": "Northern Region PractitionerRole profile",
-        "description": "Represents PractitionerRole data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+        "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
         "exampleBoolean": false
       },
       {
@@ -127,6 +127,14 @@
         "name": "drwelby",
         "description": "An example of practitioner. Used as a target by some of the other examples",
         "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Location/ghc"
+        },
+        "name": "ghc",
+        "description": "Good Health Clinic",
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
       },
       {
         "reference": {
