@@ -10,3 +10,6 @@ echo "Making terminology summary"   # will copy into IG input folder
 
 echo "Making API summary"
 ../scripts/makeCapabilityStatement.js northernRegion
+
+echo "Making examples page and uploading"
+../scripts/makeExamplePage.js northernRegion

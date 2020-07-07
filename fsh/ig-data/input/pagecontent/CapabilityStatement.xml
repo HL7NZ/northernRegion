@@ -25,36 +25,4 @@
 <td>Use for NHI queries and other queries related to identifiers</td>
 </tr>
 </table>
-<strong>Search includes</strong>
-<table class='table table-bordered table-condensed'>
-<tr><th width='15%'>Name</th></tr>
-<tr>
-<td>organization</td>
-</tr>
-<tr>
-<td>generalPractitioner</td>
-</tr>
-</table>
-<em>These are the _include parameters that are supported on Patient searches</em>
-<br/><br/>
-<a name="Practitioner"> </a>
-<h3>Practitioner</h3>
-<strong>Interactions</strong>
-<table class='table table-bordered table-condensed'>
-<tr><th width='60%'>Code</th><th width='40%'>Documentation</th></tr>
-<tr>
-<td>read</td>
-<td>Allows a read of a Practitioner resource based on its Id - eg references from Patient.generalPractitioner</td>
-</tr>
-</table>
-<a name="Organization"> </a>
-<h3>Organization</h3>
-<strong>Interactions</strong>
-<table class='table table-bordered table-condensed'>
-<tr><th width='60%'>Code</th><th width='40%'>Documentation</th></tr>
-<tr>
-<td>read</td>
-<td>Allows a read of an Organization resource based on its Id - eg references from Patient.generalPractitioner and Patient.managingOrganization</td>
-</tr>
-</table>
 </div>

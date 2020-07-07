@@ -3,6 +3,11 @@
 <table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-NrLocation.html'>NrLocation</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation</td>
+<td>Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-NrOrganization.html'>NrOrganization</a></td>
 <td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization</td>
 <td>Represents Organization data exposed through the Northern Region APIs. The profile extends the NZ Base profile</td>
@@ -16,6 +21,11 @@
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-NrPractitioner.html'>NrPractitioner</a></td>
 <td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner</td>
 <td>Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-NrPractitionerRole.html'>NrPractitionerRole</a></td>
+<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole</td>
+<td>Represents PractitionerRole data exposed through the Northern Region APIs. The profile extends the NZ Base profile</td>
 </tr>
 </table>
 </div>

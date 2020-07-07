@@ -33,6 +33,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/design.md                                | copied    | fsh/ig-data/input/pagecontent/design.md                                |
 | input/pagecontent/development.md                           | copied    | fsh/ig-data/input/pagecontent/development.md                           |
 | input/pagecontent/downloads.md                             | copied    | fsh/ig-data/input/pagecontent/downloads.md                             |
+| input/pagecontent/examples.md                              | copied    | fsh/ig-data/input/pagecontent/examples.md                              |
 | input/pagecontent/extensions.xml                           | copied    | fsh/ig-data/input/pagecontent/extensions.xml                           |
 | input/pagecontent/index.md                                 | copied    | fsh/ig-data/input/pagecontent/index.md                                 |
 | input/pagecontent/profiles.xml                             | copied    | fsh/ig-data/input/pagecontent/profiles.xml                             |

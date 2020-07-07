@@ -44,29 +44,6 @@
               "type": "token",
               "documentation": "Use for NHI queries and other queries related to identifiers"
             }
-          ],
-          "searchInclude": [
-            "organization",
-            "generalPractitioner"
-          ]
-        },
-        {
-          "type": "Practitioner",
-          "documentation": "The practitioner resource is the indiviudal delivering care. Currently this is the GP only.",
-          "interaction": [
-            {
-              "code": "read",
-              "documentation": "Allows a read of a Practitioner resource based on its Id - eg references from Patient.generalPractitioner"
-            }
-          ]
-        },
-        {
-          "type": "Organization",
-          "interaction": [
-            {
-              "code": "read",
-              "documentation": "Allows a read of an Organization resource based on its Id - eg references from Patient.generalPractitioner and Patient.managingOrganization"
-            }
           ]
         }
       ]

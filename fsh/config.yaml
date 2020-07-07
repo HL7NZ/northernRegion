@@ -17,7 +17,7 @@ name: NorthernRegionIG
 title: Northern Region Implementation Guide
 status: active
 publisher:
-  name: David Hay
+  name: healthAlliance
   email: mailto:david.hay25@gmail.com
 description: The work being done for the Northern Region under healthAlliance.
 license: CC0-1.0
@@ -61,6 +61,7 @@ menu:
     Profiles: profiles.html
     Extensions: extensions.html
     API: CapabilityStatement.html
+    Examples: examples.html
     # API: 
     #  Documentation: api.html
     #   CapabilityStatement: CapabilityStatement.html

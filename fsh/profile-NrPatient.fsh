@@ -66,7 +66,11 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.
 //both can be populated for a given patient if needed
 //Note that the healthLink EDI number is now an extension
-* generalPractitioner only Reference(NrPractitioner | NrOrganization)
+
+
+//temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
+* generalPractitioner only Reference(NrPractitionerRole)
+
 * generalPractitioner.extension contains
     //$edi-address named edi-address 0..1 and
     $gp-enrollmentDate named gp-practice-enrollment-date 0..1

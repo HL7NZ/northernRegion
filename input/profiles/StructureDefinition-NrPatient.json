@@ -212,8 +212,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner",
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole"
             ]
           }
         ]

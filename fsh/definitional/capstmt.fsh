@@ -77,7 +77,7 @@ arch by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[2].documentation = "The patients administrative gender (Patient.gender). Search must always include birthDate and name"
 */
 
-
+/*
 * rest.resource.searchInclude = "organization"
 * rest.resource.searchInclude[1] = "generalPractitioner"
 
@@ -92,3 +92,5 @@ arch by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource[2].type = #Organization
 * rest.resource[2].interaction.code = #read
 * rest.resource[2].interaction.documentation = "Allows a read of an Organization resource based on its Id - eg references from Patient.generalPractitioner and Patient.managingOrganization"
+
+*/

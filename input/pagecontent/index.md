@@ -9,17 +9,16 @@
 *****************************************************************************************
 {% endcomment %} -->
 ### Background
-This is the draft healthAlliance Implementation Guide.
+This is the draft the Northern Region Implementation Guide.
 
-Currently it covers all the FHIR design work being done at healthAlliance - in effect it describes the capabilities of the API's being developed to expose data from internal sources across healthAlliance. Currently, these are read-only. In the future, it is possible that further guides will be developed to cover specific sets of use cases with specific requirements particularly where update via API is supported.
+Currently it covers all the FHIR design work being done for the Northern Region - in effect it describes the capabilities of the API's being developed to expose data from internal sources across the Northern Region. Currently, these are read-only. In the future, it is possible that further guides will be developed to cover specific sets of use cases with specific requirements particularly where update via API is supported.
 
-Where there is overlap with the [NHI IG](http://igs.clinfhir.com/nhi/index.html), the 2 guides should be compatible if at all possible. For example the use of common extensions and identifier systems.
 
 ### Guide for use
 
 #### General notes
 
-In general terms, this guide is targetted towards those wishing to implement applications that access the data exposed through the healthAlliance RESTful APIs, and assume a familiarity with [FHIR](http://hl7.org/fhir/index.html). However, there are also aspects that will be of interest to Clinical Informaticians and Business Analysts.
+In general terms, this guide is targetted towards those wishing to implement applications that access the data exposed through the Northern Region RESTful APIs, and assume a familiarity with [FHIR](http://hl7.org/fhir/index.html). However, there are also aspects that will be of interest to Clinical Informaticians and Business Analysts.
 
 * The [FHIR specification](http://hl7.org/fhir/index.html) is quite readible, and has many links to details of the spec. There are a number of guides on the front page that give a summary to different audiences
 

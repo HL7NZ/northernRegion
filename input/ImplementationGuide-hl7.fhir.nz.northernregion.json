@@ -6,10 +6,10 @@
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
   "status": "active",
-  "publisher": "David Hay",
+  "publisher": "healthAlliance",
   "contact": [
     {
-      "name": "David Hay",
+      "name": "healthAlliance",
       "telecom": [
         {
           "system": "email",
@@ -42,6 +42,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/NrLocation"
+        },
+        "name": "Northern Region Location profile",
+        "description": "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/NrOrganization"
         },
         "name": "Northern Region Organization profile",
@@ -62,6 +70,14 @@
         },
         "name": "Northern region Practitioner profile",
         "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NrPractitionerRole"
+        },
+        "name": "Northern Region PractitionerRole profile",
+        "description": "Represents PractitionerRole data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
         "exampleBoolean": false
       },
       {
@@ -90,6 +106,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle2"
+        },
+        "name": "bundle2",
+        "description": "Sample query response",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Organization/cmdhb"
         },
         "name": "cmdhb",
@@ -114,26 +138,26 @@
       },
       {
         "reference": {
-          "reference": "Organization/gp-org1"
+          "reference": "Location/gp-location"
         },
-        "name": "gp-org1",
-        "description": "GP Practice",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+        "name": "gp-location",
+        "description": "Location",
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
       },
       {
         "reference": {
-          "reference": "Practitioner/gp-prac1"
+          "reference": "PractitionerRole/gp-pracrole1"
         },
-        "name": "gp-prac1",
+        "name": "gp-pracrole1",
         "description": "Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole"
       },
       {
         "reference": {
-          "reference": "Patient/patient1"
+          "reference": "Patient/patient2"
         },
-        "name": "patient1",
-        "description": "An example patient with all data items populated.",
+        "name": "patient2",
+        "description": "An example patient using PractitionerRole.",
         "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPatient"
       },
       {
@@ -194,6 +218,11 @@
         {
           "nameUrl": "downloads.html",
           "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
           "generation": "markdown"
         },
         {
