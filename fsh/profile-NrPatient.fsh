@@ -2,6 +2,7 @@
 // Aliases
 
 Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
+
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
@@ -10,7 +11,7 @@ Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-pr
 
 
 Profile:        NrPatient
-Parent:         NzPatient
+Parent:         CommonPatient
 Title:          "Northern Region Patient profile"
 Description:    "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
 
@@ -51,7 +52,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * telecom.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this method of contact is correct."
 
 // address is required and has a suburb extension. 
-* address only NzAddress
+* address only CommonAddress
 * address 0..*
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and

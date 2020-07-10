@@ -26,15 +26,15 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.base",
-      "packageId": "hl7.fhir.nz.base",
-      "id": "hl7_fhir_nz_base",
-      "version": "current"
-    },
-    {
       "uri": "http://hl7.org.nz/fhir/nhi/ImplementationGuide/hl7.fhir.nz.nhi",
       "packageId": "hl7.fhir.nz.nhi",
       "id": "hl7_fhir_nz_nhi",
+      "version": "dev"
+    },
+    {
+      "uri": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
+      "packageId": "hl7.fhir.nz.hpi",
+      "id": "hl7_fhir_nz_hpi",
       "version": "dev"
     }
   ],
@@ -106,14 +106,6 @@
       },
       {
         "reference": {
-          "reference": "Bundle/bundle2"
-        },
-        "name": "bundle2",
-        "description": "Sample query response",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Organization/cmdhb"
         },
         "name": "cmdhb",
@@ -143,30 +135,6 @@
         "name": "ghmc",
         "description": "Good Health Medcial Centre",
         "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Location/gp-location"
-        },
-        "name": "gp-location",
-        "description": "Location",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/gp-pracrole1"
-        },
-        "name": "gp-pracrole1",
-        "description": "Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole"
-      },
-      {
-        "reference": {
-          "reference": "Patient/patient2"
-        },
-        "name": "patient2",
-        "description": "An example patient using PractitionerRole.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPatient"
       },
       {
         "reference": {

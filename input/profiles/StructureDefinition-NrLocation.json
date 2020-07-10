@@ -23,7 +23,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Location",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzLocation",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonLocation",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -11,11 +11,11 @@
     "status": "additional"
   },
   "practitioner": {
-    "reference": "Practitioner/drwelby"
+    "reference": "undefined/drwelby"
   },
   "location": [
     {
-      "reference": "Location/gp-location"
+      "reference": "undefined/gp-location"
     }
   ]
 }

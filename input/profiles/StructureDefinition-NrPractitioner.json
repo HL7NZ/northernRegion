@@ -33,7 +33,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonPractitioner",
   "derivation": "constraint",
   "differential": {
     "element": [

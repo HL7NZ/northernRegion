@@ -1,7 +1,7 @@
 Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        NrLocation
-Parent:         NzLocation
+Parent:         CommonLocation
 Title:          "Northern Region Location profile"
 Description:    "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
 

@@ -33,7 +33,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Organization",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzOrganization",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonOrganization",
   "derivation": "constraint",
   "differential": {
     "element": [

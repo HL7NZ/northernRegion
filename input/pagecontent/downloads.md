@@ -15,7 +15,7 @@ Download the conformance resources (StructureDefinition, ValueSet, CodeSystem). 
 * [XML](definitions.xml.zip)
 * [JSON](definitions.json.zip)
 * [Turtle](definitions.ttl.zip)
-* [Structure Definition CSV] (csvs.zip)
+* [Structure Definition CSV](csvs.zip)
 
 ### Examples
 Download the examples:

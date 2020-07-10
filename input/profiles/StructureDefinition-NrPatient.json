@@ -42,7 +42,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzPatient",
+  "baseDefinition": "http://hl7.org.nz/fhir/nhi/StructureDefinition/CommonPatient",
   "derivation": "constraint",
   "differential": {
     "element": [
