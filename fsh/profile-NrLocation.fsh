@@ -7,6 +7,7 @@ Description:    "Represents Location data exposed through the Northern Region AP
 
 
 * ^version = "0.2.0"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 // unsupported elements
 * status 0..0

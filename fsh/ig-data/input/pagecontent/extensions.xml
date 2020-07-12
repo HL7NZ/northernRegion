@@ -4,19 +4,19 @@
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-authorized-by-patient.html'>authorized-by-patient</a></td>
-<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient</td>
 <td>
 <div>Address</div>
-<div>Telecom</div>
+<div>ContactPoint</div>
 </td>
 <td>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
-<td>http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient</td>
 <td>
 <div>Address</div>
-<div>Telecom</div>
+<div>ContactPoint</div>
 </td>
 <td>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</td>
 </tr>
@@ -26,15 +26,15 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Url</th><th>Description</th><th>IG</th></tr>
 <tr>
-<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
 <td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-gp-practice-enrollment-date.html'>http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date</a></td>
+<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-gp-practice-enrollment-date.html'>http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date</a></td>
 <td>The date that the patient was enrolled with their GP Practicce</td>
 <td>nhi</td>
 </tr>

@@ -11,8 +11,8 @@ Usage: #example
 * entry[1].resource = gp-pracrole1
 * entry[1].fullUrl = "http://clinfhir.com/PractitionerRole/gp-pracrole1"
 
-* entry[2].resource = gp-location
-* entry[2].fullUrl = "http://clinfhir.com/Location/gp-location"
+* entry[2].resource = ghc
+* entry[2].fullUrl = "http://clinfhir.com/Location/ghc"
 
 * entry[3].resource = drwelby
 * entry[3].fullUrl = "http://clinfhir.com/Practitioner/drwelby"
@@ -26,16 +26,17 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe</div>"
 * text.status = #additional
 
-* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/cs/ethnic-group-level-4#11111 "New Zealand European"
-* extension[nz-ethnicity][1].valueCodeableConcept = https://standards.digital.health.nz/cs/ethnic-group-level-4#12111 "Celtic"
+* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#11111 "New Zealand European"
+* extension[nz-ethnicity][1].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#12111 "Celtic"
 * extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
 * extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
 
-* extension[citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/cs/citizenship-status#CIT "Citizen"
-* extension[citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/cs/info-source#PPRT "Passport"
+* extension[citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/citizenship-status#CIT "Citizen"
+* extension[citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/info-source#PPRT "Passport"
 
 * extension[sex-at-birth].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 
+* extension[interpreter-required].valueBoolean = true
 
 //the current NHI
 * identifier.use = #official
@@ -76,7 +77,7 @@ Usage: #example
 * address.extension[nz-geocode].extension[longitude].valueDecimal = 100
 * address.extension[nz-geocode].extension[latitute].valueDecimal = 100
 * address.extension[domicile-code].valueCodeableConcept.coding.code = #0040
-* address.extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/domicileCode"
+* address.extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/domicileCode"
 * address.extension[domicile-code].valueCodeableConcept.coding.display = "Waipu"
 * address.extension[authorized-by-patient].valueBoolean = true
 * address.extension[validated-by-patient].valueBoolean = true
@@ -102,9 +103,9 @@ Usage: #example
 */
 
 * communication.language.coding.system = "urn:ietf:bcp:47"
-* communication.language.coding.code = #fr-be
-* communication.language.coding.display = "French (Belgium)" 
-* communication.extension[interpreter-required].valueBoolean = true
+* communication.language.coding.code = #fr
+* communication.language.coding.display = "French" 
+
 
 //* contact.relationship.coding.
 * contact.relationship.coding  = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
@@ -129,16 +130,10 @@ Usage: #example
 * text.status = #additional
 
 * practitioner = Reference(drwelby)
-* location = Reference(gp-location)
+* location = Reference(ghc)
 
 
 
-//The Location
-
-Instance:   gp-location
-InstanceOf: NrLocation
-Description: "Location"
-Usage: #example
 
 
 

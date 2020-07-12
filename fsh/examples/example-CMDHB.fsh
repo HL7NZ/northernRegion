@@ -10,6 +10,7 @@ Usage: #example
 
 * identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
 * identifier.value = "cmdhb-1"
+* identifier.use = #official
 
 * extension[hl-edi-number].valueString = "xxx"
 

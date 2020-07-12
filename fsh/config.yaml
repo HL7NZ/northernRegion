@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.nz.northernregion
-canonical: http://hl7.org.nz/fhir/northernregion
+canonical: http://hl7.org.nz/fhir
 version: 0.2.0
 name: NorthernRegionIG
 title: Northern Region Implementation Guide

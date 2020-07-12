@@ -3,7 +3,7 @@
   "id": "patient2",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPatient"
+      "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
     ]
   },
   "extension": [
@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "11111",
-            "system": "https://standards.digital.health.nz/cs/ethnic-group-level-4",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
             "display": "New Zealand European"
           }
         ]
@@ -25,7 +25,7 @@
         "coding": [
           {
             "code": "12111",
-            "system": "https://standards.digital.health.nz/cs/ethnic-group-level-4",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
             "display": "Celtic"
           }
         ]
@@ -59,7 +59,7 @@
             "coding": [
               {
                 "code": "CIT",
-                "system": "https://standards.digital.health.nz/cs/citizenship-status",
+                "system": "https://standards.digital.health.nz/ns/citizenship-status",
                 "display": "Citizen"
               }
             ]
@@ -71,7 +71,7 @@
             "coding": [
               {
                 "code": "PPRT",
-                "system": "https://standards.digital.health.nz/cs/info-source",
+                "system": "https://standards.digital.health.nz/ns/info-source",
                 "display": "Passport"
               }
             ]
@@ -91,6 +91,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+      "valueBoolean": true
     }
   ],
   "name": [
@@ -112,11 +116,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient",
           "valueBoolean": true
         },
         {
-          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient",
           "valueBoolean": true
         }
       ],
@@ -163,18 +167,18 @@
             "coding": [
               {
                 "code": "0040",
-                "system": "https://standards.digital.health.nz/cs/domicileCode",
+                "system": "https://standards.digital.health.nz/ns/domicileCode",
                 "display": "Waipu"
               }
             ]
           }
         },
         {
-          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient",
           "valueBoolean": true
         },
         {
-          "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient",
           "valueBoolean": true
         }
       ],
@@ -185,25 +189,6 @@
       "district": "Northland",
       "postalCode": "0510",
       "country": "New Zealand"
-    }
-  ],
-  "communication": [
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
-          "valueBoolean": true
-        }
-      ],
-      "language": {
-        "coding": [
-          {
-            "system": "urn:ietf:bcp:47",
-            "code": "fr-be",
-            "display": "French (Belgium)"
-          }
-        ]
-      }
     }
   ],
   "text": {
@@ -233,6 +218,19 @@
     {
       "reference": "PractitionerRole/gp-pracrole1",
       "display": "Dr Marcus Welby"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "fr",
+            "display": "French"
+          }
+        ]
+      }
     }
   ],
   "contact": [

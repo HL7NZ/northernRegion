@@ -22,13 +22,9 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/images/fbc.png                                       | copied    | fsh/ig-data/input/images/fbc.png                                       |
 | input/images/nregion.png                                   | copied    | fsh/ig-data/input/images/nregion.png                                   |
 | input/includes/menuDEP.xml                                 | copied    | fsh/ig-data/input/includes/menuDEP.xml                                 |
-| input/models/StructureDefinition-HaOrganizationLM.json     | copied    | fsh/ig-data/input/models/StructureDefinition-HaOrganizationLM.json     |
-| input/models/StructureDefinition-HaPatientLM.json          | copied    | fsh/ig-data/input/models/StructureDefinition-HaPatientLM.json          |
-| input/models/StructureDefinition-HaPractitionerLM.json     | copied    | fsh/ig-data/input/models/StructureDefinition-HaPractitionerLM.json     |
 | input/pagecontent/CapabilityStatement.xml                  | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                  |
-| input/pagecontent/StructureDefinition-HaPatientLM-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-intro.md |
-| input/pagecontent/StructureDefinition-HaPatientLM-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HaPatientLM-notes.md |
-| input/pagecontent/api.mdDEP                                | copied    | fsh/ig-data/input/pagecontent/api.mdDEP                                |
+| input/pagecontent/StructureDefinition-NrPatientLM-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-NrPatientLM-intro.md |
+| input/pagecontent/StructureDefinition-NrPatientLM-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-NrPatientLM-notes.md |
 | input/pagecontent/companion.xml                            | copied    | fsh/ig-data/input/pagecontent/companion.xml                            |
 | input/pagecontent/design.md                                | copied    | fsh/ig-data/input/pagecontent/design.md                                |
 | input/pagecontent/development.md                           | copied    | fsh/ig-data/input/pagecontent/development.md                           |

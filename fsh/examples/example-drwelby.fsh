@@ -5,5 +5,6 @@ Usage: #example
 
 * name.text = "Dr Marcus Welby"
 
-* identifier.system = "https://standards.digital.health.nz/id/hpi-person"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier.value = "cpn-1"
+* identifier.use = #official

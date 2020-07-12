@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NrLocation",
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrLocation",
   "version": "0.2.0",
   "name": "NrLocation",
   "title": "Northern Region Location profile",
   "status": "active",
   "description": "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

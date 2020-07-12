@@ -1,13 +1,16 @@
 
 // Aliases
 
-Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
-
-Alias: $authorizedByPatient = http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient
-Alias: $validatedByPatient =  http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient
+//international
+Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred      
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 
-Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date
+//this IG
+Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
+Alias: $validatedByPatient =  http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
+
+//NHI IG
+Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
 
 
 Profile:        NrPatient
@@ -19,6 +22,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>healthAlliance Patient profile</div>"
 
 * ^version = "0.2.0"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 //elements that have been removed
 
 * active 0..0       //Will only ever be active resources..
@@ -31,6 +35,8 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //don't allow modifier extensions
 * modifierExtension 0..0
 
+* extension contains     
+    $interpreterRequired named interpreter-required 0..1
 
 * identifier 0..*
 
@@ -90,12 +96,3 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 * communication.preferred 0..0
-* communication.extension contains
-    $interpreterRequired named interpreter-required 0..1
-
- * communication.extension[interpreter-required] ^definition = "Indicates that an interpreter will be requierd when talking to the patient"
-
-
-
-
-

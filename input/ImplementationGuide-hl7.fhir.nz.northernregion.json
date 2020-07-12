@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.northernregion",
-  "url": "http://hl7.org.nz/fhir/northernregion/ImplementationGuide/hl7.fhir.nz.northernregion",
+  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.northernregion",
   "version": "0.2.0",
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
@@ -26,16 +26,16 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org.nz/fhir/nhi/ImplementationGuide/hl7.fhir.nz.nhi",
       "packageId": "hl7.fhir.nz.nhi",
-      "id": "hl7_fhir_nz_nhi",
-      "version": "dev"
+      "version": "dev",
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.nhi",
+      "id": "hl7_fhir_nz_nhi"
     },
     {
-      "uri": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
       "packageId": "hl7.fhir.nz.hpi",
-      "id": "hl7_fhir_nz_hpi",
-      "version": "dev"
+      "version": "dev",
+      "uri": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
+      "id": "hl7_fhir_nz_hpi"
     }
   ],
   "definition": {
@@ -106,11 +106,19 @@
       },
       {
         "reference": {
+          "reference": "Bundle/bundle2"
+        },
+        "name": "bundle2",
+        "description": "Sample query response",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Organization/cmdhb"
         },
         "name": "cmdhb",
         "description": "Counties Manakau DHB",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
       },
       {
         "reference": {
@@ -118,7 +126,7 @@
         },
         "name": "drwelby",
         "description": "An example of practitioner. Used as a target by some of the other examples",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
       },
       {
         "reference": {
@@ -126,7 +134,7 @@
         },
         "name": "ghc",
         "description": "Good Health Clinic",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
       },
       {
         "reference": {
@@ -134,31 +142,23 @@
         },
         "name": "ghmc",
         "description": "Good Health Medcial Centre",
-        "exampleCanonical": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/HaOrganizationLM"
+          "reference": "PractitionerRole/gp-pracrole1"
         },
-        "description": "Represents DHB details exposed by healthAlliance systems",
-        "exampleBoolean": false,
-        "name": "HaOrganizationLM"
+        "name": "gp-pracrole1",
+        "description": "Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/HaPatientLM"
+          "reference": "Patient/patient2"
         },
-        "description": "HaPatient",
-        "exampleBoolean": false,
-        "name": "HaPatientLM"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HaPractitionerLM"
-        },
-        "description": "The Practitioner exposed by the HPI\n\nUse cases:\n\n* What is a person's CPN when I know the persons registration number i.e. Get using registration number\n* What is a person's CPN when the person doesn’t have a registration i.e. search by name, gender\n* What is a person's CPN when I don’t know the person’s registration number or CPN i.e. search by name, gender scope of practice\n* What are a practitioner’s details (eg practicing certificate dates) when I have a CPN. ie. Get using CPN",
-        "exampleBoolean": false,
-        "name": "HaPractitionerLM"
+        "name": "patient2",
+        "description": "An example patient using PractitionerRole.",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
       }
     ],
     "page": {

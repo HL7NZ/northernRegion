@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NrOrganization",
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization",
   "version": "0.2.0",
   "name": "NrOrganization",
   "title": "Northern Region Organization profile",
   "status": "active",
   "description": "Represents Organization data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

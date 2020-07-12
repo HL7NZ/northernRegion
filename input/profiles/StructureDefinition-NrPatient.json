@@ -5,12 +5,22 @@
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">healthAlliance Patient profile</div>"
   },
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPatient",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient",
   "version": "0.2.0",
   "name": "NrPatient",
   "title": "Northern Region Patient profile",
   "status": "active",
   "description": "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -42,7 +52,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org.nz/fhir/nhi/StructureDefinition/CommonPatient",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonPatientCommonPatient",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -50,6 +60,21 @@
         "id": "Patient.language",
         "path": "Patient.language",
         "max": "0"
+      },
+      {
+        "id": "Patient.extension:interpreter-required",
+        "path": "Patient.extension",
+        "sliceName": "interpreter-required",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.modifierExtension",
@@ -92,7 +117,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient"
+              "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient"
             ]
           }
         ]
@@ -108,7 +133,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
+              "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient"
             ]
           }
         ]
@@ -139,7 +164,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/authorized-by-patient"
+              "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient"
             ]
           }
         ]
@@ -155,7 +180,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
+              "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient"
             ]
           }
         ]
@@ -171,36 +196,6 @@
         "max": "0"
       },
       {
-        "id": "Patient.communication.extension",
-        "path": "Patient.communication.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Patient.communication.extension:interpreter-required",
-        "path": "Patient.communication.extension",
-        "sliceName": "interpreter-required",
-        "definition": "Indicates that an interpreter will be requierd when talking to the patient",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Patient.communication.preferred",
         "path": "Patient.communication.preferred",
         "max": "0"
@@ -212,7 +207,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole"
+              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
             ]
           }
         ]
@@ -229,7 +224,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/nhi/StructureDefinition/gp-practice-enrollment-date"
+              "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date"
             ]
           }
         ]
@@ -241,7 +236,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
             ]
           }
         ]

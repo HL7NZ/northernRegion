@@ -1,6 +1,6 @@
 {
   "package-id": "hl7.fhir.nz.northernregion",
-  "canonical": "http://hl7.org.nz/fhir/northernregion",
+  "canonical": "http://hl7.org.nz/fhir",
   "title": "Northern Region Implementation Guide",
   "introduction": "The work being done for the Northern Region under healthAlliance.",
   "list": [

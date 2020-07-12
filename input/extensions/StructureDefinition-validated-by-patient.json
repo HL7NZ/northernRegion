@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "validated-by-patient",
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient",
   "version": "0.2.0",
   "name": "ValidatedByPatient",
   "status": "active",
@@ -23,7 +23,7 @@
     },
     {
       "type": "element",
-      "expression": "Telecom"
+      "expression": "ContactPoint"
     }
   ],
   "type": "Extension",
@@ -39,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/validated-by-patient"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient"
       },
       {
         "id": "Extension.value[x]",

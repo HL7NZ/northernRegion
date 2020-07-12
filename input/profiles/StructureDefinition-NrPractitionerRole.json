@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "NrPractitionerRole",
-  "url": "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole",
   "version": "0.2.0",
   "name": "NrPractitionerRole",
   "title": "Northern Region PractitionerRole profile",
   "status": "active",
   "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,30 +58,6 @@
         "max": "0"
       },
       {
-        "id": "PractitionerRole.practitioner",
-        "path": "PractitionerRole.practitioner",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "PractitionerRole.organization",
-        "path": "PractitionerRole.organization",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrOrganization"
-            ]
-          }
-        ]
-      },
-      {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
         "max": "0"
@@ -80,18 +66,6 @@
         "id": "PractitionerRole.specialty",
         "path": "PractitionerRole.specialty",
         "max": "0"
-      },
-      {
-        "id": "PractitionerRole.location",
-        "path": "PractitionerRole.location",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrLocation"
-            ]
-          }
-        ]
       },
       {
         "id": "PractitionerRole.healthcareService",

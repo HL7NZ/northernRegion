@@ -9,6 +9,7 @@ Description:    "A minimal PractitonerRole for use in specifying the GenerapPrac
 
 
 * ^version = "0.2.0"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * active 0..0
 * period 0..0
@@ -20,10 +21,11 @@ Description:    "A minimal PractitonerRole for use in specifying the GenerapPrac
 * availabilityExceptions 0..0
 * endpoint 0..0
 
+/* THis seems to cause an error in the IG publisher. Need to track down...
 * practitioner only Reference(NrPractitioner)
 * location only Reference(NrLocation)
 * organization only Reference(NrOrganization)
 
 
-
+*/
 

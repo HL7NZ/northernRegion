@@ -7,7 +7,7 @@ Usage: #definition
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Demographics related resources</div>"
 
-* name = "hA_CapabilityStatement"
+* name = "NR-CapabilityStatement"
 * title = "Capability Statement describing healthAlliances FHIR APIs"
 * description = """
 Currently the subset of API's exposed by healthAlliance are read-only and confined to a small set of resource types.

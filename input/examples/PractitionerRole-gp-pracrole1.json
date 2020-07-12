@@ -3,7 +3,7 @@
   "id": "gp-pracrole1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/northernregion/StructureDefinition/NrPractitionerRole"
+      "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
     ]
   },
   "text": {
@@ -11,11 +11,11 @@
     "status": "additional"
   },
   "practitioner": {
-    "reference": "undefined/drwelby"
+    "reference": "Practitioner/drwelby"
   },
   "location": [
     {
-      "reference": "undefined/gp-location"
+      "reference": "Location/ghc"
     }
   ]
 }

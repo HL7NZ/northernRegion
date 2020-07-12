@@ -9,7 +9,7 @@ Description:    "Represents Organization data exposed through the Northern Regio
 
 
 * ^version = "0.2.0"
-
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 
 
