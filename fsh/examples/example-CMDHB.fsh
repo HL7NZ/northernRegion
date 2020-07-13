@@ -1,5 +1,6 @@
 Instance:   cmdhb
 InstanceOf: NrOrganization
+//BaseType: Organization
 Description: "Counties Manakau DHB"
 Usage: #example
 

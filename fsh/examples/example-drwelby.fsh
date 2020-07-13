@@ -1,5 +1,6 @@
 Instance:   drwelby
 InstanceOf: NrPractitioner
+//BaseType: Practitioner
 Description: "An example of practitioner. Used as a target by some of the other examples"
 Usage: #example
 

@@ -1,6 +1,7 @@
 
 Instance:   bundle2
 InstanceOf: Bundle
+//BaseType: Bundle
 Description: "Sample query response"
 Usage: #example
 
@@ -19,6 +20,7 @@ Usage: #example
 
 Instance:   patient2
 InstanceOf: NrPatient
+//BaseType: Patient
 Description: "An example patient using PractitionerRole for the GP link."
 Usage: #example
 
@@ -123,6 +125,7 @@ Usage: #example
 //The practitonerRole 
 Instance:   gp-pracrole1
 InstanceOf: NrPractitionerRole
+//BaseType: PractitionerRole
 Description: "Practitioner"
 Usage: #example
 
@@ -136,26 +139,3 @@ Usage: #example
 
 
 
-
-/*
-//The GP 
-Instance:   gp-prac1
-InstanceOf: NrPractitioner
-Description: "Practitioner"
-Usage: #example
-
-* name.text = "Dr  Kildaire"
-* identifier.system = "https://standards.digital.health.nz/id/hpi-person"
-* identifier.value = "welby1"
-
-//The GP practice 
-Instance:   gp-org1
-InstanceOf: NrOrganization
-Description: "GP Practice"
-Usage: #example
-
-* name = "GP Medical centre"
-* identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
-* identifier.value = "gpprac"
-
-*/

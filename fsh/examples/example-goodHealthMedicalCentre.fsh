@@ -1,5 +1,6 @@
 Instance:   ghmc
 InstanceOf: NrOrganization
+//BaseType: Organization
 Description: "Good Health Medcial Centre"
 Usage: #example
 

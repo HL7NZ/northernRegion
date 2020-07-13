@@ -3,6 +3,7 @@
 
 Instance:   ghc
 InstanceOf: NrLocation
+//BaseType: Location
 Description: "Good Health Clinic"
 Usage: #example
 
