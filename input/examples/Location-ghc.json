@@ -6,11 +6,23 @@
       "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
     ]
   },
-  "name": "Good Health Medical Centre",
   "extension": [
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number",
-      "valueString": "myHLId"
+      "extension": [
+        {
+          "url": "organization",
+          "valueIdentifier": {
+            "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
+            "value": "healthlinkOrgId"
+          }
+        },
+        {
+          "url": "value",
+          "valueString": "myHLEDIumber"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-number"
     }
-  ]
+  ],
+  "name": "Good Health Medical Centre"
 }

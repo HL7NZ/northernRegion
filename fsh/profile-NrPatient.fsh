@@ -59,7 +59,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 // address is required and has a suburb extension. 
 * address only CommonAddress
-* address 0..*
+
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1
@@ -67,7 +67,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * address.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this address."
 * address.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this address is correct."
 
-* address 1..*
+
 
 //Limit the possible resources for generalPractitioner to a practitioner or an organization.
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.

@@ -52,7 +52,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonPatientCommonPatient",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonPatient",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -146,11 +146,6 @@
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
-        "min": 1
-      },
-      {
-        "id": "Patient.address",
-        "path": "Patient.address",
         "min": 1
       },
       {

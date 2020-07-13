@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Organization",
-  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonOrganization",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonOrganization",
   "derivation": "constraint",
   "differential": {
     "element": [

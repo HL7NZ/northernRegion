@@ -12,7 +12,7 @@ Usage: #example
 * identifier.value = "cmdhb-1"
 * identifier.use = #official
 
-* extension[hl-edi-number].valueString = "xxx"
+//* extension[hl-edi-number].valueString = "xxx"
 
 
 

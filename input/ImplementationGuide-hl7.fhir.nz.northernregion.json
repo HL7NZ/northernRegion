@@ -34,7 +34,7 @@
     {
       "packageId": "hl7.fhir.nz.hpi",
       "version": "dev",
-      "uri": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.hpi",
       "id": "hl7_fhir_nz_hpi"
     }
   ],
@@ -157,7 +157,7 @@
           "reference": "Patient/patient2"
         },
         "name": "patient2",
-        "description": "An example patient using PractitionerRole.",
+        "description": "An example patient using PractitionerRole for the GP link.",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
       }
     ],

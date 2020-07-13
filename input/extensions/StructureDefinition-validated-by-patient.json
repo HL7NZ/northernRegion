@@ -6,6 +6,16 @@
   "name": "ValidatedByPatient",
   "status": "active",
   "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -19,7 +19,7 @@ Usage: #example
 
 Instance:   patient2
 InstanceOf: NrPatient
-Description: "An example patient using PractitionerRole."
+Description: "An example patient using PractitionerRole for the GP link."
 Usage: #example
 
 

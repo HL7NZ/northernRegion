@@ -6,6 +6,16 @@
   "name": "AuthorizedByPatient",
   "status": "active",
   "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

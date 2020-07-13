@@ -7,7 +7,8 @@
 <tr><td></td><td>gp-org1</td><td></td><td>GP Practice</td></tr>
 <tr><td><a href='StructureDefinition-NrPractitioner.html'>NrPractitioner</a></td><td>drwelby</td><td></td><td>An example of practitioner. Used as a target by some of the other examples</td></tr>
 <tr><td></td><td>gp-prac1</td><td></td><td>Practitioner</td></tr>
-<tr><td><a href='StructureDefinition-NrPatient.html'>NrPatient</a></td><td>patient2</td><td></td><td>An example patient using PractitionerRole.</td></tr>
+<tr><td><a href='StructureDefinition-Bundle.html'>Bundle</a></td><td>bundle2</td><td></td><td>Sample query response</td></tr>
+<tr><td><a href='StructureDefinition-NrPatient.html'>NrPatient</a></td><td>patient2</td><td></td><td>An example patient using PractitionerRole for the GP link.</td></tr>
 <tr><td><a href='StructureDefinition-NrPractitionerRole.html'>NrPractitionerRole</a></td><td>gp-pracrole1</td><td></td><td>Practitioner</td></tr>
 <tr><td><a href='StructureDefinition-NrLocation.html'>NrLocation</a></td><td>ghc</td><td></td><td>Good Health Clinic</td></tr>
 </table>

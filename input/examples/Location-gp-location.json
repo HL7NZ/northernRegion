@@ -1,9 +1,0 @@
-{
-  "resourceType": "Location",
-  "id": "gp-location",
-  "meta": {
-    "profile": [
-      "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
-    ]
-  }
-}

@@ -6,12 +6,6 @@
       "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
     ]
   },
-  "extension": [
-    {
-      "url": "hl-edi-number",
-      "valueString": "xxx"
-    }
-  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Counties Manakau DHB</div>",
     "status": "additional"

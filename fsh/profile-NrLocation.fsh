@@ -1,4 +1,4 @@
-Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+
 
 Profile:        NrLocation
 Parent:         CommonLocation
