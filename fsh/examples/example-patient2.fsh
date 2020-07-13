@@ -28,6 +28,7 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe</div>"
 * text.status = #additional
 
+
 * extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#11111 "New Zealand European"
 * extension[nz-ethnicity][1].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#12111 "Celtic"
 * extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
