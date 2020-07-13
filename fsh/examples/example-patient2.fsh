@@ -38,6 +38,10 @@ Usage: #example
 
 * extension[sex-at-birth].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 
+* extension[nz-residency-status].valueCodeableConcept = https://standards.digital.health.nz/ns/nz-residency-status#Y "Yes"
+
+
+
 * extension[interpreter-required].valueBoolean = true
 
 //the current NHI
