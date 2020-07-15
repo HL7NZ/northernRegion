@@ -12,6 +12,23 @@
 <td>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</td>
 </tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-contactpoint-other.html'>contactpoint-other</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other</td>
+<td>
+<div>ContactPoint.system</div>
+</td>
+<td>Other values for the ContactPoint system</td>
+</tr>
+<tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-current-occupation.html'>current-occupation</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/current-occupation</td>
+<td>
+<div>Address</div>
+<div>ContactPoint</div>
+</td>
+<td>The current occupation for the patient</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/northernRegion/branches/master/StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient</td>
 <td>

@@ -9,6 +9,7 @@ Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-in
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient = http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
 Alias: $currentOccupation = http://hl7.org.nz/fhir/StructureDefinition/current-occupation
+Alias: $cpOther = http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other
 
 //NHI IG
 Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
@@ -102,3 +103,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 * communication.preferred 0..0
+
+* telecom.extension contains
+    $cpOther named contactpoint-other 0..1
