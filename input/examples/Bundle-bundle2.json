@@ -111,6 +111,16 @@
             }
           },
           {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "display": "Carpenter"
+                }
+              ]
+            }
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
             "valueBoolean": true
           }
@@ -317,25 +327,12 @@
             "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
           ]
         },
-        "extension": [
+        "name": "Good Health Medical Centre",
+        "endpoint": [
           {
-            "extension": [
-              {
-                "url": "organization",
-                "valueIdentifier": {
-                  "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
-                  "value": "healthlinkOrgId"
-                }
-              },
-              {
-                "url": "value",
-                "valueString": "myHLEDIumber"
-              }
-            ],
-            "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-number"
+            "display": "EDI: myEdiNum"
           }
-        ],
-        "name": "Good Health Medical Centre"
+        ]
       },
       "fullUrl": "http://clinfhir.com/Location/ghc"
     },

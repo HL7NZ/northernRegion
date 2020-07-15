@@ -7,7 +7,8 @@ Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-in
 
 //this IG
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
-Alias: $validatedByPatient =  http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
+Alias: $validatedByPatient = http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
+Alias: $currentOccupation = http://hl7.org.nz/fhir/StructureDefinition/current-occupation
 
 //NHI IG
 Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
@@ -38,6 +39,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * modifierExtension 0..0
 
 * extension contains     
+    $currentOccupation named current-occupation 0..1 and 
     $interpreterRequired named interpreter-required 0..1
 
 * identifier 0..*
@@ -95,6 +97,8 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //The managing organization is the DHB where the Patient resource came from
 * managingOrganization only Reference(NrOrganization)
 
+//Use the ValueSet from relatedPerson as it has the same codes as contact.relationship
+* contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
 
 
 * communication.preferred 0..0

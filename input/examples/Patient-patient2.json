@@ -105,6 +105,16 @@
       }
     },
     {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "display": "Carpenter"
+          }
+        ]
+      }
+    },
+    {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
       "valueBoolean": true
     }

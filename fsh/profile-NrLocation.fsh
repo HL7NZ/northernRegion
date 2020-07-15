@@ -23,7 +23,7 @@ Description:    "Represents Location data exposed through the Northern Region AP
 * partOf 0..0
 * hoursOfOperation 0..0
 * availabilityExceptions 0..0
-* endpoint 0..0
+
 
 
 

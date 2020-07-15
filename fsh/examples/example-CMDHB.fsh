@@ -13,6 +13,12 @@ Usage: #example
 * identifier.value = "cmdhb-1"
 * identifier.use = #official
 
+
+* telecom.system = #other
+* telecom.value = "123456"
+* telecom.extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
+* telecom.extension.valueCoding.system = "https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other"
+* telecom.extension.valueCoding.code = #webforum
 //* extension[hl-edi-number].valueString = "xxx"
 
 

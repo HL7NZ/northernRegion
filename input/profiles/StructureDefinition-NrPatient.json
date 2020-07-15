@@ -67,6 +67,21 @@
         "max": "0"
       },
       {
+        "id": "Patient.extension:current-occupation",
+        "path": "Patient.extension",
+        "sliceName": "current-occupation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/current-occupation"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:interpreter-required",
         "path": "Patient.extension",
         "sliceName": "interpreter-required",
@@ -194,6 +209,14 @@
         "id": "Patient.photo",
         "path": "Patient.photo",
         "max": "0"
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
+        }
       },
       {
         "id": "Patient.communication.preferred",

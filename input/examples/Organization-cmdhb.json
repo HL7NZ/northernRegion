@@ -17,5 +17,20 @@
       "value": "cmdhb-1",
       "use": "official"
     }
+  ],
+  "telecom": [
+    {
+      "system": "other",
+      "value": "123456",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
+          "valueCoding": {
+            "system": "https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other",
+            "code": "webforum"
+          }
+        }
+      ]
+    }
   ]
 }

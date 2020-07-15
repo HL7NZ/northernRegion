@@ -90,10 +90,42 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/contactpoint-other"
+        },
+        "name": "ContactPointOther",
+        "description": "Other values for the ContactPoint system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/current-occupation"
+        },
+        "name": "CurrentOccupation",
+        "description": "The current occupation for the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/validated-by-patient"
         },
         "name": "ValidatedByPatient",
         "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/contactpoint-other"
+        },
+        "name": "Other values for the ContactPoint system",
+        "description": "Other values for the ContactPoint system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/contactpoint-other"
+        },
+        "name": "Other values for the ContactPoint system",
+        "description": "Other values for the ContactPoint system",
         "exampleBoolean": false
       },
       {

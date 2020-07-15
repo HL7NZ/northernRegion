@@ -101,11 +101,6 @@
         "id": "Location.availabilityExceptions",
         "path": "Location.availabilityExceptions",
         "max": "0"
-      },
-      {
-        "id": "Location.endpoint",
-        "path": "Location.endpoint",
-        "max": "0"
       }
     ]
   }

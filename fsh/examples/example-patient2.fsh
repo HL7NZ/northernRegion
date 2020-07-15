@@ -41,6 +41,7 @@ Usage: #example
 
 * extension[nz-residency-status].valueCodeableConcept = https://standards.digital.health.nz/ns/nz-residency-status#Y "Yes"
 
+* extension[current-occupation].valueCodeableConcept.coding.display = "Carpenter"
 
 
 * extension[interpreter-required].valueBoolean = true
