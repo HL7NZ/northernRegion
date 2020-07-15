@@ -78,6 +78,11 @@ Usage: #example
 * telecom[1].value = "+64 9 000 0000"
 
 
+* telecom[2].system = #other
+* telecom[2].value = "myZoomAcccount"
+* telecom[2].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
+* telecom[2].extension.valueCoding.system = "https://standards.digital.health.nz/ns/contactpoint-other"
+* telecom[2].extension.valueCoding.code = #videoconference
 //physical address
 
 * address.extension[building-name].valueString = "The Black building"

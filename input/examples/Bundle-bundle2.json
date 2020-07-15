@@ -163,6 +163,19 @@
           {
             "system": "phone",
             "value": "+64 9 000 0000"
+          },
+          {
+            "system": "other",
+            "value": "myZoomAcccount",
+            "extension": [
+              {
+                "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
+                "valueCoding": {
+                  "system": "https://standards.digital.health.nz/ns/contactpoint-other",
+                  "code": "videoconference"
+                }
+              }
+            ]
           }
         ],
         "address": [
