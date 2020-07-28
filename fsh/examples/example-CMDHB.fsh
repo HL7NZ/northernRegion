@@ -16,8 +16,8 @@ Usage: #example
 
 * telecom.system = #other
 * telecom.value = "123456"
-* telecom.extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
-* telecom.extension.valueCoding.system = "https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other"
+* telecom.extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contact-point-other"
+* telecom.extension.valueCoding.system = "https://standards.digital.health.nz/ns/contact-point-other-code"
 * telecom.extension.valueCoding.code = #webforum
 //* extension[hl-edi-number].valueString = "xxx"
 

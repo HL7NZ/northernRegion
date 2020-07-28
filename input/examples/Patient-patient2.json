@@ -78,7 +78,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/citizenship"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship"
     },
     {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth",
@@ -165,7 +165,7 @@
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
           "valueCoding": {
-            "system": "https://standards.digital.health.nz/ns/contactpoint-other",
+            "system": "https://standards.digital.health.nz/ns/contact-point-other-code",
             "code": "videoconference"
           }
         }

@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "ContactPointOther",
-  "id": "contactpoint-other",
+  "id": "contact-point-other",
   "title": "Other values for the ContactPoint system",
   "description": "Other values for the ContactPoint system",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/contact-point-other-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/contactpoint-other"
+        "system": "https://standards.digital.health.nz/ns/contact-point-other-code"
       }
     ]
   }

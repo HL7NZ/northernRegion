@@ -6,30 +6,30 @@ Description: "Other values for the ContactPoint system"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
-* ^context.expression = "ContactPoint.system"
+* ^context.expression = "ContactPoint"
 
 //* value[x] only CodeableConcept
 //* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other
 
 * value[x] only Coding
-* valueCoding.system from https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other
+* valueCoding.system from https://standards.digital.health.nz/fhir/ValueSet/contact-point-other
 
 ValueSet: ContactPointOther
-Id: contactpoint-other
+Id: contact-point-other
 Title: "Other values for the ContactPoint system"
 Description: "Other values for the ContactPoint system"
 
-* ^url = https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other
+* ^url = https://standards.digital.health.nz/fhir/ValueSet/contact-point-other-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/ns/contactpoint-other
+* codes from system https://standards.digital.health.nz/ns/contact-point-other-code
 
 CodeSystem: ContactPointOther
-Id: contactpoint-other
+Id: contact-point-other
 Title: "Other values for the ContactPoint system"
 Description: "Other values for the ContactPoint system"
 
-* ^url = https://standards.digital.health.nz/ns/contactpoint-other
+* ^url = https://standards.digital.health.nz/ns/contact-point-other-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * #videoconference "Video Conferencing" "eg Zoom or GoToMeeting"

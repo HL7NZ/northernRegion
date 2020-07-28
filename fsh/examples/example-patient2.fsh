@@ -34,8 +34,8 @@ Usage: #example
 * extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
 * extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
 
-* extension[citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/citizenship-status#CIT "Citizen"
-* extension[citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/info-source#PPRT "Passport"
+* extension[nz-citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/citizenship-status#CIT "Citizen"
+* extension[nz-citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/info-source#PPRT "Passport"
 
 * extension[sex-at-birth].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 
@@ -55,6 +55,10 @@ Usage: #example
 * identifier[1].use = #old
 * identifier[1].system = "https://standards.digital.health.nz/id/nhi"
 * identifier[1].value = "ABC1234"
+
+
+
+
 
 * name.family = "Doe"
 * name.given = "John"
@@ -81,7 +85,8 @@ Usage: #example
 * telecom[2].system = #other
 * telecom[2].value = "myZoomAcccount"
 * telecom[2].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
-* telecom[2].extension.valueCoding.system = "https://standards.digital.health.nz/ns/contactpoint-other"
+
+* telecom[2].extension.valueCoding.system = "https://standards.digital.health.nz/ns/contact-point-other-code"
 * telecom[2].extension.valueCoding.code = #videoconference
 //physical address
 

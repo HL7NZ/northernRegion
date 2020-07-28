@@ -24,9 +24,9 @@
       "value": "123456",
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/contact-point-other",
           "valueCoding": {
-            "system": "https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other",
+            "system": "https://standards.digital.health.nz/ns/contact-point-other-code",
             "code": "webforum"
           }
         }

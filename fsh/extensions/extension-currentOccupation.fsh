@@ -7,10 +7,9 @@ Description: "The current occupation for the patient"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
-* ^context.expression = "Address"
+* ^context.expression = "Patient"
 
-* ^context[1].type = #element
-* ^context[1].expression = "ContactPoint"
+
 
 //states that there are no 'child' extensions
 * extension 0..0

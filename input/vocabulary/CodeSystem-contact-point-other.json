@@ -3,11 +3,11 @@
   "status": "active",
   "content": "complete",
   "name": "ContactPointOther",
-  "id": "contactpoint-other",
+  "id": "contact-point-other",
   "title": "Other values for the ContactPoint system",
   "description": "Other values for the ContactPoint system",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/ns/contactpoint-other",
+  "url": "https://standards.digital.health.nz/ns/contact-point-other-code",
   "jurisdiction": [
     {
       "coding": [

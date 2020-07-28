@@ -29,11 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Address"
-    },
-    {
-      "type": "element",
-      "expression": "ContactPoint"
+      "expression": "Patient"
     }
   ],
   "type": "Extension",
