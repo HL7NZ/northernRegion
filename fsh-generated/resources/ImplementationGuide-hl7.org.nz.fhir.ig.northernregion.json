@@ -27,7 +27,7 @@
   "dependsOn": [
     {
       "packageId": "hl7.org.nz.fhir.ig.base",
-      "version": "dev",
+      "version": "1.0.0",
       "uri": "http://hl7.org.nz/fhir/ig/base/ImplementationGuide/hl7.org.nz.fhir.ig.base",
       "id": "hl7_org_nz_fhir_ig_base"
     }
