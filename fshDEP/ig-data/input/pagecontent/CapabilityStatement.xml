@@ -1,0 +1,28 @@
+<div xmlns='http://www.w3.org/1999/xhtml'>
+<br/><div>API summary (generated from the capabilityStatement resource)</div><br/><br/>
+<br/><div>Currently the subset of API's exposed by healthAlliance are read-only and confined to a small set of resource types.</div><br/>
+<a name="Patient"> </a>
+<h3>Patient</h3>
+<strong>Interactions</strong>
+<table class='table table-bordered table-condensed'>
+<tr><th width='60%'>Code</th><th width='40%'>Documentation</th></tr>
+<tr>
+<td>read</td>
+<td>Used to retrieve a Patient resource by Id. Note that this is ***not*** the same as the NHI identifier (use the identifier search for that)</td>
+</tr>
+<tr>
+<td>search-type</td>
+<td></td>
+</tr>
+</table>
+<strong>Search Parameters</strong>
+<table class='table table-bordered table-condensed'>
+<tr><th width='15%'>Name</th><th>Type</th> <th>Definition</th><th width='40%'>Documentation</th></tr>
+<tr>
+<td>identifier</td>
+<td>token</td>
+<td></td>
+<td>Use for NHI queries and other queries related to identifiers</td>
+</tr>
+</table>
+</div>

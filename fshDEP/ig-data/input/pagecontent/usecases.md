@@ -1,0 +1,23 @@
+### Identify a Patient
+As a Health Professional, I want to retrieve patient records in PAS using patient identifiers (at least 3) so that:
+
+* I can correctly identify if the person in an existing or new patient of the DHB
+* Can verify if the person I am interacting with is the same person on my record
+
+### Know a Patient
+As a Health Professional, I want to know the patient’s preferred language so that I may know how best to communicate with them.
+
+### Check Patient’s Eligibility for Service
+As a Health Professional, I want to know the patient’s citizenship so that I may confirm their eligibility to use DHB’s services
+
+### Sending of Clinic Letters/ Documents, Discharge Summaries
+As a clinician producing a discharge summary or clinic letter for my patient in I want to ensure that the discharge summary/ clinic letter is populated with the latest patient demographic details so that I have confidence in the accuracy of data as this is shared with the patient and their care team e.g. Primary Care, Specialists and that the correct GP/Referrer receives a copy.  
+
+
+### Verify Patient vs. Healthcare GP, Practice
+As a Health Professional, I want to compare patient-GP records in PAS versus MOH records so that I can keep the patient-GP information in PAS up to date.
+
+### Patient Context in Clinical Portals
+As a Health Professional, I want to know the patient’s preferred language so that I may know how best to communicate with them.
+
+

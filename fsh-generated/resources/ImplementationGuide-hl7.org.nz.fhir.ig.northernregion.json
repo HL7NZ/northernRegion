@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.nz.northernregion",
-  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.northernregion",
+  "id": "hl7.org.nz.fhir.ig.northernregion",
+  "url": "http://hl7.org.nz/fhir/ig/northernregion/ImplementationGuide/hl7.org.nz.fhir.ig.northernregion",
   "version": "0.2.0",
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
@@ -19,65 +19,27 @@
     }
   ],
   "description": "The work being done for the Northern Region under healthAlliance.",
-  "packageId": "hl7.fhir.nz.northernregion",
+  "packageId": "hl7.org.nz.fhir.ig.northernregion",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.fhir.nz.nhi",
+      "packageId": "hl7.org.nz.fhir.ig.base",
       "version": "dev",
-      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.nhi",
-      "id": "hl7_fhir_nz_nhi"
-    },
-    {
-      "packageId": "hl7.fhir.nz.hpi",
-      "version": "dev",
-      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.hpi",
-      "id": "hl7_fhir_nz_hpi"
+      "uri": "http://hl7.org.nz/fhir/ig/base/ImplementationGuide/hl7.org.nz.fhir.ig.base",
+      "id": "hl7_org_nz_fhir_ig_base"
     }
   ],
   "definition": {
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/NrLocation"
-        },
-        "name": "Northern Region Location profile",
-        "description": "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NrOrganization"
-        },
-        "name": "Northern Region Organization profile",
-        "description": "Represents Organization data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/NrPatient"
         },
         "name": "Northern Region Patient profile",
         "description": "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NrPractitioner"
-        },
-        "name": "Northern region Practitioner profile",
-        "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NrPractitionerRole"
-        },
-        "name": "Northern Region PractitionerRole profile",
-        "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
         "exampleBoolean": false
       },
       {
@@ -135,94 +97,6 @@
         "name": "CapabilityStatement",
         "description": "Represents API exposed by healthAlliance systems",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Appointment/appt1"
-        },
-        "name": "appt1",
-        "description": "FSA in orthopedics",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Patient/apptPatient1"
-        },
-        "name": "apptPatient1",
-        "description": "Appointment patient",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/bundle2"
-        },
-        "name": "bundle2",
-        "description": "Sample query response",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Organization/cmdhb"
-        },
-        "name": "cmdhb",
-        "description": "Counties Manakau DHB",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/drwelby"
-        },
-        "name": "drwelby",
-        "description": "An example of practitioner. Used as a target by some of the other examples",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "Location/ghc"
-        },
-        "name": "ghc",
-        "description": "Good Health Clinic",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
-      },
-      {
-        "reference": {
-          "reference": "Organization/ghmc"
-        },
-        "name": "ghmc",
-        "description": "Good Health Medcial Centre",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
-      },
-      {
-        "reference": {
-          "reference": "PractitionerRole/gp-pracrole1"
-        },
-        "name": "gp-pracrole1",
-        "description": "Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
-      },
-      {
-        "reference": {
-          "reference": "HealthcareService/hsOrthopedics"
-        },
-        "name": "hsOrthopedics",
-        "description": "Orthopedics outpatients service",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Location/locOrthopedics"
-        },
-        "name": "locOrthopedics",
-        "description": "Orthopedic Outpatients",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Patient/patient2"
-        },
-        "name": "patient2",
-        "description": "An example patient using PractitionerRole for the GP link.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
       }
     ],
     "page": {
@@ -233,6 +107,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "api.html",
+          "title": "Api",
           "generation": "markdown"
         },
         {
@@ -261,6 +140,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "exampleInstances.html",
+          "title": "Example Instances",
+          "generation": "html"
+        },
+        {
           "nameUrl": "examples.html",
           "title": "Examples",
           "generation": "markdown"
@@ -273,7 +157,7 @@
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
-          "generation": "html"
+          "generation": "markdown"
         },
         {
           "nameUrl": "terminology.html",
@@ -283,6 +167,11 @@
         {
           "nameUrl": "usecases.html",
           "title": "Usecases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecasesDEP.html",
+          "title": "Usecases DEP",
           "generation": "markdown"
         }
       ]
