@@ -5,7 +5,7 @@
 # ../scripts/makeTerminologySummary.js northernRegion
 
 
-JAVA -jar input-cache/org.hl7.fhir.publisher.jar -ig . 
+JAVA -jar ../publisher/publisher.jar -ig .
 
 
 

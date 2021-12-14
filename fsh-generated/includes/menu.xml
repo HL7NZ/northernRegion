@@ -17,22 +17,10 @@
     <a href="usecases.html">Use cases</a>
   </li>
   <li>
-    <a href="design.html">Design</a>
-  </li>
-  <li>
     <a href="profiles.html">Profiles</a>
   </li>
   <li>
     <a href="extensions.html">Extensions</a>
-  </li>
-  <li>
-    <a href="terminology.html">Terminology</a>
-  </li>
-  <li>
-    <a href="CapabilityStatement.html">API</a>
-  </li>
-  <li>
-    <a href="examples.html">Examples</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact index</a>
@@ -49,8 +37,5 @@
         <a href="downloads.html">Downloads</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="development.html">Development</a>
   </li>
 </ul>

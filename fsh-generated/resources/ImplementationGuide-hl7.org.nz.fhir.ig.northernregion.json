@@ -115,11 +115,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "CapabilityStatement.html",
-          "title": "Capability Statement",
-          "generation": "html"
-        },
-        {
           "nameUrl": "companion.html",
           "title": "Companion",
           "generation": "html"
@@ -157,7 +152,7 @@
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
-          "generation": "markdown"
+          "generation": "html"
         },
         {
           "nameUrl": "terminology.html",
