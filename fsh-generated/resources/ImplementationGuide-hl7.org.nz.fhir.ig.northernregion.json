@@ -97,6 +97,14 @@
         "name": "CapabilityStatement",
         "description": "Represents API exposed by healthAlliance systems",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient1"
+        },
+        "name": "patient1",
+        "description": "An example patient using PractitionerRole for the GP link.",
+        "exampleCanonical": "http://hl7.org.nz/fhir/ig/northernregion/StructureDefinition/NrPatient"
       }
     ],
     "page": {
