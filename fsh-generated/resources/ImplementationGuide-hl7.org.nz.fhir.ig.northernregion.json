@@ -24,14 +24,6 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [
-    {
-      "packageId": "hl7.org.nz.fhir.ig.base",
-      "version": "1.0.0",
-      "uri": "http://hl7.org.nz/fhir/ig/base/ImplementationGuide/hl7.org.nz.fhir.ig.base",
-      "id": "hl7_org_nz_fhir_ig_base"
-    }
-  ],
   "definition": {
     "resource": [
       {
@@ -52,6 +44,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/building-name"
+        },
+        "name": "Building Name",
+        "description": "The name of a building cited in an address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/contactpoint-other"
         },
         "name": "ContactPointOther",
@@ -68,10 +68,58 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/domicile-code"
+        },
+        "name": "NZ Domicile Code",
+        "description": "NZ Domicile Code. Derived from a patient's primary physical, home address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nz-citizenship"
+        },
+        "name": "NZ Citizenship",
+        "description": "New Zealand citizenship",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nz-ethnicity"
+        },
+        "name": "NZ Ethnicity",
+        "description": "The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.\n\nThe Stats New Zealand standard can be found [here](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sex-at-birth"
+        },
+        "name": "Sex At Birth",
+        "description": "A person’s sex at the time of their birth (considered to be immutable).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/suburb"
+        },
+        "name": "NZ Suburb",
+        "description": "Suburb element of a NZ Address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/validated-by-patient"
         },
         "name": "ValidatedByPatient",
         "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/citizenship-status"
+        },
+        "name": "NZ Citizenship status",
+        "description": "Citizenship status",
         "exampleBoolean": false
       },
       {
@@ -84,10 +132,90 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/dod-information-source"
+        },
+        "name": "Death date Information Source",
+        "description": "The source from where the date of death was sourced",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/domicile-code"
+        },
+        "name": "domicileCode",
+        "description": "Domicile Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ethnicity"
+        },
+        "name": "Ethnicity of a person",
+        "description": "Codes to record a person's ethnicity, drawn from [Level 4 of the Ethnicity code system](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/information-source"
+        },
+        "name": "Information Source",
+        "description": "The source from where the value of this item was sourced",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nz-residency-status"
+        },
+        "name": "NZ Residency status",
+        "description": "Is the person a NZ resident",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/citizenship-status"
+        },
+        "name": "NZ Citizenship status",
+        "description": "Is this person a NZ Citizen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/contact-point-other"
         },
         "name": "Other values for the ContactPoint system",
         "description": "Other values for the ContactPoint system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/domicile-code"
+        },
+        "name": "domicileCode",
+        "description": "Domicile Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ethnicityL4"
+        },
+        "name": "Level 4 ethnicity codes",
+        "description": "Codes to record a person’s ethnicity, drawn from Level 4 of the Ethnicity code system \ndescribed [here](http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/information-source"
+        },
+        "name": "Information Source",
+        "description": "All possible sources of information",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nz-residency-status"
+        },
+        "name": "NZ Residency status",
+        "description": "NZ Residency status",
         "exampleBoolean": false
       },
       {

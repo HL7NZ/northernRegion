@@ -1,11 +1,25 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "contactpoint-other",
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
-  "version": "0.2.0",
-  "name": "ContactPointOther",
+  "id": "domicile-code",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
+  "version": "1.0",
+  "name": "Domicile_code",
+  "title": "NZ Domicile Code",
   "status": "active",
-  "description": "Other values for the ContactPoint system",
+  "date": "2020-07-20",
+  "publisher": "HL7 New Zealand",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "admin@hl7.org.nz",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "NZ Domicile Code. Derived from a patient's primary physical, home address.",
   "jurisdiction": [
     {
       "coding": [
@@ -16,6 +30,7 @@
       ]
     }
   ],
+  "copyright": "HL7 New Zealand© 2020+; Licensed Under Creative Commons No Rights Reserved.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +44,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "ContactPoint"
+      "expression": "Patient"
     }
   ],
   "type": "Extension",
@@ -40,7 +55,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "Other values for the ContactPoint system"
+        "short": "NZ Domicile Code",
+        "definition": "NZ Domicile Code. Derived from a patient's primary physical, home address."
       },
       {
         "id": "Extension.extension",
@@ -50,7 +66,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
       },
       {
         "id": "Extension.value[x]",
@@ -67,22 +83,18 @@
         },
         "type": [
           {
-            "code": "Coding"
+            "code": "CodeableConcept"
           }
         ]
       },
       {
-        "id": "Extension.valueCoding",
-        "path": "Extension.valueCoding",
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Extension.valueCoding.system",
-        "path": "Extension.valueCoding.system",
+        "max": "1",
         "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/contact-point-other"
+          "strength": "preferred",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/domicile-code"
         }
       }
     ]

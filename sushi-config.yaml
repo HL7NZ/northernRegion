@@ -11,8 +11,8 @@ publisher:
 description: The work being done for the Northern Region under healthAlliance.
 license: CC0-1.0
 fhirVersion: 4.0.1
-dependencies:
-  hl7.org.nz.fhir.ig.base: 1.0.0
+# dependencies:
+#  hl7.org.nz.fhir.ig.base: 1.0.0
   
 parameters:
   show-inherited-invariants: false

@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CitizenshipStatus",
+  "id": "citizenship-status",
+  "title": "NZ Citizenship status",
+  "description": "Is this person a NZ Citizen",
+  "version": "0.2.0",
+  "url": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
+  "concept": [
+    {
+      "code": "yes",
+      "display": "Yes",
+      "definition": "This patient is a citizen."
+    },
+    {
+      "code": "no",
+      "display": "No",
+      "definition": "This patient is not a citizen."
+    },
+    {
+      "code": "unknown",
+      "display": "The citizenship status is unknown"
+    }
+  ],
+  "count": 3
+}

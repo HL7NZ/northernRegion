@@ -66,9 +66,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * extension[nz-citizenship] ^short = "The New Zealand citizenship status"
 * extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
 
-
-
-
 * identifier 0..*
 
 //identifier - current NHI. 

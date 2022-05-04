@@ -2,6 +2,7 @@
 <br/><strong>Extensions defined in this guide</strong><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
+<th>Status</th>
 </tr>
 <tr>
 <td><a href='StructureDefinition-authorized-by-patient.html'>authorized-by-patient</a></td>
@@ -12,8 +13,19 @@
 </td>
 <td><p>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</p></td>
 <td></td>
+<td>draft</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-building-name.html'>building-name</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/building-name</td>
+<td>
+<div>Address</div>
+</td>
+<td><p>The name of a building cited in an address.</p></td>
+<td></td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-contactpoint-other.html'>contactpoint-other</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other</td>
 <td>
@@ -21,6 +33,7 @@
 </td>
 <td><p>Other values for the ContactPoint system</p></td>
 <td></td>
+<td>active</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-current-occupation.html'>current-occupation</a></td>
@@ -30,6 +43,61 @@
 </td>
 <td><p>The current occupation for the patient</p></td>
 <td></td>
+<td>draft</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-domicile-code.html'>domicile-code</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/domicile-code</td>
+<td>
+<div>Patient</div>
+</td>
+<td><p>NZ Domicile Code. Derived from a patient&#39;s primary physical, home address.</p></td>
+<td></td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-nz-citizenship.html'>nz-citizenship</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship</td>
+<td>
+<div>Patient</div>
+</td>
+<td><p>New Zealand citizenship</p></td>
+<td></td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-nz-ethnicity.html'>nz-ethnicity</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
+<td>
+<div>Patient</div>
+<div>Practitioner</div>
+<div>RelatedPerson</div>
+</td>
+<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
+
+<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
+<td></td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-sex-at-birth.html'>sex-at-birth</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth</td>
+<td>
+<div>Patient</div>
+</td>
+<td><p>A person’s sex at the time of their birth (considered to be immutable).</p></td>
+<td></td>
+<td>active</td>
+</tr>
+<tr style='background-color:#FFCCCC'>
+<td><a href='StructureDefinition-suburb.html'>suburb</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
+<td>
+<div>Address</div>
+</td>
+<td><p>Suburb element of a NZ Address.</p></td>
+<td><p>Required as FHIR Base Address Type does not contain an element for Suburb (only District or State which, in population terms, are both broader than City - whereas Suburb is narrower).</p></td>
+<td>active</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
@@ -40,38 +108,13 @@
 </td>
 <td><p>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</p></td>
 <td></td>
+<td>draft</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>
 <h3>Extensions used but defined elsewhere</h3>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
-
-<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship</td>
-<td><p>New Zealand citizenship</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-citizenship.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth</td>
-<td><p>A person’s sex at the time of their birth (considered to be immutable).</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-sex-at-birth.html'>NZ base</a></div>
-</td>
-</tr>
 <tr>
 <td>Patient.extension</td>
 <td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
@@ -81,14 +124,6 @@
 <td>Patient.name.extension</td>
 <td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
 <td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient.address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
-<td><p>Suburb element of a NZ Address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-suburb.html'>NZ base</a></div>
-</td>
 </tr>
 </table>
 </div>
