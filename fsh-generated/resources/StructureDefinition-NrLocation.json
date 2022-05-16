@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NorthernRegionLocation",
+  "id": "NrLocation",
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Location profile</div>",
     "status": "additional"
@@ -15,9 +15,9 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrLocation",
   "version": "0.2.0",
-  "name": "NorthernRegionLocation",
+  "name": "NrLocation",
   "title": "Northern Region Location profile",
   "status": "active",
   "description": "Represents Location data exposed through the Northern Region APIs.",

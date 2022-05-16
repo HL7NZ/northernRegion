@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NorthernRegionPatient",
+  "id": "NrPatient",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">healthAlliance Patient profile</div>"
@@ -15,9 +15,9 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient",
   "version": "0.2.0",
-  "name": "NorthernRegionPatient",
+  "name": "NrPatient",
   "title": "Northern Region Patient profile",
   "status": "active",
   "description": "Represents Patient data exposed through the Northern Region APIs.",
@@ -122,6 +122,36 @@
         ]
       },
       {
+        "id": "Patient.extension:patient-iwi",
+        "path": "Patient.extension",
+        "sliceName": "patient-iwi",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nz-iwi"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:nz-residency-status",
+        "path": "Patient.extension",
+        "sliceName": "nz-residency-status",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:nz-citizenship",
         "path": "Patient.extension",
         "sliceName": "nz-citizenship",
@@ -163,21 +193,6 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:domicile-code",
-        "path": "Patient.extension",
-        "sliceName": "domicile-code",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
             ]
           }
         ]
@@ -370,6 +385,51 @@
         ]
       },
       {
+        "id": "Patient.address.extension:building-name",
+        "path": "Patient.address.extension",
+        "sliceName": "building-name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/building-name"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:domicile-code",
+        "path": "Patient.address.extension",
+        "sliceName": "domicile-code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:nz-geocode",
+        "path": "Patient.address.extension",
+        "sliceName": "nz-geocode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.multipleBirth[x]",
         "path": "Patient.multipleBirth[x]",
         "max": "0"
@@ -399,7 +459,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole"
+              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
             ]
           }
         ]
@@ -416,6 +476,18 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
             ]
           }
         ]

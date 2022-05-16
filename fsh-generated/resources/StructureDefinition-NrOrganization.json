@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NorthernRegionOrganization",
+  "id": "NrOrganization",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,9 +11,9 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization",
   "version": "0.2.0",
-  "name": "NorthernRegionOrganization",
+  "name": "NrOrganization",
   "title": "Northern Region Organization profile",
   "status": "active",
   "description": "Represents Organization data exposed through the Northern Region APIs.",

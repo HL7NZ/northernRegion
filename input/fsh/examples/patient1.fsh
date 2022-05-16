@@ -1,6 +1,6 @@
 
 Instance:   patient1
-InstanceOf: NorthernRegionPatient
+InstanceOf: NrPatient
 //BaseType: Patient
 Description: "An example patient using PractitionerRole for the GP link."
 Usage: #example

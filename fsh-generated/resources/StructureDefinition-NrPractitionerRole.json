@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NorthernRegionPractitionerRole",
+  "id": "NrPractitionerRole",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,9 +11,9 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole",
   "version": "0.2.0",
-  "name": "NorthernRegionPractitionerRole",
+  "name": "NrPractitionerRole",
   "title": "Northern Region PractitionerRole profile",
   "status": "active",
   "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",

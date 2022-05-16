@@ -27,7 +27,7 @@
   "dependsOn": [
     {
       "packageId": "fhir.org.nz.ig.base",
-      "version": "1.0.0",
+      "version": "current",
       "uri": "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base",
       "id": "fhir_org_nz_ig_base"
     }
@@ -36,7 +36,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/NorthernRegionLocation"
+          "reference": "StructureDefinition/NrLocation"
         },
         "name": "Northern Region Location profile",
         "description": "Represents Location data exposed through the Northern Region APIs.",
@@ -44,7 +44,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NorthernRegionOrganization"
+          "reference": "StructureDefinition/NrOrganization"
         },
         "name": "Northern Region Organization profile",
         "description": "Represents Organization data exposed through the Northern Region APIs.",
@@ -52,7 +52,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NorthernRegionPatient"
+          "reference": "StructureDefinition/NrPatient"
         },
         "name": "Northern Region Patient profile",
         "description": "Represents Patient data exposed through the Northern Region APIs.",
@@ -60,7 +60,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NorthernRegionPractitioner"
+          "reference": "StructureDefinition/NrPractitioner"
         },
         "name": "Northern region Practitioner profile",
         "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
@@ -68,7 +68,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NorthernRegionPractitionerRole"
+          "reference": "StructureDefinition/NrPractitionerRole"
         },
         "name": "Northern Region PractitionerRole profile",
         "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
@@ -80,6 +80,14 @@
         },
         "name": "AuthorizedByPatient",
         "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/birth-place"
+        },
+        "name": "BirthPlace",
+        "description": "Place of birth",
         "exampleBoolean": false
       },
       {
@@ -168,7 +176,7 @@
         },
         "name": "patient1",
         "description": "An example patient using PractitionerRole for the GP link.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
       },
       {
         "reference": {
@@ -183,7 +191,7 @@
           "reference": "Patient/real-1"
         },
         "name": "real-1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
+        "exampleBoolean": true
       }
     ],
     "page": {

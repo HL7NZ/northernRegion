@@ -1,38 +1,10 @@
 
-// Aliases
-
-//international
-Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred      
-Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
-
-//this IG
-Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
-Alias: $validatedByPatient = http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
-Alias: $currentOccupation = http://hl7.org.nz/fhir/StructureDefinition/current-occupation
-Alias: $cpOther = http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other
-
-Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
-///Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birth-place
-Alias: $birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-
-
-Alias: $patient-iwi = http://hl7.org.nz/fhir/StructureDefinition/patient-iwi
-Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/information-source
-Alias: $nzcitizenship = http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship
-//Alias: $sexAtBirth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
-Alias: $residencyStatus = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
-Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
-
-Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicile-code
-
-Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
-
-Profile:        NorthernRegionPatient
+Profile:        NrPatient
 Parent:         Patient
 Title:          "Northern Region Patient profile"
 Description:    "Represents Patient data exposed through the Northern Region APIs."
 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
 
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>healthAlliance Patient profile</div>"
@@ -57,13 +29,14 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * extension contains
     $nzEthnicity named nz-ethnicity 0..6 and
     $birthPlace named birth-place 0..1 and
-    //$patient-iwi named patient-iwi 0..* and
-    //$residencyStatus named nz-residency-status 0..1 and 
+    $patient-iwi named patient-iwi 0..* and
+    $residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
    // $sexAtBirth named sex-at-birth 0..1 and
     $currentOccupation named current-occupation 0..1 and 
-    $interpreterRequired named interpreter-required 0..1 and 
-    $domicileCode named domicile-code 0..1
+    $interpreterRequired named interpreter-required 0..1 //and
+   // $birthPlace named birth-place 0..1 //and 
+   // $domicileCode named domicile-code 0..1
 
    
 * extension[nz-ethnicity] ^short = "The persons ethnicity (up to 6)"
@@ -95,9 +68,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * identifier[dormantNHI] ^short = "NHI numbers that have been deprecated"
 
 
-
-
-
 //gender and birthDate are required
 * gender 1..1
 * birthDate 1..1
@@ -120,7 +90,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1 and
-    $suburb named suburb 0..1 
+    $suburb named suburb 0..1 and
+    $buildingName named building-name 0..1 and 
+    $domicileCode named domicile-code 0..1 and
+    $nz-geocode named nz-geocode 0..1
 
 
 
@@ -136,7 +109,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 //temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
-* generalPractitioner only Reference(NorthernRegionPractitionerRole)
+* generalPractitioner only Reference(NrPractitionerRole)
 * generalPractitioner.extension contains
     $gp-enrollmentDate named gp-practice-enrollment-date 0..1
 
@@ -144,7 +117,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 //The managing organization is the DHB where the Patient resource came from
-* managingOrganization only Reference(Organization)
+* managingOrganization only Reference(NrOrganization)
 
 //Use the ValueSet from relatedPerson as it has the same codes as contact.relationship
 * contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
