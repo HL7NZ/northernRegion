@@ -1,0 +1,108 @@
+{
+    "resourceType": "Patient",
+    "id": "real-1",
+    "meta": {
+      "profile": [
+        "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
+      ]
+    },
+    "text": {
+      "status": "additional",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">, Testing Patchmar Viedo Conf</div>"
+    },
+    "extension": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+        "valueCodeableConcept": {
+            "coding": [{
+                "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+                "code": "21111",
+                "display": "Maori"
+              }]
+            }
+        }
+        
+      ,
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+            "country":"New Zraland"
+        }
+      }
+    ],
+    "identifier": [
+      {
+        "system":"https://standards.digital.health.nz/ns/nhi-id",
+        "value": "ZZZ0032",
+        "use":"official"
+      },
+      {
+        "system":"https://standards.digital.health.nz/ns/nhi-id",
+        "value": "3331796",
+        "use":"old"
+      }
+    ],
+    "name": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-preferred",
+            "valueBoolean": false
+          }
+        ],
+        "use": "official",
+        "family": "Patchmar Viedo Conf",
+        "given": [
+          "Testing"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-preferred",
+            "valueBoolean": true
+          }
+        ],
+        "use": "usual",
+        "family": "Patchmar Viedo Conf",
+        "given": [
+          "Testing"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "email",
+        "use": "home"
+      }
+    ],
+    "gender": "unknown",
+    "birthDate": "2003-11-06",
+    "deceasedBoolean": true,
+    "address": [
+      {
+        "use": "home",
+        "type": "postal",
+        "line": [
+          "1 High Street",
+          "Auckland Central",
+          "Auckland"
+        ],
+        "postalCode": "1010"
+      },
+      {
+        "use": "home",
+        "type": "postal",
+        "line": [
+          "1 Broadway",
+          "Newmarket",
+          "Auckland"
+        ],
+        "postalCode": "1023"
+      }
+    ],
+    "managingOrganization": {
+    
+      "display": "Auckland District Health Board"
+    }
+  }

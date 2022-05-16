@@ -85,14 +85,6 @@
 </td>
 </tr>
 <tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth</td>
-<td><p>A person’s sex at the time of their birth (considered to be immutable).</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-sex-at-birth.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
 <td>Patient.extension</td>
 <td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
 <td>Defined outside of known IG's</td>

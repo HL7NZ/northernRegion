@@ -19,7 +19,7 @@ Alias: $birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-iwi = http://hl7.org.nz/fhir/StructureDefinition/patient-iwi
 Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/information-source
 Alias: $nzcitizenship = http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship
-Alias: $sexAtBirth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
+//Alias: $sexAtBirth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
 Alias: $residencyStatus = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
 Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
 
@@ -60,7 +60,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
     //$patient-iwi named patient-iwi 0..* and
     //$residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
-    $sexAtBirth named sex-at-birth 0..1 and
+   // $sexAtBirth named sex-at-birth 0..1 and
     $currentOccupation named current-occupation 0..1 and 
     $interpreterRequired named interpreter-required 0..1 and 
     $domicileCode named domicile-code 0..1
@@ -71,7 +71,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //* extension[patient-iwi] ^short = "The Iwi the person is associated with"
 //* extension[nz-residency-status] ^short = "Is the person a NZ resident"
 * extension[nz-citizenship] ^short = "The New Zealand citizenship status"
-* extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
+// * extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
 
 * identifier 0..*
 

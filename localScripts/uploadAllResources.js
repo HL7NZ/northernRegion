@@ -10,8 +10,8 @@ let fs = require('fs');
 let axios = require('../../scripts/node_modules/axios');
 
 //where the resources will be uploaded to...
-let serverRoot = 'http://home.clinfhir.com:8054/baseR4/';  
-
+//let serverRoot = 'http://home.clinfhir.com:8054/baseR4/';  
+let serverRoot = 'http://hapi.fhir.org/baseR4/';  
 
 
 let folder = "../fsh-generated/resources/"

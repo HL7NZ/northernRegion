@@ -177,6 +177,13 @@
         "name": "prac1",
         "description": "The Practitioner representing for the GP",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/real-1"
+        },
+        "name": "real-1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
       }
     ],
     "page": {
