@@ -1,0 +1,201 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "NrLocation",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Location profile</div>",
+    "status": "additional"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://fhir.org.nz/ig/northernregion/StructureDefinition/NrLocation",
+  "version": "0.2.0",
+  "name": "NrLocation",
+  "title": "Northern Region Location profile",
+  "status": "active",
+  "description": "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Location.identifier:facId",
+        "path": "Location.identifier",
+        "sliceName": "facId",
+        "short": "The current Facility id for this location",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:facId.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "Location.identifier:facId.system",
+        "path": "Location.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
+      },
+      {
+        "id": "Location.identifier:dormant",
+        "path": "Location.identifier",
+        "sliceName": "dormant",
+        "short": "Old facility id's that have been deprecated",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:dormant.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "fixedCode": "old"
+      },
+      {
+        "id": "Location.identifier:dormant.system",
+        "path": "Location.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
+      },
+      {
+        "id": "Location.identifier:legacyFacId",
+        "path": "Location.identifier",
+        "sliceName": "legacyFacId",
+        "short": "The MOH (NZHIS) Legacy facility code)",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:legacyFacId.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "Location.identifier:legacyFacId.system",
+        "path": "Location.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/legacy-tbd-id"
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "max": "0"
+      },
+      {
+        "id": "Location.operationalStatus",
+        "path": "Location.operationalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Location.alias",
+        "path": "Location.alias",
+        "max": "0"
+      },
+      {
+        "id": "Location.description",
+        "path": "Location.description",
+        "max": "0"
+      },
+      {
+        "id": "Location.mode",
+        "path": "Location.mode",
+        "max": "0"
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "max": "0"
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "max": "0"
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "max": "0"
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
+        "max": "0"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Location.hoursOfOperation",
+        "path": "Location.hoursOfOperation",
+        "max": "0"
+      },
+      {
+        "id": "Location.availabilityExceptions",
+        "path": "Location.availabilityExceptions",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -5,7 +5,6 @@ InstanceOf: NrPatient
 Description: "An example patient using PractitionerRole for the GP link."
 Usage: #example
 
-
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe</div>"
 * text.status = #additional
 
@@ -28,19 +27,19 @@ Usage: #example
 
 * extension[interpreter-required].valueBoolean = true
 
+* extension[domicile-code].valueCodeableConcept.coding.code = #0040
+* extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/domicileCode"
+* extension[domicile-code].valueCodeableConcept.coding.display = "Waipu"
+
 //the current NHI
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/id/nhi"
+* identifier.system = "https://standards.digital.health.nz/ns/nhi-id"
 * identifier.value = "WER4568"
 
 //the dormant NHI
 * identifier[1].use = #old
-* identifier[1].system = "https://standards.digital.health.nz/id/nhi"
+* identifier[1].system = "https://standards.digital.health.nz/ns/nhi-id"
 * identifier[1].value = "ABC1234"
-
-
-
-
 
 * name.family = "Doe"
 * name.given = "John"
@@ -74,11 +73,7 @@ Usage: #example
 
 * address.extension[building-name].valueString = "The Black building"
 * address.extension[suburb].valueString = "Waipu river"
-//* address.extension[nz-geocode].extension[longitude].valueDecimal = 100
-//* address.extension[nz-geocode].extension[latitute].valueDecimal = 100
-* address.extension[domicile-code].valueCodeableConcept.coding.code = #0040
-* address.extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/domicileCode"
-* address.extension[domicile-code].valueCodeableConcept.coding.display = "Waipu"
+
 * address.extension[authorized-by-patient].valueBoolean = true
 * address.extension[validated-by-patient].valueBoolean = true
 
@@ -124,4 +119,35 @@ Usage: #example
 
 
 
+Instance:   gp-pracrole1
+InstanceOf: PractitionerRole
+//BaseType: PractitionerRole
+Description: "The PractitionerRole for the GP"
+Usage: #example
 
+* practitioner = Reference(prac1)
+* organization = Reference(ghmc)
+
+
+Instance:   prac1
+InstanceOf: Practitioner
+//BaseType: Practitioner
+Description: "The Practitioner representing for the GP"
+Usage: #example
+
+
+Instance:   ghmc
+InstanceOf: Organization
+//BaseType: Organization
+Description: "The GP practice"
+Usage: #example
+
+* name = "Good health Medical Centre"
+
+Instance:   cmdhb
+InstanceOf: Organization
+//BaseType: Organization
+Description: "Counties Manukau Organization"
+Usage: #example
+
+* name = "Counties Manukau DHB"

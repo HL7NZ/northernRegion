@@ -1,7 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "HaCapabilityStatement",
-  "url": "http://hl7.org.nz/fhir/ig/northernregion/CapabilityStatement/HaCapabilityStatement",
+  "url": "http://fhir.org.nz/ig/northernregion/CapabilityStatement/HaCapabilityStatement",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Demographics related resources</div>"

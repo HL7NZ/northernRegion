@@ -3,7 +3,7 @@
   "id": "patient1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/ig/northernregion/StructureDefinition/NrPatient"
+      "http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPatient"
     ]
   },
   "extension": [
@@ -85,6 +85,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
       "valueBoolean": true
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "0040",
+            "system": "https://standards.digital.health.nz/ns/domicileCode",
+            "display": "Waipu"
+          }
+        ]
+      }
     }
   ],
   "name": [
@@ -152,18 +164,6 @@
           "valueString": "Waipu river"
         },
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/domicile-code",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "0040",
-                "system": "https://standards.digital.health.nz/ns/domicileCode",
-                "display": "Waipu"
-              }
-            ]
-          }
-        },
-        {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient",
           "valueBoolean": true
         },
@@ -188,12 +188,12 @@
   "identifier": [
     {
       "use": "official",
-      "system": "https://standards.digital.health.nz/id/nhi",
+      "system": "https://standards.digital.health.nz/ns/nhi-id",
       "value": "WER4568"
     },
     {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/nhi",
+      "system": "https://standards.digital.health.nz/ns/nhi-id",
       "value": "ABC1234"
     }
   ],
@@ -201,12 +201,12 @@
   "gender": "male",
   "birthDate": "1989-12-12",
   "managingOrganization": {
-    "reference": "cmdhb",
+    "reference": "Organization/cmdhb",
     "display": "Counties-Manukau DHB"
   },
   "generalPractitioner": [
     {
-      "reference": "gp-pracrole1",
+      "reference": "PractitionerRole/gp-pracrole1",
       "display": "Dr Marcus Welby"
     }
   ],

@@ -4,9 +4,29 @@
 <table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
+<td><a href='StructureDefinition-NrLocation.html'>NrLocation</a></td>
+<td>http://fhir.org.nz/ig/northernregion/StructureDefinition/NrLocation</td>
+<td><p>Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-NrOrganization.html'>NrOrganization</a></td>
+<td>http://fhir.org.nz/ig/northernregion/StructureDefinition/NrOrganization</td>
+<td><p>Represents Organization data exposed through the Northern Region APIs.</p></td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-NrPatient.html'>NrPatient</a></td>
-<td>http://hl7.org.nz/fhir/ig/northernregion/StructureDefinition/NrPatient</td>
+<td>http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPatient</td>
 <td><p>Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-NrPractitioner.html'>NrPractitioner</a></td>
+<td>http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPractitioner</td>
+<td><p>Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile</p></td>
+</tr>
+<tr>
+<td><a href='StructureDefinition-NrPractitionerRole.html'>NrPractitionerRole</a></td>
+<td>http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPractitionerRole</td>
+<td><p>A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient</p></td>
 </tr>
 </table>
 </div>

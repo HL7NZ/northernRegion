@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.org.nz.fhir.ig.northernregion",
-  "url": "http://hl7.org.nz/fhir/ig/northernregion/ImplementationGuide/hl7.org.nz.fhir.ig.northernregion",
+  "id": "fhir.org.nz.ig.northernregion",
+  "url": "http://fhir.org.nz/ig/northernregion/ImplementationGuide/fhir.org.nz.ig.northernregion",
   "version": "0.2.0",
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
@@ -19,7 +19,7 @@
     }
   ],
   "description": "The work being done for the Northern Region under healthAlliance.",
-  "packageId": "hl7.org.nz.fhir.ig.northernregion",
+  "packageId": "fhir.org.nz.ig.northernregion",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -28,10 +28,42 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/NrLocation"
+        },
+        "name": "Northern Region Location profile",
+        "description": "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NrOrganization"
+        },
+        "name": "Northern Region Organization profile",
+        "description": "Represents Organization data exposed through the Northern Region APIs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/NrPatient"
         },
         "name": "Northern Region Patient profile",
         "description": "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NrPractitioner"
+        },
+        "name": "Northern region Practitioner profile",
+        "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NrPractitionerRole"
+        },
+        "name": "Northern Region PractitionerRole profile",
+        "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
         "exampleBoolean": false
       },
       {
@@ -228,11 +260,43 @@
       },
       {
         "reference": {
+          "reference": "Organization/cmdhb"
+        },
+        "name": "cmdhb",
+        "description": "Counties Manukau Organization",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/ghmc"
+        },
+        "name": "ghmc",
+        "description": "The GP practice",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/gp-pracrole1"
+        },
+        "name": "gp-pracrole1",
+        "description": "The PractitionerRole for the GP",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Patient/patient1"
         },
         "name": "patient1",
         "description": "An example patient using PractitionerRole for the GP link.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/ig/northernregion/StructureDefinition/NrPatient"
+        "exampleCanonical": "http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPatient"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/prac1"
+        },
+        "name": "prac1",
+        "description": "The Practitioner representing for the GP",
+        "exampleBoolean": true
       }
     ],
     "page": {
@@ -274,11 +338,6 @@
           "nameUrl": "exampleInstances.html",
           "title": "Example Instances",
           "generation": "html"
-        },
-        {
-          "nameUrl": "examples.html",
-          "title": "Examples",
-          "generation": "markdown"
         },
         {
           "nameUrl": "extensions.html",

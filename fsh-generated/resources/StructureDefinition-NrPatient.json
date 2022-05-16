@@ -15,7 +15,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/ig/northernregion/StructureDefinition/NrPatient",
+  "url": "http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPatient",
   "version": "0.2.0",
   "name": "NrPatient",
   "title": "Northern Region Patient profile",
@@ -107,6 +107,21 @@
         ]
       },
       {
+        "id": "Patient.extension:birth-place",
+        "path": "Patient.extension",
+        "sliceName": "birth-place",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:nz-citizenship",
         "path": "Patient.extension",
         "sliceName": "nz-citizenship",
@@ -164,6 +179,21 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:domicile-code",
+        "path": "Patient.extension",
+        "sliceName": "domicile-code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
             ]
           }
         ]

@@ -12,7 +12,10 @@ Alias: $currentOccupation = http://hl7.org.nz/fhir/StructureDefinition/current-o
 Alias: $cpOther = http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other
 
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
-Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birth-place
+///Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birth-place
+Alias: $birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
+
+
 Alias: $patient-iwi = http://hl7.org.nz/fhir/StructureDefinition/patient-iwi
 Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/information-source
 Alias: $nzcitizenship = http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship
@@ -20,9 +23,10 @@ Alias: $sexAtBirth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
 Alias: $residencyStatus = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
 Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
 
-//NHI IG
-Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
+Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicile-code
 
+//NHI IG
+//Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
 
 Profile:        NrPatient
 Parent:         Patient
@@ -51,13 +55,15 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //root level extensions
 * extension contains
     $nzEthnicity named nz-ethnicity 0..6 and
-    //$birthPlace named birth-place 0..1 and
+    $birthPlace named birth-place 0..1 and
     //$patient-iwi named patient-iwi 0..* and
     //$residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
     $sexAtBirth named sex-at-birth 0..1 and
     $currentOccupation named current-occupation 0..1 and 
-    $interpreterRequired named interpreter-required 0..1
+    $interpreterRequired named interpreter-required 0..1 and 
+    $domicileCode named domicile-code 0..1
+
    
 * extension[nz-ethnicity] ^short = "The persons ethnicity (up to 6)"
 //* extension[birth-place] ^short = "Where the person was born"
@@ -108,14 +114,14 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * telecom.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this method of contact."
 * telecom.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this method of contact is correct."
 
-// address is required and has a suburb extension. 
-//* address only CommonAddress
 
 
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
     $validatedByPatient named validated-by-patient 0..1 and
-    $suburb named suburb 0..1
+    $suburb named suburb 0..1 
+
+
 
 * address.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this address."
 * address.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this address is correct."
@@ -131,13 +137,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 //temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
 * generalPractitioner only Reference(PractitionerRole)
 
-//* generalPractitioner.extension contains
- //   $gp-enrollmentDate named gp-practice-enrollment-date 0..1
-
-
-//not sure about enrollment date...
-//* generalPractitioner.extension[gp-practice-enrollment-date] ^definition = "The date that the patient enrolled with this GP Practice"
-//* generalPractitioner.extension[gp-practice-enrollment-date] ^short = "The date that the patient enrolled with this GP Practice"
 
 
 //The managing organization is the DHB where the Patient resource came from

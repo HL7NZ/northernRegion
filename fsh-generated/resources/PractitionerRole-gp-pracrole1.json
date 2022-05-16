@@ -1,0 +1,10 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "gp-pracrole1",
+  "practitioner": {
+    "reference": "Practitioner/prac1"
+  },
+  "organization": {
+    "reference": "Organization/ghmc"
+  }
+}

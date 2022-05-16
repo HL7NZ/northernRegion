@@ -117,6 +117,11 @@
 <tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
 <tr>
 <td>Patient.extension</td>
+<td>http://hl7.org/fhir/StructureDefinition/patient-birthPlace</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td>Patient.extension</td>
 <td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
 <td>Defined outside of known IG's</td>
 </tr>
