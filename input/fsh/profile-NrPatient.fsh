@@ -28,10 +28,12 @@ Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicile-code
 //NHI IG
 //Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
 
-Profile:        NrPatient
+Profile:        NorthernRegionPatient
 Parent:         Patient
 Title:          "Northern Region Patient profile"
-Description:    "Represents Patient data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
+Description:    "Represents Patient data exposed through the Northern Region APIs."
+
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
 
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>healthAlliance Patient profile</div>"
@@ -135,7 +137,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 //temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
-* generalPractitioner only Reference(PractitionerRole)
+* generalPractitioner only Reference(NorthernRegionPractitionerRole)
 
 
 

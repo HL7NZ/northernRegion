@@ -1,13 +1,13 @@
 
-
-Profile:        NrLocation
+Profile:        NorthernRegionLocation
 Parent:         Location
 Title:          "Northern Region Location profile"
-Description:    "Represents Location data exposed through the Northern Region APIs. The profile extends the NZ Base profile"
+Description:    "Represents Location data exposed through the Northern Region APIs."
 
 
 * ^version = "0.2.0"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation"
 
 // unsupported elements
 * status 0..0

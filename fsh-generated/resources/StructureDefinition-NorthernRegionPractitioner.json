@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NrPractitioner",
+  "id": "NorthernRegionPractitioner",
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Base Practitioner profile</div>",
     "status": "additional"
@@ -15,9 +15,9 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://fhir.org.nz/ig/northernregion/StructureDefinition/NrPractitioner",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner",
   "version": "0.2.0",
-  "name": "NrPractitioner",
+  "name": "NorthernRegionPractitioner",
   "title": "Northern region Practitioner profile",
   "status": "active",
   "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
