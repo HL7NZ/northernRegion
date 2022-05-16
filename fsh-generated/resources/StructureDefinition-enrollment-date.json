@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "current-occupation",
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
+  "id": "enrollment-date",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date",
   "version": "0.2.0",
-  "name": "CurrentOccupation",
+  "name": "EnrollmentDate",
   "status": "active",
-  "description": "The current occupation for the patient",
+  "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
   "jurisdiction": [
     {
       "coding": [
@@ -29,7 +29,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Patient"
+      "expression": "Patient.generalPractitioner"
     }
   ],
   "type": "Extension",
@@ -51,7 +51,7 @@
         ],
         "path": "Extension",
         "short": "Optional Extensions Element",
-        "definition": "The current occupation for the patient",
+        "definition": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
         "min": 0,
         "max": "*",
         "base": {
@@ -212,7 +212,7 @@
             ]
           }
         ],
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -236,7 +236,7 @@
         },
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "date"
           }
         ],
         "constraint": [
@@ -265,7 +265,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "definition": "The current occupation for the patient"
+        "definition": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them."
       },
       {
         "id": "Extension.extension",
@@ -275,14 +275,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "date"
           }
         ]
       }

@@ -25,8 +25,7 @@ Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
 
 Alias: $domicileCode = http://hl7.org.nz/fhir/StructureDefinition/domicile-code
 
-//NHI IG
-//Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
+Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date
 
 Profile:        NorthernRegionPatient
 Parent:         Patient
@@ -138,7 +137,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 //temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
 * generalPractitioner only Reference(NorthernRegionPractitionerRole)
+* generalPractitioner.extension contains
+    $gp-enrollmentDate named gp-practice-enrollment-date 0..1
 
+* generalPractitioner.extension[gp-practice-enrollment-date] ^definition = "The date that the patient enrolled with this GP Practice"
 
 
 //The managing organization is the DHB where the Patient resource came from
@@ -146,7 +148,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 //Use the ValueSet from relatedPerson as it has the same codes as contact.relationship
 * contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
-
 
 * communication.preferred 0..0
 

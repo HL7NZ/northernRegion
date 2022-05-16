@@ -100,6 +100,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/enrollment-date"
+        },
+        "name": "EnrollmentDate",
+        "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/validated-by-patient"
         },
         "name": "ValidatedByPatient",

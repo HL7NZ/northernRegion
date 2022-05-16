@@ -1,20 +1,18 @@
-Extension: AuthorizedByPatient
-Id: authorized-by-patient
+Extension: EnrollmentDate
+Id: enrollment-date
 Description: "If true, then indicates that the patient as authorized the use of this address or telecom to contact them."
 
 //* ^definition = "If true, then indicates that the patient as authorized the use of this address or telecom to contact them." 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^status = #active
 
 * ^context.type = #element
-* ^context.expression = "Address"
+* ^context.expression = "Patient.generalPractitioner"
 
-* ^context[1].type = #element
-* ^context[1].expression = "ContactPoint"
 
 * extension 0..0
-* value[x] only boolean
+* value[x] only date
 
 
