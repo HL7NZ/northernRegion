@@ -40,11 +40,11 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
    
 * extension[nz-ethnicity] ^short = "The persons ethnicity (up to 6)"
-//* extension[birth-place] ^short = "Where the person was born"
-//* extension[patient-iwi] ^short = "The Iwi the person is associated with"
-//* extension[nz-residency-status] ^short = "Is the person a NZ resident"
+* extension[birth-place] ^short = "Where the person was born"
+* extension[patient-iwi] ^short = "The Iwi the person is associated with"
+* extension[nz-residency-status] ^short = "Is the person a NZ resident"
 * extension[nz-citizenship] ^short = "The New Zealand citizenship status"
-// * extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
+//* extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
 
 * identifier 0..*
 
