@@ -6,6 +6,11 @@
 Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred      
 Alias: $interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 
+Alias: $gender-identity = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
+
+//nz base
+Alias: $iwi-cs = https://standards.digital.health.nz/ns/iwi-code
+
 //this IG
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient = http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient
@@ -33,6 +38,8 @@ Alias: $gp-enrollmentDate = http://hl7.org.nz/fhir/StructureDefinition/gp-practi
 Alias: $nz-geocode = http://hl7.org.nz/fhir/StructureDefinition/nz-geocode
 
 
+
+Alias: $sex-at-birth = http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth
 //terminology
 
 Alias: $ethnicity-code-cs = https://standards.digital.health.nz/ns/ethnic-group-level-4-code

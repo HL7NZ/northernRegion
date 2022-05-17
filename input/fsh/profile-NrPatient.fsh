@@ -30,11 +30,15 @@ Description:    "Represents Patient data exposed through the Northern Region API
     $nzEthnicity named nz-ethnicity 0..6 and
     $birthPlace named birth-place 0..1 and
     $patient-iwi named patient-iwi 0..* and
-    $residencyStatus named nz-residency-status 0..1 and 
+    //$residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
    // $sexAtBirth named sex-at-birth 0..1 and
     $currentOccupation named current-occupation 0..1 and 
-    $interpreterRequired named interpreter-required 0..1 //and
+    $interpreterRequired named interpreter-required 0..1 and
+    $gender-identity named gender-identity 0..1 and
+    $sex-at-birth named sex-at-birth 0..1 and 
+    $domicileCode named domicile-code 0..1 
+    //and
    // $birthPlace named birth-place 0..1 //and 
    // $domicileCode named domicile-code 0..1
 
@@ -42,7 +46,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * extension[nz-ethnicity] ^short = "The persons ethnicity (up to 6)"
 * extension[birth-place] ^short = "Where the person was born"
 * extension[patient-iwi] ^short = "The Iwi the person is associated with"
-* extension[nz-residency-status] ^short = "Is the person a NZ resident"
+//* extension[nz-residency-status] ^short = "Is the person a NZ resident"
 * extension[nz-citizenship] ^short = "The New Zealand citizenship status"
 //* extension[sex-at-birth] ^short = "The sex that the patient was at birth. Considered immutable."
 
@@ -92,7 +96,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
     $validatedByPatient named validated-by-patient 0..1 and
     $suburb named suburb 0..1 and
     $buildingName named building-name 0..1 and 
-    $domicileCode named domicile-code 0..1 and
+ //   $domicileCode named domicile-code 0..1 and
     $nz-geocode named nz-geocode 0..1
 
 

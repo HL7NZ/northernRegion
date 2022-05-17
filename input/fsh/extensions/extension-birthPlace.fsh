@@ -17,11 +17,11 @@ Description: "Place of birth"
 
 // definitions of sub-extensions
 * extension[country].url = "country" (exactly)
-* extension[country] ^definition = "Counrty of Birth"
+* extension[country] ^definition = "Country of Birth"
 * extension[country].value[x] only CodeableConcept
 
 * extension[place-of-birth].url = "place-of-birth" (exactly)
-* extension[place-of-birth] ^definition = "The period the conditions on practice are effective"
+* extension[place-of-birth] ^definition = "The location within the country"
 * extension[place-of-birth].value[x] only string
 
 * extension[source].url = "source" (exactly)

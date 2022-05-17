@@ -10,10 +10,10 @@ Usage: #example
 
 
 * extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#11111 "New Zealand European"
-* extension[nz-ethnicity][1].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#12111 "Celtic"
+* extension[nz-ethnicity][+].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#12111 "Celtic"
 
-//* extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#nz
-//* extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
+* extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#NZ
+* extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
 
 * extension[nz-citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/citizenship-status#CIT "Citizen"
 * extension[nz-citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/info-source#PPRT "Passport"
@@ -23,8 +23,8 @@ Usage: #example
 //* extension[nz-residency-status].valueCodeableConcept = https://standards.digital.health.nz/ns/nz-residency-status#Y "Yes"
 
 * extension[current-occupation].valueCodeableConcept.coding.display = "Carpenter"
-
-
+* extension[patient-iwi].valueCodeableConcept = $iwi-cs#01112 "Te Rarawa"
+* extension[gender-identity].valueCodeableConcept =  http://hl7.org/fhir/gender-identity#male
 * extension[interpreter-required].valueBoolean = true
 
 * extension[domicile-code].valueCodeableConcept.coding.code = #0040
@@ -76,6 +76,9 @@ Usage: #example
 
 * address.extension[authorized-by-patient].valueBoolean = true
 * address.extension[validated-by-patient].valueBoolean = true
+
+
+
 
 * address.line = "23 Thule St"
 * address.city = "Waipu"
