@@ -14,6 +14,7 @@ Alias: $cpOther = http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other
 
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 Alias: $birthPlace = http://hl7.org.nz/fhir/StructureDefinition/birth-place
+
 //Alias: $birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 
 Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/building-name

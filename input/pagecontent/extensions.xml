@@ -19,7 +19,7 @@
 <td><a href='StructureDefinition-birth-place.html'>birth-place</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/birth-place</td>
 <td>
-<div>Practitioner.qualification</div>
+<div>Patient</div>
 </td>
 <td><p>Place of birth</p></td>
 <td></td>

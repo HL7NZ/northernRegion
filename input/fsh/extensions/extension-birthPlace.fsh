@@ -6,7 +6,7 @@ Description: "Place of birth"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
-* ^context.expression = "Practitioner.qualification"
+* ^context.expression = "Patient"
 
 * extension contains
     country 0..1 and

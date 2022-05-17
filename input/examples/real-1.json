@@ -20,14 +20,20 @@
                 "display": "Maori"
               }]
             }
-        }
-        
-      ,
+        },
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-        "valueAddress" : {
-            "country":"New Zraland"
-        }
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/birth-place",
+        "extension" :[
+          {
+            "url":"country",
+            "valueCodeableConcept":{
+              "coding":[
+                {"code":"999"}
+              ]
+            }
+          }
+
+        ]
       }
     ],
     "identifier": [
