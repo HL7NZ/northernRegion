@@ -380,7 +380,7 @@
         },
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
         "constraint": [
@@ -1139,7 +1139,7 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
       },
