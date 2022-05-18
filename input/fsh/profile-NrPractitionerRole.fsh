@@ -22,9 +22,9 @@ Description:    "A minimal PractitonerRole for use in specifying the GenerapPrac
 * endpoint 0..0
 
 /* THis seems to cause an error in the IG publisher. Need to track down... */
-* practitioner only Reference(NrPractitioner)
-* location only Reference(NrLocation)
-* organization only Reference(NrOrganization)
+* practitioner only Reference(NorthernRegionPractitioner)
+* location only Reference(NorthernRegionLocation)
+* organization only Reference(NorthernRegionOrganization)
 
 
 
