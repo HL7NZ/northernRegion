@@ -128,5 +128,5 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 * communication.preferred 0..0
 
-* telecom.extension contains
-    $cpOther named contactpoint-other 0..1
+//* telecom.extension contains
+//    $cpOther named contactpoint-other 0..1

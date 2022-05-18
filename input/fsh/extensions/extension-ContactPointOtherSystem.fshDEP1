@@ -14,6 +14,7 @@ Description: "Other values for the ContactPoint system"
 * value[x] only Coding
 * valueCoding.system from https://standards.digital.health.nz/fhir/ValueSet/contact-point-other
 
+
 ValueSet: ContactPointOther
 Id: contact-point-other
 Title: "Other values for the ContactPoint system"
@@ -23,6 +24,7 @@ Description: "Other values for the ContactPoint system"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * codes from system https://standards.digital.health.nz/ns/contact-point-other-code
+
 
 CodeSystem: ContactPointOther
 Id: contact-point-other

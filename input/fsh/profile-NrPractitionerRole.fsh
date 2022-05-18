@@ -5,7 +5,7 @@ Alias: $hlEDI = http://hl7.org.nz/fhir/StructureDefinition/healthlink-edi
 Profile:        NorthernRegionPractitionerRole
 Parent:         PractitionerRole
 Title:          "Northern Region PractitionerRole profile"
-Description:    "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient"
+Description:    "A minimal PractitonerRole for use in specifying the GeneralPractitioner and GP Practice for a patient"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole"
 * ^version = "0.2.0"

@@ -71,7 +71,7 @@
           "reference": "StructureDefinition/NorthernRegionPractitionerRole"
         },
         "name": "Northern Region PractitionerRole profile",
-        "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
+        "description": "A minimal PractitonerRole for use in specifying the GeneralPractitioner and GP Practice for a patient",
         "exampleBoolean": false
       },
       {
@@ -92,14 +92,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/contactpoint-other"
-        },
-        "name": "ContactPointOther",
-        "description": "Other values for the ContactPoint system",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/current-occupation"
         },
         "name": "CurrentOccupation",
@@ -111,7 +103,7 @@
           "reference": "StructureDefinition/enrollment-date"
         },
         "name": "EnrollmentDate",
-        "description": "If true, then indicates that the patient as authorized the use of this address or telecom to contact them.",
+        "description": "The date of enrollment of the patient with this GP practice.",
         "exampleBoolean": false
       },
       {
@@ -120,22 +112,6 @@
         },
         "name": "ValidatedByPatient",
         "description": "If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/contact-point-other"
-        },
-        "name": "Other values for the ContactPoint system",
-        "description": "Other values for the ContactPoint system",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/contact-point-other"
-        },
-        "name": "Other values for the ContactPoint system",
-        "description": "Other values for the ContactPoint system",
         "exampleBoolean": false
       },
       {
