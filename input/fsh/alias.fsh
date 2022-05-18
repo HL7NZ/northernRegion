@@ -10,6 +10,7 @@ Alias: $gender-identity = http://hl7.org/fhir/StructureDefinition/patient-gender
 
 //nz base
 Alias: $iwi-cs = https://standards.digital.health.nz/ns/iwi-code
+Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 //this IG
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient

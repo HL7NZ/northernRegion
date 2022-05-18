@@ -2,7 +2,7 @@
 Alias: $hlEDI = http://hl7.org.nz/fhir/StructureDefinition/healthlink-edi
 
 
-Profile:        NrPractitionerRole
+Profile:        NorthernRegionPractitionerRole
 Parent:         PractitionerRole
 Title:          "Northern Region PractitionerRole profile"
 Description:    "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient"
@@ -21,11 +21,11 @@ Description:    "A minimal PractitonerRole for use in specifying the GenerapPrac
 * availabilityExceptions 0..0
 * endpoint 0..0
 
-/* THis seems to cause an error in the IG publisher. Need to track down...
+/* THis seems to cause an error in the IG publisher. Need to track down... */
 * practitioner only Reference(NrPractitioner)
 * location only Reference(NrLocation)
 * organization only Reference(NrOrganization)
 
 
-*/
+
 

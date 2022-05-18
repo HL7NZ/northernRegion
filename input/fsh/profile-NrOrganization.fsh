@@ -1,8 +1,6 @@
-// Aliases
-Alias: $hlEDI = http://hl7.org.nz/fhir/StructureDefinition/healthlink-edi
 
 
-Profile:        NrOrganization
+Profile:        NorthernRegionOrganization
 Parent:         Organization
 Title:          "Northern Region Organization profile"
 Description:    "Represents Organization data exposed through the Northern Region APIs."
@@ -28,5 +26,6 @@ Description:    "Represents Organization data exposed through the Northern Regio
 * identifier[orgId] ^short = "The current HPI organization Id for this Organization"
 
 
-
+* telecom.extension contains
+    $edi-address named edi-address 0..1
 

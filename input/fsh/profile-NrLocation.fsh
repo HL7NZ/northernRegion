@@ -1,5 +1,5 @@
 
-Profile:        NrLocation
+Profile:        NorthernRegionLocation
 Parent:         Location
 Title:          "Northern Region Location profile"
 Description:    "Represents Location data exposed through the Northern Region APIs."

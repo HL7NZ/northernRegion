@@ -72,6 +72,14 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
 <tr>
+<td>Organization.telecom</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
+<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
+</td>
+</tr>
+<tr>
 <td>Patient</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
 <td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
@@ -157,6 +165,14 @@
 <p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
+</td>
+</tr>
+<tr>
+<td>Practitioner.telecom</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
+<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
 </td>
 </tr>
 </table>

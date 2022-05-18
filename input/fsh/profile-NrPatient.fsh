@@ -1,5 +1,5 @@
 
-Profile:        NrPatient
+Profile:        NorthernRegionPatient
 Parent:         Patient
 Title:          "Northern Region Patient profile"
 Description:    "Represents Patient data exposed through the Northern Region APIs."
@@ -106,14 +106,14 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 
-//Limit the possible resources for generalPractitioner to a practitioner or an organization.
+//Limit the possible resources for generalPractitioner to a practitionerrole.
 //If the actual GPis known, then use Practitioner, if the practice then use Organization.
 //both can be populated for a given patient if needed
 //Note that the healthLink EDI number is now an extension
 
 
 //temp * generalPractitioner only Reference(NrPractitioner | NrOrganization)
-* generalPractitioner only Reference(NrPractitionerRole)
+* generalPractitioner only Reference(NorthernRegionPractitionerRole)
 * generalPractitioner.extension contains
     $gp-enrollmentDate named gp-practice-enrollment-date 0..1
 
@@ -121,7 +121,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 
 
 //The managing organization is the DHB where the Patient resource came from
-* managingOrganization only Reference(NrOrganization)
+* managingOrganization only Reference(NorthernRegionOrganization)
 
 //Use the ValueSet from relatedPerson as it has the same codes as contact.relationship
 * contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype

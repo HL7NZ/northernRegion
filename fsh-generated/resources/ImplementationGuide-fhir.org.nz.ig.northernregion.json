@@ -36,7 +36,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/NrLocation"
+          "reference": "StructureDefinition/NorthernRegionLocation"
         },
         "name": "Northern Region Location profile",
         "description": "Represents Location data exposed through the Northern Region APIs.",
@@ -44,7 +44,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NrOrganization"
+          "reference": "StructureDefinition/NorthernRegionOrganization"
         },
         "name": "Northern Region Organization profile",
         "description": "Represents Organization data exposed through the Northern Region APIs.",
@@ -52,7 +52,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NrPatient"
+          "reference": "StructureDefinition/NorthernRegionPatient"
         },
         "name": "Northern Region Patient profile",
         "description": "Represents Patient data exposed through the Northern Region APIs.",
@@ -60,15 +60,15 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NrPractitioner"
+          "reference": "StructureDefinition/NorthernRegionPractitioner"
         },
         "name": "Northern region Practitioner profile",
-        "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
+        "description": "Represents Practitioner data exposed by northern region DHBs.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/NrPractitionerRole"
+          "reference": "StructureDefinition/NorthernRegionPractitionerRole"
         },
         "name": "Northern Region PractitionerRole profile",
         "description": "A minimal PractitonerRole for use in specifying the GenerapPractitoner and GP Practice for a patient",
@@ -172,6 +172,14 @@
       },
       {
         "reference": {
+          "reference": "Organization/organization1"
+        },
+        "name": "organization1",
+        "description": "An example Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+      },
+      {
+        "reference": {
           "reference": "Patient/patient1"
         },
         "name": "patient1",
@@ -185,6 +193,14 @@
         "name": "prac1",
         "description": "The Practitioner representing for the GP",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner1"
+        },
+        "name": "practitioner1",
+        "description": "An example patient using PractitionerRole for the GP link.",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
       },
       {
         "reference": {

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Practitioner",
+  "id": "practitioner1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "11111",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
+            "display": "New Zealand European"
+          }
+        ]
+      }
+    }
+  ],
+  "telecom": [
+    {
+      "system": "other",
+      "_system": {
+        "extension": [
+          {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+            "valueString": "healthlink"
+          }
+        ]
+      },
+      "value": "abx234"
+    }
+  ],
+  "name": [
+    {
+      "family": "Welby",
+      "given": [
+        "Marcus"
+      ],
+      "text": "Marcus Welby"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://standards.digital.health.nz/ns/hpi-person-id",
+      "value": "hpi-person-001"
+    }
+  ]
+}

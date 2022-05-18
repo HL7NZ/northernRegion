@@ -1,0 +1,30 @@
+{
+  "resourceType": "Organization",
+  "id": "organization1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "other",
+      "_system": {
+        "extension": [
+          {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
+            "valueString": "healthlink"
+          }
+        ]
+      },
+      "value": "abx234"
+    }
+  ],
+  "name": "Good health medical centre",
+  "identifier": [
+    {
+      "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
+      "value": "hpiorg-01"
+    }
+  ]
+}

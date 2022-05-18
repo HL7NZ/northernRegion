@@ -1,21 +1,23 @@
-Profile:        NrPractitioner
+Profile:        NorthernRegionPractitioner
 Parent:         Practitioner
 Title:          "Northern region Practitioner profile"
-Description:    "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile"
+Description:    "Represents Practitioner data exposed by northern region DHBs."
 
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
 * ^version = "0.2.0"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>NZ Base Practitioner profile</div>"
+* ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Northern Region Practitioner profile</div>"
 * ^text.status = #additional
 
 //top level  extensions
 * extension contains 
     $nzEthnicity named nzEthnicity 0..6
+
+* telecom.extension contains
+    $edi-address named edi-address 0..1
 
 
 
@@ -36,7 +38,7 @@ Description:    "Represents Practitioner data exposed by northern region DHBs. T
 * identifier contains 
     HPI 0..1 MS 
 
-* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
 * identifier[HPI].type 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"

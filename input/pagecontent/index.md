@@ -26,6 +26,9 @@ In general terms, this guide is targetted towards those wishing to implement app
 
 The [Use Cases](usecases.html) give examples of how the API's are intended to be used. The term 'API' (stands for Application Programming Interface) describes the technical details of how an external application (or 'client') can access the data being exposed.
 
+
+<!--
+
 Also check out the Logical models. These represent the alterations that made to the individual resource types to suit the needs of the project in a 'simple to understand format'. For example, new elements are added and others removed. FHIR Profiles represent the information in these models represented in the FHIR conformance artifacts and show the content of the actual data exchanged. (You can think of the Profile as being the technical representation of the Model)
 
 The following models are defined in this guide:
@@ -35,7 +38,7 @@ The following models are defined in this guide:
 * The [Organization](StructureDefinition-NrOrganization.html) profile is curently used to represent a General Practice, though can be used more widely
 
 The links above give significant detail of these models. The Snapshot table on each page is the best place to start (Note that model is also called a 'profile' in these pages - this is not the same as the FHIR profiles in this guide)
-
+-->
 The [Design Notes](design.html) page will be of interest to clinicians interested in informatics. It describes the resource types that are available, and some of the background around the choice of resource - as there are often different ways to do something in FHIR, depending on the exact requirements.
 
 #### If you are an Implementer:

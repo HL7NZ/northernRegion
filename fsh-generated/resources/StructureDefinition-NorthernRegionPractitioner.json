@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NrPractitioner",
+  "id": "NorthernRegionPractitioner",
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Base Practitioner profile</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Northern Region Practitioner profile</div>",
     "status": "additional"
   },
   "extension": [
@@ -17,10 +17,10 @@
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner",
   "version": "0.2.0",
-  "name": "NrPractitioner",
+  "name": "NorthernRegionPractitioner",
   "title": "Northern region Practitioner profile",
   "status": "active",
-  "description": "Represents Practitioner data exposed by northern region DHBs. The profile extends the NZ Base profile",
+  "description": "Represents Practitioner data exposed by northern region DHBs.",
   "jurisdiction": [
     {
       "coding": [
@@ -133,13 +133,28 @@
         "id": "Practitioner.identifier:HPI.system",
         "path": "Practitioner.identifier.system",
         "min": 1,
-        "fixedUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-person-id"
       },
       {
         "id": "Practitioner.name",
         "path": "Practitioner.name",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.extension:edi-address",
+        "path": "Practitioner.telecom.extension",
+        "sliceName": "edi-address",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
+            ]
+          }
+        ]
       }
     ]
   }

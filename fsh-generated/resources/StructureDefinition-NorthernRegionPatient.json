@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "NrPatient",
+  "id": "NorthernRegionPatient",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">healthAlliance Patient profile</div>"
@@ -17,7 +17,7 @@
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient",
   "version": "0.2.0",
-  "name": "NrPatient",
+  "name": "NorthernRegionPatient",
   "title": "Northern Region Patient profile",
   "status": "active",
   "description": "Represents Patient data exposed through the Northern Region APIs.",
