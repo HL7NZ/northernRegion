@@ -3,7 +3,7 @@
   "id": "organization1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+      "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
     ]
   },
   "telecom": [

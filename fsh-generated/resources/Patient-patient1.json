@@ -3,7 +3,7 @@
   "id": "patient1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
+      "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
     ]
   },
   "extension": [

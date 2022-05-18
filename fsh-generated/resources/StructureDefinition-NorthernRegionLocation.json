@@ -15,7 +15,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrLocation",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation",
   "version": "0.2.0",
   "name": "NorthernRegionLocation",
   "title": "Northern Region Location profile",

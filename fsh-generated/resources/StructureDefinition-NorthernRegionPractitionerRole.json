@@ -11,7 +11,7 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole",
   "version": "0.2.0",
   "name": "NorthernRegionPractitionerRole",
   "title": "Northern Region PractitionerRole profile",
@@ -617,7 +617,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner"
             ]
           }
         ],
@@ -656,7 +656,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
             ]
           }
         ],
@@ -807,7 +807,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation"
             ]
           }
         ],
@@ -1589,7 +1589,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner"
             ]
           }
         ]
@@ -1601,7 +1601,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
             ]
           }
         ]
@@ -1623,7 +1623,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrLocation"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation"
             ]
           }
         ]

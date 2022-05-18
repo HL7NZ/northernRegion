@@ -15,7 +15,7 @@
       "valueCode": "individual"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner",
   "version": "0.2.0",
   "name": "NorthernRegionPractitioner",
   "title": "Northern region Practitioner profile",

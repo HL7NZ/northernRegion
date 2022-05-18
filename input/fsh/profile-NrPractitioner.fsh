@@ -4,7 +4,7 @@ Title:          "Northern region Practitioner profile"
 Description:    "Represents Practitioner data exposed by northern region DHBs."
 
 
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner"
 * ^version = "0.2.0"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 

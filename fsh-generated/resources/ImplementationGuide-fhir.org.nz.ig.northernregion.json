@@ -176,7 +176,7 @@
         },
         "name": "organization1",
         "description": "An example Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
       },
       {
         "reference": {
@@ -184,7 +184,7 @@
         },
         "name": "patient1",
         "description": "An example patient using PractitionerRole for the GP link.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
       },
       {
         "reference": {
@@ -199,15 +199,15 @@
           "reference": "Practitioner/practitioner1"
         },
         "name": "practitioner1",
-        "description": "An example patient using PractitionerRole for the GP link.",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+        "description": "An example Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner"
       },
       {
         "reference": {
           "reference": "Patient/real-1"
         },
         "name": "real-1",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient"
       }
     ],
     "page": {

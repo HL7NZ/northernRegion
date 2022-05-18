@@ -15,7 +15,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/NrPatient",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPatient",
   "version": "0.2.0",
   "name": "NorthernRegionPatient",
   "title": "Northern Region Patient profile",
@@ -5140,7 +5140,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole"
             ]
           }
         ],
@@ -5504,7 +5504,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
             ]
           }
         ],
@@ -6230,7 +6230,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrPractitionerRole"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitionerRole"
             ]
           }
         ]
@@ -6258,7 +6258,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NrOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionOrganization"
             ]
           }
         ]

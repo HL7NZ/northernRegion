@@ -3,7 +3,7 @@
   "id": "practitioner1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/StructureDefinition/NrPractitioner"
+      "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionPractitioner"
     ]
   },
   "extension": [
