@@ -13,7 +13,7 @@ Description: "Place of birth"
     place-of-birth 0..1 and
     source 0..1
 
-* ^status = #active
+* ^status = #draft
 
 // definitions of sub-extensions
 * extension[country].url = "country" (exactly)

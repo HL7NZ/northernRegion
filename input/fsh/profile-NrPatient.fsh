@@ -19,7 +19,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * link 0..0
 * multipleBirth[x] 0..0
 * language 0..0
-* active 0..0
+
 
 
 //don't allow modifier extensions

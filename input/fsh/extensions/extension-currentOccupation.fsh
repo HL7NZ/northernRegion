@@ -8,7 +8,7 @@ Description: "The current occupation for the patient"
 
 * ^context.type = #element
 * ^context.expression = "Patient"
-* ^status = #active
+* ^status = #draft
 
 
 //states that there are no 'child' extensions

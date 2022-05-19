@@ -6,7 +6,7 @@ Description: "If true, then indicates that the patient as authorized the use of 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* ^status = #active
+* ^status = #draft
 
 * ^context.type = #element
 * ^context.expression = "Address"

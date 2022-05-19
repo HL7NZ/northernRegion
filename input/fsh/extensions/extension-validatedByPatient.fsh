@@ -9,7 +9,7 @@ Description: "If true, then indicates that the patient as indicated that the dat
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* ^status = #active
+* ^status = #draft
 
 * ^context.type = #element
 * ^context.expression = "Address"

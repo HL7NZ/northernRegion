@@ -5,7 +5,7 @@
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 <th>Status</th>
 </tr>
-<tr style='background-color:#FFCCCC'>
+<tr>
 <td><a href='StructureDefinition-authorized-by-patient.html'>authorized-by-patient</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient</td>
 <td>
@@ -14,9 +14,9 @@
 </td>
 <td><p>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</p></td>
 <td></td>
-<td>active</td>
+<td>draft</td>
 </tr>
-<tr style='background-color:#FFCCCC'>
+<tr>
 <td><a href='StructureDefinition-birth-place.html'>birth-place</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/birth-place</td>
 <td>
@@ -24,9 +24,9 @@
 </td>
 <td><p>Place of birth</p></td>
 <td></td>
-<td>active</td>
+<td>draft</td>
 </tr>
-<tr style='background-color:#FFCCCC'>
+<tr>
 <td><a href='StructureDefinition-current-occupation.html'>current-occupation</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/current-occupation</td>
 <td>
@@ -34,7 +34,7 @@
 </td>
 <td><p>The current occupation for the patient</p></td>
 <td></td>
-<td>active</td>
+<td>draft</td>
 </tr>
 <tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-enrollment-date.html'>enrollment-date</a></td>
@@ -46,7 +46,7 @@
 <td></td>
 <td>active</td>
 </tr>
-<tr style='background-color:#FFCCCC'>
+<tr>
 <td><a href='StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient</td>
 <td>
@@ -55,7 +55,7 @@
 </td>
 <td><p>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</p></td>
 <td></td>
-<td>active</td>
+<td>draft</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>
