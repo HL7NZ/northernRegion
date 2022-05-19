@@ -6,7 +6,7 @@ Description: "The date of enrollment of the patient with this GP practice."
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* ^status = #active
+* ^status = #draft
 
 * ^context.type = #element
 * ^context.expression = "Patient.generalPractitioner"

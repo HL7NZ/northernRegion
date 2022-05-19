@@ -4,7 +4,7 @@
   "url": "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date",
   "version": "0.2.0",
   "name": "EnrollmentDate",
-  "status": "active",
+  "status": "draft",
   "description": "The date of enrollment of the patient with this GP practice.",
   "jurisdiction": [
     {
