@@ -12,6 +12,8 @@ Alias: $gender-identity = http://hl7.org/fhir/StructureDefinition/patient-gender
 Alias: $iwi-cs = https://standards.digital.health.nz/ns/iwi-code
 Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
+Alias: $residency-status = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
+
 //this IG
 Alias: $authorizedByPatient = http://hl7.org.nz/fhir/StructureDefinition/authorized-by-patient
 Alias: $validatedByPatient = http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient

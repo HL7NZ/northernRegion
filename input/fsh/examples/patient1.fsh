@@ -24,7 +24,7 @@ Usage: #example
 
 * extension[current-occupation].valueCodeableConcept.coding.display = "Carpenter"
 * extension[patient-iwi].valueCodeableConcept = $iwi-cs#01112 "Te Rarawa"
-* extension[gender-identity].valueCodeableConcept =  http://hl7.org/fhir/gender-identity#male
+//* extension[gender-identity].valueCodeableConcept =  http://hl7.org/fhir/gender-identity#male
 * extension[interpreter-required].valueBoolean = true
 
 * extension[domicile-code].valueCodeableConcept.coding.code = #0040

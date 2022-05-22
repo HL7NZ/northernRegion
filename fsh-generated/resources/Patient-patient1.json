@@ -115,17 +115,6 @@
       }
     },
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "male",
-            "system": "http://hl7.org/fhir/gender-identity"
-          }
-        ]
-      }
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
       "valueBoolean": true
     },

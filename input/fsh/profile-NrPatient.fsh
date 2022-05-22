@@ -35,9 +35,10 @@ Description:    "Represents Patient data exposed through the Northern Region API
    // $sexAtBirth named sex-at-birth 0..1 and
     $currentOccupation named current-occupation 0..1 and 
     $interpreterRequired named interpreter-required 0..1 and
-    $gender-identity named gender-identity 0..1 and
+    //$gender-identity named gender-identity 0..1 and
     $sex-at-birth named sex-at-birth 0..1 and 
-    $domicileCode named domicile-code 0..1 
+    $domicileCode named domicile-code 0..1 and 
+    $residency-status named residency-status 0..1  
     //and
    // $birthPlace named birth-place 0..1 //and 
    // $domicileCode named domicile-code 0..1
