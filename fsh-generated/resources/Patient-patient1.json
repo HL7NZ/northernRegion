@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "11111",
-            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
             "display": "New Zealand European"
           }
         ]
@@ -25,31 +25,18 @@
         "coding": [
           {
             "code": "12111",
-            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
             "display": "Celtic"
           }
         ]
       }
     },
     {
-      "extension": [
-        {
-          "url": "country",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "NZ",
-                "system": "urn:iso:std:iso:3166"
-              }
-            ]
-          }
-        },
-        {
-          "url": "place-of-birth",
-          "valueString": "Palmerston North"
-        }
-      ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/birth-place"
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "New Zealand",
+        "city": "Palmerston North"
+      }
     },
     {
       "extension": [
@@ -58,9 +45,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "CIT",
-                "system": "https://standards.digital.health.nz/ns/citizenship-status",
-                "display": "Citizen"
+                "code": "yes",
+                "system": "https://standards.digital.health.nz/ns/nz-citizenship-status-code",
+                "display": "Yes"
               }
             ]
           }
@@ -71,7 +58,7 @@
             "coding": [
               {
                 "code": "PPRT",
-                "system": "https://standards.digital.health.nz/ns/info-source",
+                "system": "https://standards.digital.health.nz/ns/information-source-code",
                 "display": "Passport"
               }
             ]
@@ -93,23 +80,30 @@
       }
     },
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "display": "Carpenter"
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "yes",
+                "system": "https://standards.digital.health.nz/ns/nz-residency-status-code",
+                "display": "Permanent Resident"
+              }
+            ]
           }
-        ]
-      }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status"
     },
     {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-iwi",
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "01112",
+            "code": "0104",
             "system": "https://standards.digital.health.nz/ns/iwi-code",
-            "display": "Te Rarawa"
+            "display": "Ngāpuhi"
           }
         ]
       }
@@ -124,7 +118,7 @@
         "coding": [
           {
             "code": "0040",
-            "system": "https://standards.digital.health.nz/ns/domicileCode",
+            "system": "https://standards.digital.health.nz/ns/domicile-code",
             "display": "Waipu"
           }
         ]
@@ -175,10 +169,14 @@
       "value": "myZoomAcccount",
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
-          "valueCoding": {
-            "system": "https://standards.digital.health.nz/ns/contact-point-other-code",
-            "code": "videoconference"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "vc",
+                "system": "https://standards.digital.health.nz/ns/contact-point-purpose-code"
+              }
+            ]
           }
         }
       ]
@@ -202,6 +200,19 @@
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient",
           "valueBoolean": true
+        },
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": -35.98500680010878
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 174.44749709999996
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode"
         }
       ],
       "line": [

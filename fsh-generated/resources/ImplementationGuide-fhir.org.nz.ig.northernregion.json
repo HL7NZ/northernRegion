@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "fhir.org.nz.ig.northernregion",
   "url": "http://fhir.org.nz/ig/northernregion/ImplementationGuide/fhir.org.nz.ig.northernregion",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "NorthernRegionIG",
   "title": "Northern Region Implementation Guide",
   "status": "active",
@@ -27,7 +27,7 @@
   "dependsOn": [
     {
       "packageId": "fhir.org.nz.ig.base",
-      "version": "current",
+      "version": "dev",
       "uri": "http://fhir.org.nz/ig/base/ImplementationGuide/fhir.org.nz.ig.base",
       "id": "fhir_org_nz_ig_base"
     }
@@ -84,14 +84,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/birth-place"
-        },
-        "name": "BirthPlace",
-        "description": "Place of birth",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/current-occupation"
         },
         "name": "CurrentOccupation",
@@ -116,7 +108,7 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/HaCapabilityStatement"
+          "reference": "CapabilityStatement/NorthernRegionCapabilityStatement"
         },
         "name": "CapabilityStatement",
         "description": "Represents API exposed by healthAlliance systems",
@@ -222,11 +214,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "exampleInstances.html",
-          "title": "Example Instances",
-          "generation": "html"
-        },
-        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
@@ -235,11 +222,6 @@
           "nameUrl": "profiles.html",
           "title": "Profiles",
           "generation": "html"
-        },
-        {
-          "nameUrl": "terminology.html",
-          "title": "Terminology",
-          "generation": "markdown"
         },
         {
           "nameUrl": "usecases.html",

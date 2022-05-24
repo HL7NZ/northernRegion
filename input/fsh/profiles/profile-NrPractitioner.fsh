@@ -16,15 +16,18 @@ Description:    "Represents Practitioner data exposed by northern region DHBs."
 * extension contains 
     $nzEthnicity named nzEthnicity 0..6
 
+//Note that the extension is on the ContactPoint.system element
 * telecom.extension contains
-    $edi-address named edi-address 0..1
+    $contactPointPurpose named contact-point-purpose 0..1
 
+* telecom.system.extension contains
+    $edi-address named edi-address 0..1
 
 
 //must be one name with a family name
 //todo - should we really insist on a family name? May not always be known...
 * name 1..* MS
-//* name.family 1..1 MS
+
 
 //slice identifier to add the HPI as Must Support
 * identifier ^slicing.discriminator.type = #value

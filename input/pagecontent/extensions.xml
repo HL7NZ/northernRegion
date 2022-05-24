@@ -17,16 +17,6 @@
 <td>draft</td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-birth-place.html'>birth-place</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/birth-place</td>
-<td>
-<div>Patient</div>
-</td>
-<td><p>Place of birth</p></td>
-<td></td>
-<td>draft</td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-current-occupation.html'>current-occupation</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/current-occupation</td>
 <td>
@@ -82,6 +72,11 @@
 </tr>
 <tr>
 <td>Patient.extension</td>
+<td>http://hl7.org/fhir/StructureDefinition/patient-birthPlace</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td>Patient.extension</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-iwi</td>
 <td>Defined outside of known IG's</td>
 </tr>
@@ -125,6 +120,11 @@
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
+<td>Patient.telecom.extension</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
 <td>Patient.address</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
 <td><p>Suburb element of a NZ Address.</p></td>
@@ -159,7 +159,12 @@
 </td>
 </tr>
 <tr>
-<td>Practitioner.telecom</td>
+<td>Practitioner.telecom.extension</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose</td>
+<td>Defined outside of known IG's</td>
+</tr>
+<tr>
+<td>Practitioner.telecom.system</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
 <td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
 <td>

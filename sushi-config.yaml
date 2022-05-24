@@ -1,7 +1,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.org.nz.ig.northernregion
 canonical: http://fhir.org.nz/ig/northernregion
-version: 0.3.0
+version: 0.4.0
 name: NorthernRegionIG
 title: Northern Region Implementation Guide
 status: active
@@ -13,7 +13,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
   #fhir.org.nz.ig.base: 1.0.0
-  fhir.org.nz.ig.base: current
+  fhir.org.nz.ig.base: dev
   
 parameters:
   show-inherited-invariants: false

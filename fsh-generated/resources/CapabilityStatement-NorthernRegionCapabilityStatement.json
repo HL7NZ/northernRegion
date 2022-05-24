@@ -1,12 +1,12 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "HaCapabilityStatement",
-  "url": "http://fhir.org.nz/ig/northernregion/CapabilityStatement/HaCapabilityStatement",
+  "id": "NorthernRegionCapabilityStatement",
+  "url": "http://fhir.org.nz/ig/northernregion/CapabilityStatement/NorthernRegionCapabilityStatement",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Demographics related resources</div>"
   },
-  "name": "NR-CapabilityStatement",
+  "name": "NorthernRegionCapabilityStatement",
   "title": "Capability Statement describing healthAlliances FHIR APIs",
   "description": "Currently the subset of API's exposed by healthAlliance are read-only and confined to a small set of resource types.",
   "date": "2020-04-01",

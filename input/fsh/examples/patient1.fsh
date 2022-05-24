@@ -8,27 +8,28 @@ Usage: #example
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>John Doe</div>"
 * text.status = #additional
 
+* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
+* extension[nz-ethnicity][+].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#12111 "Celtic"
 
-* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#11111 "New Zealand European"
-* extension[nz-ethnicity][+].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#12111 "Celtic"
+//* extension[birth-place].country = urn:iso:std:iso:3166#NZ
+* extension[birth-place].valueAddress.country = "New Zealand"
+* extension[birth-place].valueAddress.city = "Palmerston North"
 
-* extension[birth-place].extension[country].valueCodeableConcept = urn:iso:std:iso:3166#NZ
-* extension[birth-place].extension[place-of-birth].valueString = "Palmerston North"
 
-* extension[nz-citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/citizenship-status#CIT "Citizen"
-* extension[nz-citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/info-source#PPRT "Passport"
+* extension[nz-citizenship].extension[status].valueCodeableConcept =  https://standards.digital.health.nz/ns/nz-citizenship-status-code#yes "Yes"
+* extension[nz-citizenship].extension[source].valueCodeableConcept =  https://standards.digital.health.nz/ns/information-source-code#PPRT "Passport"
 
 * extension[sex-at-birth].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
+* extension[residency-status].extension[status].valueCodeableConcept = https://standards.digital.health.nz/ns/nz-residency-status-code#yes "Permanent Resident"
 
-//* extension[nz-residency-status].valueCodeableConcept = https://standards.digital.health.nz/ns/nz-residency-status#Y "Yes"
+//* extension[current-occupation].valueCodeableConcept.coding.display = "Carpenter"
+* extension[patient-iwi].valueCodeableConcept = $iwi-cs#0104 "Ngāpuhi"
 
-* extension[current-occupation].valueCodeableConcept.coding.display = "Carpenter"
-* extension[patient-iwi].valueCodeableConcept = $iwi-cs#01112 "Te Rarawa"
 //* extension[gender-identity].valueCodeableConcept =  http://hl7.org/fhir/gender-identity#male
 * extension[interpreter-required].valueBoolean = true
 
 * extension[domicile-code].valueCodeableConcept.coding.code = #0040
-* extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/domicileCode"
+* extension[domicile-code].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/domicile-code"
 * extension[domicile-code].valueCodeableConcept.coding.display = "Waipu"
 
 //the current NHI
@@ -59,16 +60,19 @@ Usage: #example
 * telecom.extension[authorized-by-patient].valueBoolean = true
 * telecom.extension[validated-by-patient].valueBoolean = true
 
+
 * telecom[1].system = #phone
 * telecom[1].value = "+64 9 000 0000"
 
 
 * telecom[2].system = #other
 * telecom[2].value = "myZoomAcccount"
-* telecom[2].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
+* telecom[2].extension.url = $contactPointPurpose
 
-* telecom[2].extension.valueCoding.system = "https://standards.digital.health.nz/ns/contact-point-other-code"
-* telecom[2].extension.valueCoding.code = #videoconference
+* telecom[2].extension.valueCodeableConcept = https://standards.digital.health.nz/ns/contact-point-purpose-code#vc
+
+
+
 //physical address
 
 * address.extension[building-name].valueString = "The Black building"
@@ -77,8 +81,8 @@ Usage: #example
 * address.extension[authorized-by-patient].valueBoolean = true
 * address.extension[validated-by-patient].valueBoolean = true
 
-
-
+* address.extension[nz-geocode].extension[latitude].valueDecimal = -35.98500680010878
+* address.extension[nz-geocode].extension[longitude].valueDecimal = 174.44749709999996
 
 * address.line = "23 Thule St"
 * address.city = "Waipu"

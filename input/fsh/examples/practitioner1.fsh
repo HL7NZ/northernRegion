@@ -4,7 +4,7 @@ InstanceOf: NorthernRegionPractitioner
 Description: "An example Practitioner"
 Usage: #example
 
-* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4#11111 "New Zealand European"
+* extension[nz-ethnicity].valueCodeableConcept = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
 
 * name.family = "Welby"
 * name.given = "Marcus"

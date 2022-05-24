@@ -20,8 +20,6 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * multipleBirth[x] 0..0
 * language 0..0
 
-
-
 //don't allow modifier extensions
 * modifierExtension 0..0
 
@@ -33,15 +31,13 @@ Description:    "Represents Patient data exposed through the Northern Region API
     //$residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
    // $sexAtBirth named sex-at-birth 0..1 and
-    $currentOccupation named current-occupation 0..1 and 
+    //$currentOccupation named current-occupation 0..1 and 
     $interpreterRequired named interpreter-required 0..1 and
     //$gender-identity named gender-identity 0..1 and
     $sex-at-birth named sex-at-birth 0..1 and 
     $domicileCode named domicile-code 0..1 and 
     $residency-status named residency-status 0..1  
-    //and
-   // $birthPlace named birth-place 0..1 //and 
-   // $domicileCode named domicile-code 0..1
+
 
    
 * extension[nz-ethnicity] ^short = "The persons ethnicity (up to 6)"
@@ -82,15 +78,14 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * name.extension contains
     $preferred named preferred 0..1
   
-
 * telecom.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
-    $validatedByPatient named validated-by-patient 0..1
+    $validatedByPatient named validated-by-patient 0..1 and
+    $contactPointPurpose named contact-point-purpose 0..1
 
 * telecom.extension[authorized-by-patient] ^definition = "Indicates that the patient has authorized the use of this method of contact."
 * telecom.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this method of contact is correct."
-
-
+* telecom.extension[contact-point-purpose] ^definition = "The reason for using this contact point"
 
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and

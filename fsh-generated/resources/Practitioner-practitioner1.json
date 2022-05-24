@@ -13,7 +13,7 @@
         "coding": [
           {
             "code": "11111",
-            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4",
+            "system": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
             "display": "New Zealand European"
           }
         ]
