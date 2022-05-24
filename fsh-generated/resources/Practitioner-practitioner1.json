@@ -20,20 +20,6 @@
       }
     }
   ],
-  "telecom": [
-    {
-      "system": "other",
-      "_system": {
-        "extension": [
-          {
-            "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-address",
-            "valueString": "healthlink"
-          }
-        ]
-      },
-      "value": "abx234"
-    }
-  ],
   "name": [
     {
       "family": "Welby",

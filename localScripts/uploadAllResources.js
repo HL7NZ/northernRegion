@@ -2,7 +2,7 @@
 
 /**
  * Upload the all resources created by sushi to a server
- * This MUST be run after the IG builder has run, as the IG builder adds the snapshot element to the SD
+ * Note that sushi must be executed with the -s switch to generate the snapshots
  **/
 
 console.log("Uploading all generated resources")
@@ -15,7 +15,7 @@ let serverRoot = 'http://hapi.fhir.org/baseR4/';
 
 
 let folder = "../fsh-generated/resources/"
-let inx = 0
+
 fs.readdirSync(folder).forEach(function(file) {
     //console.log(file)
     let fullFileName = folder + file;
@@ -25,7 +25,7 @@ fs.readdirSync(folder).forEach(function(file) {
     if (resource.resourceType !== 'CapabilityStatement') {  //server won't let a CapabilityStatement be PUTted
        
         //put to the server with the given id
-        resource.fhirVersion = "4.0.0";     //todo my server is a slightly older version..
+        //only needed for my server resource.fhirVersion = "4.0.0";     //todo my server is a slightly older version..
         let url = serverRoot + resource.resourceType + "/" + resource.id
         //console.log(url)
     

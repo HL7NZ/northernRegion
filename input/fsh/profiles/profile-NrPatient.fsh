@@ -31,7 +31,7 @@ Description:    "Represents Patient data exposed through the Northern Region API
     //$residencyStatus named nz-residency-status 0..1 and 
     $nzcitizenship named nz-citizenship 0..1 and 
    // $sexAtBirth named sex-at-birth 0..1 and
-    //$currentOccupation named current-occupation 0..1 and 
+    $currentOccupation named current-occupation 0..1 and 
     $interpreterRequired named interpreter-required 0..1 and
     //$gender-identity named gender-identity 0..1 and
     $sex-at-birth named sex-at-birth 0..1 and 

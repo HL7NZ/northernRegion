@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "enrollment-date",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/gp-practice-enrollment-date",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "name": "EnrollmentDate",
   "status": "draft",
   "description": "The date of enrollment of the patient with this GP practice.",

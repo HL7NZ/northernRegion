@@ -20,6 +20,7 @@ Description:    "A minimal PractitonerRole for use in specifying the GeneralPrac
 * notAvailable 0..0
 * availabilityExceptions 0..0
 * endpoint 0..0
+* telecom 0..0
 
 /* THis seems to cause an error in the IG publisher. Need to track down... */
 * practitioner only Reference(NorthernRegionPractitioner)

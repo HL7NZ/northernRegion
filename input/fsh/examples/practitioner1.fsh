@@ -14,6 +14,6 @@ Usage: #example
 * identifier.value = "hpi-person-001"
 
 
-* telecom.system = #other
-* telecom.system.extension[$edi-address].valueString = "healthlink"
-* telecom.value = "abx234"
+//* telecom.system = #other
+//* telecom.system.extension[$edi-address].valueString = "healthlink"
+//* telecom.value = "abx234"

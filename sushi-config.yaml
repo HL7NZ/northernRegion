@@ -1,7 +1,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.org.nz.ig.northernregion
 canonical: http://fhir.org.nz/ig/northernregion
-version: 0.4.0
+version: 0.4.1
 name: NorthernRegionIG
 title: Northern Region Implementation Guide
 status: active
@@ -44,8 +44,7 @@ menu:
     #   CapabilityStatement: CapabilityStatement.html
     Artifact index: artifacts.html
     Support:
-        # Companion: companion.html
         FHIR Spec: http://hl7.org/fhir/R4/index.html
         Downloads: downloads.html
-    # Development: development.html
+
 

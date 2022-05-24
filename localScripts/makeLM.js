@@ -2,7 +2,7 @@
 
 /**
 Create logical models suitable for the IG builder from the clinFHIR logical models
-
+NO longer used
  */
 let fs = require('fs');
 let syncRequest = require('../../scripts/node_modules/sync-request');
