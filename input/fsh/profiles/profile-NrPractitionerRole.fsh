@@ -11,7 +11,7 @@ Description:    "A minimal PractitonerRole for use in specifying the GeneralPrac
 * ^version = "0.2.0"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* active 0..0
+
 * period 0..0
 * code 0..0
 * specialty 0..0
@@ -22,7 +22,7 @@ Description:    "A minimal PractitonerRole for use in specifying the GeneralPrac
 * endpoint 0..0
 * telecom 0..0
 
-/* THis seems to cause an error in the IG publisher. Need to track down... */
+
 * practitioner only Reference(NorthernRegionPractitioner)
 * location only Reference(NorthernRegionLocation)
 * organization only Reference(NorthernRegionOrganization)

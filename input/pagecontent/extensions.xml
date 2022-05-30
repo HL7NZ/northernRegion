@@ -149,30 +149,6 @@
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
-<td>Patient.address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
-<td><p>Suburb element of a NZ Address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-suburb.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient.address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/building-name</td>
-<td><p>The name of a building cited in an address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-building-name.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient.address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-geocode</td>
-<td><p>New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-geocode.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
 <td>Practitioner</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
 <td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>

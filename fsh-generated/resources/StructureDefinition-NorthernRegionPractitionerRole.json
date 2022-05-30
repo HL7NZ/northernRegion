@@ -58,11 +58,6 @@
   "differential": {
     "element": [
       {
-        "id": "PractitionerRole.active",
-        "path": "PractitionerRole.active",
-        "max": "0"
-      },
-      {
         "id": "PractitionerRole.period",
         "path": "PractitionerRole.period",
         "max": "0"

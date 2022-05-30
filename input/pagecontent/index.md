@@ -34,7 +34,7 @@ The [Design Notes](design.html) page will be of interest to clinicians intereste
 
 * The [Artifact Index](artifacts.html) lists all FHIR artifacts in the guide, with links to details on each one. The most significant ones at present are
 
-  * The [API](api.html) describes the different API's exposed by the solution and the contents of tab is directly generated from the [CapabilityStatement](CapabilityStatement-HaCapabilityStatement.html) resource, which is the machine readible description of the API.
+  * The [API](api.html) describes the different API's exposed by the solution and the contents of tab is directly generated from the [CapabilityStatement](CapabilityStatement-NorthernRegionCapabilityStatement.html) resource, which is the machine readible description of the API.
   * The profiles that describe the structure of the resource instances returned by queries are found on the [Artifact Index](artifacts.html#structures-resource-profiles) page (as are all the other FHIR artifacts). Like logical models, the snapshot tab is the most useful summary, but there is a lot of detail about each profile. Each profile page also contains links to examples of resource instances conformant to the profile.
 
 

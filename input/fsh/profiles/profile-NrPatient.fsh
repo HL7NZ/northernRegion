@@ -87,13 +87,15 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * telecom.extension[validated-by-patient] ^definition = "Indicates that the patient has confirmed that this method of contact is correct."
 * telecom.extension[contact-point-purpose] ^definition = "The reason for using this contact point"
 
+* address only NzAddress
+
 * address.extension contains
     $authorizedByPatient named authorized-by-patient 0..1 and
-    $validatedByPatient named validated-by-patient 0..1 and
-    $suburb named suburb 0..1 and
-    $buildingName named building-name 0..1 and 
+    $validatedByPatient named validated-by-patient 0..1 
+  //  $suburb named suburb 0..1 and
+  //  $buildingName named building-name 0..1 and 
  //   $domicileCode named domicile-code 0..1 and
-    $nz-geocode named nz-geocode 0..1
+  //  $nz-geocode named nz-geocode 0..1
 
 
 

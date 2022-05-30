@@ -371,6 +371,18 @@
         "min": 1
       },
       {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.address.extension:authorized-by-patient",
         "path": "Patient.address.extension",
         "sliceName": "authorized-by-patient",
@@ -398,51 +410,6 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/validated-by-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:suburb",
-        "path": "Patient.address.extension",
-        "sliceName": "suburb",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/suburb"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:building-name",
-        "path": "Patient.address.extension",
-        "sliceName": "building-name",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/building-name"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:nz-geocode",
-        "path": "Patient.address.extension",
-        "sliceName": "nz-geocode",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode"
             ]
           }
         ]
