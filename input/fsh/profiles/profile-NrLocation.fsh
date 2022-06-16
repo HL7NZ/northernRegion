@@ -59,7 +59,7 @@ Description:    "Represents Location data exposed through the Northern Region AP
 * identifier[MOHFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
 
 
-
+/*
 * address.extension contains
 
     $suburb named suburb 0..1 and
@@ -67,9 +67,10 @@ Description:    "Represents Location data exposed through the Northern Region AP
  //   $domicileCode named domicile-code 0..1 and
     $nz-geocode named nz-geocode 0..1
 
+*/
+* address only NzAddress
 
-
-
+* partOf = Reference(NorthernRegionLocation)
 
 
 

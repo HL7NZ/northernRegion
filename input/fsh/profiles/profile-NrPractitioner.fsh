@@ -16,6 +16,7 @@ Description:    "Represents Practitioner data exposed by northern region DHBs."
 * telecom 0..0
 * birthDate 0..0
 * photo 0..0
+* address 0..0
 
 
 

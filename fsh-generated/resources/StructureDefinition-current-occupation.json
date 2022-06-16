@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "current-occupation",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/current-occupation",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "name": "CurrentOccupation",
   "status": "draft",
   "description": "The current occupation for the patient",
