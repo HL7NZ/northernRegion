@@ -70,7 +70,7 @@ Description:    "Represents Location data exposed through the Northern Region AP
 */
 * address only NzAddress
 
-* partOf = Reference(NorthernRegionLocation)
+* partOf = Reference(http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation)
 
 
 

@@ -200,21 +200,6 @@
         ]
       },
       {
-        "id": "Patient.extension:domicile-code",
-        "path": "Patient.extension",
-        "sliceName": "domicile-code",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Patient.extension:residency-status",
         "path": "Patient.extension",
         "sliceName": "residency-status",

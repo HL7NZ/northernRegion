@@ -156,7 +156,7 @@
         "id": "Location.partOf",
         "path": "Location.partOf",
         "patternReference": {
-          "reference": "NorthernRegionLocation"
+          "reference": "http://hl7.org.nz/fhir/StructureDefinition/NorthernRegionLocation"
         }
       },
       {

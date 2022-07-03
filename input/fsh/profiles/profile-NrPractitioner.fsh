@@ -54,3 +54,8 @@ Description:    "Represents Practitioner data exposed by northern region DHBs."
 //* identifier[HPI_CPN].type 0..0
 * identifier[HPI_CPN] ^short = "The currently active CPN (Common Person Name)"
 * identifier[HPI_CPN] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
+
+* qualification.extension contains
+    http://hl7.org.nz/fhir/StructureDefinition/registration-status-code named registration-status-code 0..1 and
+    http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice named scope-of-practice 0..1 and
+    http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice named condition-on-practive 0..1
