@@ -122,7 +122,8 @@ Description:    "Represents Patient data exposed through the Northern Region API
 * managingOrganization only Reference(NorthernRegionOrganization)
 
 //Use the ValueSet from relatedPerson as it has the same codes as contact.relationship
-* contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype
+* contact.relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype (extensible)
+
 
 * communication.preferred 0..0
 
