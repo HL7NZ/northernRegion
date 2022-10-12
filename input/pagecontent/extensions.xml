@@ -1,9 +1,6 @@
 <div xmlns='http://www.w3.org/1999/xhtml'>
-<a name="internalExtensions"> </a>
-<br/><h3>Extensions defined in this guide</h3><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
-<th>Status</th>
+<tr><th>Id</th><th>Canonical url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
 <td><a href='StructureDefinition-authorized-by-patient.html'>authorized-by-patient</a></td>
@@ -14,7 +11,6 @@
 </td>
 <td><p>If true, then indicates that the patient as authorized the use of this address or telecom to contact them.</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-current-occupation.html'>current-occupation</a></td>
@@ -24,7 +20,6 @@
 </td>
 <td><p>The current occupation for the patient</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-enrollment-date.html'>enrollment-date</a></td>
@@ -34,7 +29,6 @@
 </td>
 <td><p>The date of enrollment of the patient with this GP practice.</p></td>
 <td></td>
-<td>draft</td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-validated-by-patient.html'>validated-by-patient</a></td>
@@ -45,110 +39,6 @@
 </td>
 <td><p>If true, then indicates that the patient as indicated that the data is correct. Defined by healthAlliance</p></td>
 <td></td>
-<td>draft</td>
-</tr>
-</table>
-<a name="externalExtensions"> </a>
-<h3>Extensions used but defined elsewhere</h3>
-<table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
-<tr>
-<td>Organization.telecom</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
-<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
-
-<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient.extension</td>
-<td>http://hl7.org/fhir/StructureDefinition/patient-birthPlace</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient.extension</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-iwi</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship</td>
-<td><p>New Zealand citizenship</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-citizenship.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient.extension</td>
-<td>http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/sex-at-birth</td>
-<td><p>A person’s sex at the time of their birth (considered to be immutable).</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-sex-at-birth.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Patient.extension</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient.name.extension</td>
-<td>http://hl7.org/fhir/StructureDefinition/iso21090-preferred</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Patient.telecom.extension</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose</td>
-<td>Defined outside of known IG's</td>
-</tr>
-<tr>
-<td>Practitioner</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
-
-<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Practitioner.qualification</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/registration-status-code</td>
-<td><p>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-registration-status-code.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Practitioner.qualification</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice</td>
-<td><p>The type or range of health services a practitioner is authorised to perform, as determined by the Responsible Authority or professional body.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-scope-of-practice.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Practitioner.qualification</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice</td>
-<td><p>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-condition-on-practice.html'>NZ base</a></div>
-</td>
 </tr>
 </table>
 </div>

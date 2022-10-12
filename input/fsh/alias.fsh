@@ -13,7 +13,8 @@ Alias: $gender-identity = http://hl7.org/fhir/StructureDefinition/patient-gender
 //nz base
 Alias: $iwi-cs = https://standards.digital.health.nz/ns/iwi-code
 Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
-Alias: $residency-status = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
+//Alias: $residency-status = http://hl7.org.nz/fhir/StructureDefinition/nz-residency-status
+Alias: $residency-status = http://hl7.org.nz/fhir/StructureDefinition/nz-residency
 Alias: $contactPointPurpose = http://hl7.org.nz/fhir/StructureDefinition/contactpoint-purpose
 
 

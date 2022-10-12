@@ -1,7 +1,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.org.nz.ig.northernregion
 canonical: http://fhir.org.nz/ig/northernregion
-version: 0.4.5
+version: 0.4.6
 name: NorthernRegionIG
 title: Northern Region Implementation Guide
 status: active
