@@ -1,4 +1,5 @@
 
+
 # IG build script. Executed at the root of the IG folder
 
 # build the terminology summary
