@@ -2,7 +2,6 @@
 
 An Implementation Guide (IG) that represents FHIR interfaces to be supported across secondary care in the Northern region of New Zealand (supported by healthAlliance). It has a dependancy on the [NZBase IG](https://github.com/HL7NZ/nzbase/tree/master).
 
-
 ## Folders
 
 Note that this is the same folder structure used for all IG's
