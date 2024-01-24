@@ -4,7 +4,7 @@ An Implementation Guide (IG) that represents FHIR interfaces to be supported acr
 
 ## Folders
 
-Note that this is the same folder structure used for all IG's
+Note that this is the same folder structure used for all IG's.
 
 ### input 
 
