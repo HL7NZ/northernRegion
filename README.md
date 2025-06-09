@@ -47,7 +47,7 @@ These are located in the /fsh/extensions folder. In general, one file per extens
 ValueSets and CodeSystems defined by this IG are placed in the /fsh/definitional folder. 
 
 #### Examples
-Located in the /fsh/examples folder
+Located in the /fsh/examples folder.
 
 
 ### Update Logical Models
